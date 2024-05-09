@@ -1,15 +1,14 @@
-package com.spring.batch.processor;
+package com.spring.batch.converter;
 
-import com.spring.batch.xml.Transaction;
 import org.springframework.batch.item.ItemProcessor;
 import org.springframework.lang.NonNull;
 
-public class CustomItemProcessor implements ItemProcessor<Transaction, Transaction> {
+public class TransactionItemProcessor implements ItemProcessor<Transaction, Transaction> {
 
     // Processor: 定义读取数据的加工过程，传递的参数非空
     @Override
     public Transaction process(@NonNull Transaction transaction) {
-        System.out.println("processing transaction item");
+        System.out.println("processing transaction item: " + transaction);
         return transaction;
     }
 }

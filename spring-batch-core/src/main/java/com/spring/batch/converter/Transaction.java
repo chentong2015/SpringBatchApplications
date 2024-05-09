@@ -1,4 +1,4 @@
-package com.spring.batch.xml;
+package com.spring.batch.converter;
 
 import jakarta.xml.bind.annotation.XmlRootElement;
 

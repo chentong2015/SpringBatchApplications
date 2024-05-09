@@ -12,6 +12,7 @@
 [INFO]    |  +- com.zaxxer:HikariCP:jar:5.0.1:compile
 [INFO]    |  |  \- org.slf4j:slf4j-api:jar:2.0.0-alpha1:compile
 [INFO]    |  \- org.springframework:spring-jdbc:jar:6.1.1:compile
+
 [INFO]    \- org.springframework.batch:spring-batch-core:jar:5.1.0:compile
 [INFO]       +- org.springframework.batch:spring-batch-infrastructure:jar:5.1.0:compile
 [INFO]       +- org.springframework:spring-aop:jar:6.1.0:compile
@@ -24,36 +25,3 @@
 [INFO]       |  +- org.hdrhistogram:HdrHistogram:jar:2.1.12:runtime
 [INFO]       |  \- org.latencyutils:LatencyUtils:jar:2.0.3:runtime
 [INFO]       \- io.micrometer:micrometer-observation:jar:1.12.0:compile
-
-
- org.example:spring-batch-testing:jar:1.0-SNAPSHOT
-[INFO] \- org.springframework.boot:spring-boot-starter-batch:jar:2.7.18:compile
-[INFO]    +- org.springframework.boot:spring-boot-starter:jar:2.7.18:compile
-[INFO]    |  +- org.springframework.boot:spring-boot:jar:2.7.18:compile
-[INFO]    |  +- org.springframework.boot:spring-boot-autoconfigure:jar:2.7.18:compile
-[INFO]    |  +- org.springframework.boot:spring-boot-starter-logging:jar:2.7.18:compile
-[INFO]    |  |  +- ch.qos.logback:logback-classic:jar:1.2.12:compile
-[INFO]    |  |  |  \- ch.qos.logback:logback-core:jar:1.2.12:compile
-[INFO]    |  |  +- org.apache.logging.log4j:log4j-to-slf4j:jar:2.17.2:compile
-[INFO]    |  |  |  \- org.apache.logging.log4j:log4j-api:jar:2.17.2:compile
-[INFO]    |  |  \- org.slf4j:jul-to-slf4j:jar:1.7.36:compile
-[INFO]    |  +- jakarta.annotation:jakarta.annotation-api:jar:1.3.5:compile
-[INFO]    |  +- org.springframework:spring-core:jar:5.3.31:compile
-[INFO]    |  |  \- org.springframework:spring-jcl:jar:5.3.31:compile
-[INFO]    |  \- org.yaml:snakeyaml:jar:1.30:compile
-[INFO]    +- org.springframework.boot:spring-boot-starter-jdbc:jar:2.7.18:compile
-[INFO]    |  +- com.zaxxer:HikariCP:jar:4.0.3:compile
-[INFO]    |  |  \- org.slf4j:slf4j-api:jar:2.0.0-alpha1:compile
-[INFO]    |  \- org.springframework:spring-jdbc:jar:5.3.31:compile
-[INFO]    \- org.springframework.batch:spring-batch-core:jar:4.3.10:compile
-[INFO]       +- com.fasterxml.jackson.core:jackson-databind:jar:2.11.4:compile
-[INFO]       |  +- com.fasterxml.jackson.core:jackson-annotations:jar:2.11.4:compile
-[INFO]       |  \- org.latencyutils:LatencyUtils:jar:2.0.3:runtime
-[INFO]       +- javax.batch:javax.batch-api:jar:1.0:compile
-[INFO]       +- org.springframework.batch:spring-batch-infrastructure:jar:4.3.10:compile
-[INFO]       |  \- org.springframework.retry:spring-retry:jar:1.3.4:compile
-[INFO]       +- org.springframework:spring-aop:jar:5.3.31:compile
-[INFO]       +- org.springframework:spring-beans:jar:5.3.31:compile
-[INFO]       +- org.springframework:spring-context:jar:5.3.31:compile
-[INFO]       |  \- org.springframework:spring-expression:jar:5.3.31:compile
-[INFO]       \- org.springframework:spring-tx:jar:5.3.31:compile
