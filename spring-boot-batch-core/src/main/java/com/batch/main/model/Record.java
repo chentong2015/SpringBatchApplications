@@ -1,22 +1,30 @@
-package com.spring.batch.model;
+package com.batch.main.model;
 
+import jakarta.xml.bind.annotation.XmlAccessType;
+import jakarta.xml.bind.annotation.XmlAccessorType;
+import jakarta.xml.bind.annotation.XmlElement;
 import jakarta.xml.bind.annotation.XmlRootElement;
 
-import java.time.LocalDate;
+@XmlAccessorType(XmlAccessType.FIELD)
+@XmlRootElement(name = "record")
+public class Record {
 
-// 定义XML Root头标签的名称
-@XmlRootElement(name = "transactionRecord")
-public class Transaction {
-
+    @XmlElement(name = "username")
     private String username;
+
+    @XmlElement(name = "id")
     private int id;
-    private LocalDate date;
+
+    @XmlElement(name = "date")
+    private String date;
+
+    @XmlElement(name = "amount")
     private double amount;
 
-    public Transaction() {
+    public Record() {
     }
 
-    public Transaction(String username, int id, LocalDate date, double amount) {
+    public Record(String username, int id, String date, double amount) {
         this.username = username;
         this.id = id;
         this.date = date;
@@ -31,19 +39,19 @@ public class Transaction {
         this.username = username;
     }
 
-    public int getid() {
+    public int getId() {
         return id;
     }
 
-    public void setid(int id) {
+    public void setId(int id) {
         this.id = id;
     }
 
-    public LocalDate getDate() {
+    public String getDate() {
         return date;
     }
 
-    public void setDate(LocalDate date) {
+    public void setDate(String date) {
         this.date = date;
     }
 

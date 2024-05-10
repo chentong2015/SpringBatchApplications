@@ -3,7 +3,7 @@ package com.spring.batch.config;
 import com.spring.batch.condition.StepCondition;
 import com.spring.batch.listener.MyJobExecutionListener;
 import com.spring.batch.listener.MyStepExecutionListener;
-import com.spring.batch.converter.processor.TransactionItemProcessor;
+import com.spring.batch.conversion.processor.TransactionItemProcessor;
 import com.spring.batch.model.Transaction;
 import org.springframework.batch.core.Job;
 import org.springframework.batch.core.Step;
@@ -43,7 +43,7 @@ public class JobStepConfiguration {
         return factory.getObject();
     }
 
-    // TODO. 定义要执行的Job, 相同Job名称只会在BATCH_JOB_INSTANCE中记录一次
+    // TODO. 定义要执行的Job, 相同Job名称只会在BATCH_JOB_INSTANCE中记录一次 !!
     @Bean(name = "loadCsvToXmlJob")
     public Job job(JobRepository jobRepository, @Qualifier("step1") Step step1) {
         return new JobBuilder("loadCsvToXmlJob", jobRepository)
@@ -57,7 +57,7 @@ public class JobStepConfiguration {
     // TODO. 同一个Job可以按照属性执行不同的Step(Read, Process, Write)
     @Bean
     @Conditional(StepCondition.class)
-    protected Step step1(JobRepository jobRepository,
+    public Step step1(JobRepository jobRepository,
                          PlatformTransactionManager transactionManager,
                          ItemReader<Transaction> reader,
                          ItemWriter<Transaction> writer) {

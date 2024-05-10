@@ -11,9 +11,8 @@
 
     <modules>
         <module>spring-batch-core</module>
-        <module>spring-boot2-batch</module>
-        <module>spring-boot3-batch</module>
-        <module>spring-batch-testing</module>
+        <module>spring-boot-batch-core</module>
+        <module>spring-boot-batch-testing</module>
     </modules>
 
     <properties>

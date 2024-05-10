@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/spring-batch-core-migration/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-batch-core-migration/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-batch-core/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-batch-core/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/spring-batch-testing/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/spring-batch-testing/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-batch-core/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-batch-core/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-batch-testing/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-batch-testing/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-boot2-batch/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-boot2-batch/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/spring-boot3-batch/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/spring-boot3-batch/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
   </component>

@@ -1,0 +1,33 @@
+<?xml version="1.0" ?>
+<records>
+    <record>
+        <username>dev1</username>
+        <id>1234565</id>
+        <date>15-12-1980 18:09:09</date>
+        <amount>10000.0</amount>
+    </record>
+    <record>
+        <username>dev2</username>
+        <id>123421</id>
+        <date>15-12-1980 18:09:09</date>
+        <amount>100200.0</amount>
+    </record>
+    <record>
+        <username>dev3</username>
+        <id>123442</id>
+        <date>15-12-1980 18:09:09</date>
+        <amount>1002100.0</amount>
+    </record>
+    <record>
+        <username>dev4</username>
+        <id>1234098</id>
+        <date>15-12-1980 18:09:09</date>
+        <amount>10000.0</amount>
+    </record>
+    <record>
+        <username>dev1</username>
+        <id>1234565</id>
+        <date>15-12-1980 18:09:09</date>
+        <amount>10000.0</amount>
+    </record>
+</records>

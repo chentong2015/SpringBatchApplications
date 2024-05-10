@@ -6,11 +6,14 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="spring-boot-batch-core" />
         <module name="spring-batch-core" />
-        <module name="spring-boot3-batch" />
-        <module name="spring-boot2-batch" />
-        <module name="spring-batch-testing" />
+        <module name="spring-boot-batch-testing" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="spring-batch-core-migration" target="17" />
+      <module name="spring-boot2-batch" target="17" />
+    </bytecodeTargetLevel>
   </component>
 </project>
