@@ -1,25 +1,29 @@
-package com.spring.batch.converter;
+package com.batch.main.model;
 
+import jakarta.xml.bind.annotation.XmlElement;
 import jakarta.xml.bind.annotation.XmlRootElement;
 
 import java.time.LocalDate;
 
-// 定义生成XML文件的根标签
-// <?xml version="1.0" encoding="UTF-8"?>
-// <transactionRecord>
-// </transactionRecord>
-@XmlRootElement(name = "transactionRecord")
-public class Transaction {
+@XmlRootElement(name = "record")
+public class Record {
 
+    @XmlElement(name = "username")
     private String username;
+
+    @XmlElement(name = "userId")
     private int userId;
+
+    @XmlElement(name = "date")
     private LocalDate date;
+
+    @XmlElement(name = "amount")
     private double amount;
 
-    public Transaction() {
+    public Record() {
     }
 
-    public Transaction(String username, int userId, LocalDate date, double amount) {
+    public Record(String username, int userId, LocalDate date, double amount) {
         this.username = username;
         this.userId = userId;
         this.date = date;

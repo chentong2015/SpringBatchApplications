@@ -17,7 +17,6 @@
     </properties>
 
     <dependencies>
-        <!-- 纯Spring Batch依赖, 与spring Web无关 -->
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-context</artifactId>

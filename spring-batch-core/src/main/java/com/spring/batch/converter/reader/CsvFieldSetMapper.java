@@ -1,5 +1,6 @@
-package com.spring.batch.converter;
+package com.spring.batch.converter.reader;
 
+import com.spring.batch.model.Transaction;
 import org.springframework.batch.item.file.mapping.FieldSetMapper;
 import org.springframework.batch.item.file.transform.FieldSet;
 import org.springframework.validation.BindException;
@@ -7,7 +8,7 @@ import org.springframework.validation.BindException;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
-public class RecordFieldSetMapper implements FieldSetMapper<Transaction> {
+public class CsvFieldSetMapper implements FieldSetMapper<Transaction> {
 
     // TODO. 必须定义FieldSet中token标识名称，才能通过字符串名称来读取指定位置的数据
     @Override
