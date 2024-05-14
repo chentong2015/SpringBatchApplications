@@ -47,9 +47,9 @@ public class JobStepConfiguration {
 
     // TODO. SpringBoot启动后会默认执行Job对应的Step, 可通过属性配置关闭
     // 在应用启动后，更加参数条件来选择执行Job和特定的Step
-    @Bean(name = "loadXmlToDbJob26")
+    @Bean(name = "loadXmlToDbJob30")
     public Job job(JobRepository jobRepository, Step step) {
-        return new JobBuilder("loadXmlToDbJob26", jobRepository)
+        return new JobBuilder("loadXmlToDbJob30", jobRepository)
                 .preventRestart()
                 .start(step)
                 .build();

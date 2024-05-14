@@ -1,6 +1,7 @@
 package com.spring.batch.config;
 
-import com.spring.batch.components.JobCompletionNotificationListener;
+import com.spring.batch.listener.JobCompletionNotificationListener;
+import com.spring.batch.conversion.PersonItemProcessor;
 import com.spring.batch.model.Person;
 import org.springframework.batch.core.Job;
 import org.springframework.batch.core.Step;
@@ -29,18 +30,9 @@ import javax.sql.DataSource;
 @Configuration
 public class BatchConfiguration {
 
-    // 控制并发线程池中的数量
-    @Bean
-    public TaskExecutor taskExecutor() {
-        final int nbThreads = 4;
-        ThreadPoolTaskExecutor taskExecutor = new ThreadPoolTaskExecutor();
-        taskExecutor.setCorePoolSize(nbThreads);
-        return taskExecutor;
-    }
-
     @Bean
     public Job importUserJob(JobRepository jobRepository, JobCompletionNotificationListener listener, Step step1) {
-        return new JobBuilder("importUserJob", jobRepository)
+        return new JobBuilder("importUserJob1", jobRepository)
                 .incrementer(new RunIdIncrementer())
                 .listener(listener)
                 .flow(step1)
@@ -48,7 +40,6 @@ public class BatchConfiguration {
                 .build();
     }
 
-    // TODO. 设置并发执行Step
     @Bean
     public Step step1(JobRepository jobRepository, PlatformTransactionManager transactionManager, PersonItemProcessor processor) {
         return new StepBuilder("step1", jobRepository)
@@ -60,12 +51,9 @@ public class BatchConfiguration {
                 .build();
     }
 
-    // TODO. 数据的读取, 支持获取不同的Resource资源, 然后对数据做Mapper转换
     @Bean
     public FlatFileItemReader<Person> read() {
         Resource resource = new ClassPathResource("sample-data.csv");
-        Resource resource1 = new FileSystemResource("full file path");
-
         return new FlatFileItemReaderBuilder<Person>()
                 .name("personItemReader")
                 .resource(resource)
@@ -77,7 +65,7 @@ public class BatchConfiguration {
                 .build();
     }
 
-    // TODO. 数据的写入, 将数据进行其他格式的存储或者写入DB (DataSource)
+    // TODO. 将数据进行其他格式的存储或者写入DB
     @Bean
     public JdbcBatchItemWriter<Person> write() {
         return new JdbcBatchItemWriterBuilder<Person>()
@@ -87,13 +75,22 @@ public class BatchConfiguration {
                 .build();
     }
 
+    // TODO. 通过线程池并发执行Step, 并发Step的共享数据必须保证线程安全
+    @Bean
+    public TaskExecutor taskExecutor() {
+        final int nbThreads = 4;
+        ThreadPoolTaskExecutor taskExecutor = new ThreadPoolTaskExecutor();
+        taskExecutor.setCorePoolSize(nbThreads);
+        return taskExecutor;
+    }
+
     @Bean
     public DataSource dataSource() {
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
         dataSource.setDriverClassName("org.postgresql.Driver");
         dataSource.setUsername("postgres");
-        dataSource.setPassword("admin");
-        dataSource.setUrl("jdbc:postgresql://localhost:5432/hibernate_demo");
+        dataSource.setPassword("");
+        dataSource.setUrl("jdbc:postgresql://localhost:5432/postgres");
         return dataSource;
     }
 }

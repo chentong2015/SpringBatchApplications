@@ -1,5 +1,6 @@
-package com.spring.batch.components;
+package com.spring.batch.listener;
 
+import com.spring.batch.conversion.PersonRowMapper;
 import org.springframework.batch.core.BatchStatus;
 import org.springframework.batch.core.JobExecution;
 import org.springframework.batch.core.JobExecutionListener;

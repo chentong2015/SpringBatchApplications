@@ -1,4 +1,4 @@
-package com.batch.main.config;
+package com.spring.batch.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

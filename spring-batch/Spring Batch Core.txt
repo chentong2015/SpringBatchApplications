@@ -1,0 +1,25 @@
+批量数据读写以及操作的模板化流程: 数据的IO + 数据转换(Conversion) + 存储(Storage)
+
+TODO. Batch architecture
+JobLauncher 负责执行特定名称的Job
+Job (name):
+  JobRepository (dataSource) scheduling and interacting with the job
+  >> JobExecutionListener (beforeJob, afterJob) 监听器/拦截器设计
+
+  Step1 (name): 定义任务要执行步骤
+  >> StepExecutionListener (beforeStep, afterStep) 监听器
+      -> reader()
+      -> ItemProcessor
+         >> ItemProcessListener (beforeProcess, afterProcess) 监听器
+      -> writer()
+
+  Step2 (name):
+      -> reader()
+      -> ItemProcessor
+      -> writer()
+  ...
+
+
+主要支持的数据格式: .csv .xml .json
+https://github.com/eugenp/tutorials/tree/master/spring-batch
+https://docs.spring.io/spring-batch/reference/readers-and-writers/json-reading-writing.html

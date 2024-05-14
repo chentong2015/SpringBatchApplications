@@ -1,4 +1,4 @@
-package com.spring.batch.components;
+package com.spring.batch.conversion;
 
 import com.spring.batch.model.Person;
 import org.springframework.jdbc.core.RowMapper;

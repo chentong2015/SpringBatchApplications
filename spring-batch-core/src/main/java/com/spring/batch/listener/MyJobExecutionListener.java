@@ -14,6 +14,6 @@ public class MyJobExecutionListener implements JobExecutionListener {
 
     @Override
     public void afterJob(JobExecution jobExecution) {
-        // job done
+        // 可以统计Job执行完成的时间
     }
 }

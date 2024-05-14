@@ -1,8 +1,8 @@
 package com.spring.batch.config;
 
-public class BatchCoreConfiguration {
+public class MyBatchAutoConfiguration {
 
-    // 以下的bean会被Batch自动装配进行注入
+    // Spring Boot 自动装配如下的bean对象
     // [org/springframework/boot/autoconfigure/batch/BatchAutoConfiguration$SpringBootBatchConfiguration.class]
     //
     // @Bean(name = "jobRepository")

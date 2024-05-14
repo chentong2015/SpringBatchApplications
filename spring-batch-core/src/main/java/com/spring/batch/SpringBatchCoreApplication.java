@@ -10,11 +10,11 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 
 public class SpringBatchCoreApplication {
 
+    // TODO. 自定义要注入的Configuration, 不会自动装配DefaultBatchConfiguration中的bean
+    //
+    // Spring Boot autoconfigure会自动加载如下的Configuration, 导致bean冲突
+    // org.springframework.batch.core.configuration.support.DefaultBatchConfiguration
     public static void main(String[] args) {
-        // TODO. 自定义要注入的Configuration, 不会自动装配DefaultBatchConfiguration中的bean
-        //
-        // Spring Boot autoconfigure会自动加载如下的Configuration, 导致bean冲突
-        // org.springframework.batch.core.configuration.support.DefaultBatchConfiguration
         AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext();
         context.register(JobStepConfiguration.class, DbSourceConfiguration.class);
         context.refresh();
