@@ -1,5 +1,6 @@
 package com.spring.batch.conversion.processor;
 
+import com.spring.batch.conversion.mapper.MyRecordMapper;
 import com.spring.batch.model.Transaction;
 import org.springframework.batch.item.ItemProcessor;
 import org.springframework.lang.NonNull;
@@ -8,9 +9,12 @@ import org.springframework.lang.NonNull;
 // 从Input数据到Output, 定义读取数据的加工过程
 public class TransactionItemProcessor implements ItemProcessor<Transaction, Transaction> {
 
+    // 通过Mapper来加工和映射原始数据到目标对象
+    private MyRecordMapper mapper = new MyRecordMapper();
+
     @Override
     public Transaction process(@NonNull Transaction transaction) {
-        System.out.println("processing transaction item: " + transaction);
+        Object target = mapper.map(transaction);
         return transaction;
     }
 }
