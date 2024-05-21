@@ -1,4 +1,4 @@
-package com.batch.main.conversion.processor;
+package com.batch.main.conversion;
 
 import com.batch.main.model.Record;
 import com.batch.main.model.DbRecord;

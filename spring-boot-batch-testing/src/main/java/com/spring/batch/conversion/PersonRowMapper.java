@@ -6,7 +6,7 @@ import org.springframework.jdbc.core.RowMapper;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-// Spring JDBC RowMapper: 定义如何从查询结果Row映射到Class对象
+// JDBC RowMapper: ResultSet -> Object 从查询结果Row映射到Class对象
 public class PersonRowMapper implements RowMapper<Person> {
 
     @Override

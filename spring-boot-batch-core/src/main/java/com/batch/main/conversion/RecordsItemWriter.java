@@ -1,4 +1,4 @@
-package com.batch.main.conversion.writer;
+package com.batch.main.conversion;
 
 import com.batch.main.dao.RecordRepositoryService;
 import com.batch.main.model.DbRecord;

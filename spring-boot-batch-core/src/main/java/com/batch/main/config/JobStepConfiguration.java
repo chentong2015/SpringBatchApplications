@@ -1,6 +1,6 @@
 package com.batch.main.config;
 
-import com.batch.main.conversion.processor.RecordItemProcessor;
+import com.batch.main.conversion.RecordItemProcessor;
 import com.batch.main.model.DbRecord;
 import com.batch.main.model.Record;
 import org.springframework.batch.core.Job;

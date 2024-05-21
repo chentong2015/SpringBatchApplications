@@ -1,6 +1,5 @@
 package com.spring.batch.config;
 
-import com.spring.batch.listener.JobCompletionNotificationListener;
 import com.spring.batch.conversion.PersonItemProcessor;
 import com.spring.batch.model.Person;
 import org.springframework.batch.core.Job;
@@ -18,7 +17,6 @@ import org.springframework.batch.item.file.mapping.BeanWrapperFieldSetMapper;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.io.ClassPathResource;
-import org.springframework.core.io.FileSystemResource;
 import org.springframework.core.io.Resource;
 import org.springframework.core.task.TaskExecutor;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
@@ -31,10 +29,9 @@ import javax.sql.DataSource;
 public class BatchConfiguration {
 
     @Bean
-    public Job importUserJob(JobRepository jobRepository, JobCompletionNotificationListener listener, Step step1) {
+    public Job importUserJob(JobRepository jobRepository, Step step1) {
         return new JobBuilder("importUserJob1", jobRepository)
                 .incrementer(new RunIdIncrementer())
-                .listener(listener)
                 .flow(step1)
                 .end()
                 .build();
