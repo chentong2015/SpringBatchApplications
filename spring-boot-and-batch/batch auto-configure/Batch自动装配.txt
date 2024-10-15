@@ -1,5 +1,7 @@
 TODO. 最少情况下，只需注入dataSource() Bean即可运行Spring Batch Application
 
+TODO. @EnableBatchProcessing 注入相关的Batch Bean
+
 Spring Boot 自动装配如下的bean对象
 [org/springframework/boot/autoconfigure/batch/BatchAutoConfiguration$SpringBootBatchConfiguration.class]
 

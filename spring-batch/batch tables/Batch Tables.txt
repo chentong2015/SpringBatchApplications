@@ -1,0 +1,7 @@
+TODO. Batch APP运行前的Health Check，检测Schema是否正确
+https://docs.spring.io/spring-batch/reference/schema-appendix.html
+
+有关Batch Table没有创建出来的异常
+PreparedStatementCallback; bad SQL grammar
+  [SELECT JOB_INSTANCE_ID, JOB_NAME from BATCH_JOB_INSTANCE where JOB_NAME = ? and JOB_KEY = ?]
+Exception: ERROR: relation "batch_job_instance" does not exist

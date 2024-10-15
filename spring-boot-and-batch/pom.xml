@@ -29,7 +29,8 @@
             <version>5.1.1</version>
         </dependency>
 
-        <!-- 提供XML Reader Writer Marshaller 编制器 -->
+        <!-- 提供XML Reader Writer Marshaller 编制器
+         TODO. 该依赖引入的spring-core必须和spring-boot引入的spring-core版本兼容 -->
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-oxm</artifactId>
