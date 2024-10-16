@@ -1,4 +1,4 @@
-package xml_to_database.conversion;
+package xml_to_database.processing;
 
 import xml_to_database.dao.RecordRepositoryService;
 import xml_to_database.model.DbRecord;

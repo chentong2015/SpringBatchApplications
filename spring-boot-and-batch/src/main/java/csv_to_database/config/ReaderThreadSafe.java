@@ -1,4 +1,4 @@
-package csv_to_database.config.tasks;
+package csv_to_database.config;
 
 import org.springframework.batch.item.ExecutionContext;
 import org.springframework.batch.item.ItemReader;
@@ -8,7 +8,7 @@ import org.springframework.beans.factory.InitializingBean;
 import org.springframework.util.Assert;
 
 // 在Step中使用线程安全地Reader来获取数据
-public class ThreadSafeReader<T> implements ItemStreamReader<T>, InitializingBean {
+public class ReaderThreadSafe<T> implements ItemStreamReader<T>, InitializingBean {
 
     private ItemReader<T> itemReader;
     private boolean isStream = false;

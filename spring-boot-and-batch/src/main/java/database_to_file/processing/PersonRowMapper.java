@@ -1,6 +1,6 @@
-package database_to_file.conversion;
+package database_to_file.processing;
 
-import database_to_file.bean.Person;
+import database_to_file.model.Person;
 import org.springframework.jdbc.core.RowMapper;
 
 import java.sql.ResultSet;

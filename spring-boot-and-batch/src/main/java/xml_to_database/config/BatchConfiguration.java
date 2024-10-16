@@ -1,8 +1,5 @@
 package xml_to_database.config;
 
-import xml_to_database.conversion.RecordItemProcessor;
-import xml_to_database.model.DbRecord;
-import xml_to_database.model.Record;
 import org.springframework.batch.core.Job;
 import org.springframework.batch.core.Step;
 import org.springframework.batch.core.job.builder.JobBuilder;
@@ -11,18 +8,37 @@ import org.springframework.batch.core.launch.support.TaskExecutorJobLauncher;
 import org.springframework.batch.core.repository.JobRepository;
 import org.springframework.batch.core.repository.support.JobRepositoryFactoryBean;
 import org.springframework.batch.core.step.builder.StepBuilder;
-
 import org.springframework.batch.item.ItemReader;
 import org.springframework.batch.item.ItemWriter;
+import org.springframework.batch.support.transaction.ResourcelessTransactionManager;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Primary;
+import org.springframework.jdbc.datasource.DriverManagerDataSource;
 import org.springframework.transaction.PlatformTransactionManager;
+import xml_to_database.model.DbRecord;
+import xml_to_database.model.Record;
+import xml_to_database.processing.RecordItemProcessor;
 
 import javax.sql.DataSource;
 
 @Configuration
-public class JobStepConfiguration {
+public class BatchConfiguration {
+
+    @Bean
+    public DataSource dataSource() {
+        DriverManagerDataSource dataSource = new DriverManagerDataSource();
+        dataSource.setDriverClassName("org.postgresql.Driver");
+        dataSource.setUsername("postgres");
+        dataSource.setPassword("");
+        dataSource.setUrl("jdbc:postgresql://localhost:5432/test_batch_core");
+        return dataSource;
+    }
+
+    @Bean(name = "transactionManager")
+    public PlatformTransactionManager getTransactionManager() {
+        return new ResourcelessTransactionManager();
+    }
 
     @Bean(name = "myJobLauncher")
     public JobLauncher jobLauncher(JobRepository jobRepository) throws Exception {
@@ -56,9 +72,9 @@ public class JobStepConfiguration {
     // 以chunk块的方式进行批量操作并写入到数据库中
     @Bean
     public Step importRecords(JobRepository jobRepository,
-                         PlatformTransactionManager transactionManager,
-                         ItemReader<Record> reader,
-                         ItemWriter<DbRecord> writer) {
+                              PlatformTransactionManager transactionManager,
+                              ItemReader<Record> reader,
+                              ItemWriter<DbRecord> writer) {
         return new StepBuilder("importRecords", jobRepository)
                 .<Record, DbRecord>chunk(10, transactionManager)
                 .reader(reader)

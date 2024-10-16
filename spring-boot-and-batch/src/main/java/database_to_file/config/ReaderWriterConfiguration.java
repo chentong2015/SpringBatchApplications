@@ -1,7 +1,7 @@
 package database_to_file.config;
 
-import database_to_file.bean.Person;
-import database_to_file.conversion.PersonRowMapper;
+import database_to_file.model.Person;
+import database_to_file.processing.PersonRowMapper;
 import org.springframework.batch.item.ItemReader;
 import org.springframework.batch.item.ItemWriter;
 import org.springframework.batch.item.database.JdbcCursorItemReader;

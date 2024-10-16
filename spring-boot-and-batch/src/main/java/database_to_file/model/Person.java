@@ -1,4 +1,4 @@
-package csv_to_database.bean;
+package database_to_file.model;
 
 public class Person {
 

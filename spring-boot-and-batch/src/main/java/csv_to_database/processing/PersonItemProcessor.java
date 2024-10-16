@@ -1,6 +1,6 @@
-package database_to_file.conversion;
+package csv_to_database.processing;
 
-import database_to_file.bean.Person;
+import csv_to_database.model.Person;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.batch.item.ItemProcessor;
