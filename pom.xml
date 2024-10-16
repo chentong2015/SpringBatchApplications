@@ -12,7 +12,6 @@
     <modules>
         <module>spring-batch-core</module>
         <module>spring-boot-and-batch</module>
-        <module>spring-boot-starter-batch-demo</module>
     </modules>
 
     <properties>

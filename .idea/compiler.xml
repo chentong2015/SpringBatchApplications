@@ -7,12 +7,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="spring-batch-core" />
-        <module name="spring-boot-starter-batch-demo" />
         <module name="spring-boot-and-batch" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="spring-batch-core-migration" target="17" />
+      <module name="spring-boot-starter-batch-demo" target="17" />
       <module name="spring-boot2-batch" target="17" />
     </bytecodeTargetLevel>
   </component>

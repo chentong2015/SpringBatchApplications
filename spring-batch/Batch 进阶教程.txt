@@ -1,0 +1,10 @@
+TODO. Spring Batch 数据批量操作模板
+数据格式: .csv .xml .json
+https://github.com/eugenp/tutorials/tree/master/spring-batch
+https://docs.spring.io/spring-batch/reference/readers-and-writers/json-reading-writing.html
+
+并发执行: Scaling and Parallel Processing
+https://docs.spring.io/spring-batch/reference/scalability.html
+
+迁移升级: Spring Batch 5.0 Migration Guide
+https://github.com/spring-projects/spring-batch/wiki/Spring-Batch-5.0-Migration-Guide

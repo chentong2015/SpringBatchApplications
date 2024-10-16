@@ -1,6 +1,6 @@
 package csv_to_xml.config;
 
-import csv_to_xml.conversion.CsvFieldSetMapper;
+import csv_to_xml.processing.CsvFieldSetMapper;
 import csv_to_xml.model.Transaction;
 import org.springframework.batch.item.ItemReader;
 import org.springframework.batch.item.ItemWriter;

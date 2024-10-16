@@ -1,0 +1,35 @@
+TODO. 根据需求设计Job以及Step的执行配置
+
+Job (name): 执行任务 => 由JobLauncher启动执行
+  -> JobRepository (dataSource)
+  => JobExecutionListener (beforeJob, afterJob) 监听器/拦截器
+  .start() SimpleJobBuilder 用于指定依次执行的Steps
+  .next()
+  .build()
+
+  .flow() JobFlowBuilder 用于指定依次执行的Steps
+  .next()
+  .end()
+  .build()
+
+  -> Step0 (name): Tasklet 任务步骤(自定义的准备工作)，可能不涉及数据操作
+  => StepExecutionListener (beforeStep, afterStep)
+      -> .tasklet(MyTasklet())
+
+  -> Step1 (name): Chunk<I, O> 块执行步骤, 完整的读写数据流程
+  => StepExecutionListener (beforeStep, afterStep)
+      -> ItemReader
+         ItemReadListener (beforeRead, afterRead, onReadError)
+         -> FieldSetMapper 从原始文件中数据映射到读取对象
+         -> FlatFileItemReader
+         -> JdbcCursorItemReader
+
+      -> ItemProcessor
+         ItemProcessListener (beforeProcess, afterProcess)
+         -> ItemMapper  从读取对象映射到目标对象
+         -> SourceExtractor 从原始对象中解析出适配内容
+
+      -> ItemWriter
+         ItemWriteListener (beforeWrite, afterWrite, onWriteError)
+         -> StaxEventItemWriter
+         -> JdbcBatchItemWriter
