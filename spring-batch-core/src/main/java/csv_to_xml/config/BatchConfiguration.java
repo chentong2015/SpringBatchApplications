@@ -27,11 +27,6 @@ public class BatchConfiguration {
         return dataSource;
     }
 
-    @Bean(name = "transactionManager")
-    public PlatformTransactionManager getTransactionManager() {
-        return new ResourcelessTransactionManager();
-    }
-
     // TODO. JobLauncher负责执行特定名称的Job，启动需要在DB中记录数据
     @Bean(name = "myJobLauncher")
     public JobLauncher jobLauncher(JobRepository jobRepository) throws Exception {

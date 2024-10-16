@@ -9,12 +9,13 @@ import org.springframework.stereotype.Service;
 import javax.sql.DataSource;
 import java.util.List;
 
-// 提供数据库持久化层的Dao API
+// TODO. DAO层数据持久化所使用的DataSource和Spring JobRepository所使用的DB可能不同
 @Service
 public class RecordRepositoryService {
 
     private final NamedParameterJdbcTemplate namedParameterJdbcTemplate;
 
+    // 持久化到指定的Database
     public RecordRepositoryService(DataSource dataSource) {
         this.namedParameterJdbcTemplate = new NamedParameterJdbcTemplate(dataSource);
     }

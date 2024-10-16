@@ -1,0 +1,2 @@
+并发执行: Scaling and Parallel Processing
+https://docs.spring.io/spring-batch/reference/scalability.html

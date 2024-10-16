@@ -35,11 +35,6 @@ public class BatchConfiguration {
         return dataSource;
     }
 
-    @Bean(name = "transactionManager")
-    public PlatformTransactionManager getTransactionManager() {
-        return new ResourcelessTransactionManager();
-    }
-
     @Bean(name = "myJobLauncher")
     public JobLauncher jobLauncher(JobRepository jobRepository) throws Exception {
         TaskExecutorJobLauncher jobLauncher = new TaskExecutorJobLauncher();

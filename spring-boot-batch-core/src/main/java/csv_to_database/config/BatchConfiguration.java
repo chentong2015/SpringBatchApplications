@@ -33,20 +33,6 @@ public class BatchConfiguration {
         return dataSource;
     }
 
-    @Bean(name = "transactionManager")
-    public PlatformTransactionManager getTransactionManager() {
-        return new ResourcelessTransactionManager();
-    }
-
-    // TODO. 通过线程池并发执行Step, 并发Step的共享数据必须保证线程安全
-    @Bean
-    public TaskExecutor taskExecutor() {
-        final int nbThreads = 4;
-        ThreadPoolTaskExecutor taskExecutor = new ThreadPoolTaskExecutor();
-        taskExecutor.setCorePoolSize(nbThreads);
-        return taskExecutor;
-    }
-
     @Bean
     public Job importUserJob(JobRepository jobRepository, Step step1) {
         return new JobBuilder("importUserJob1", jobRepository)
@@ -61,14 +47,12 @@ public class BatchConfiguration {
                       PlatformTransactionManager transactionManager,
                       ItemReader<Person> reader,
                       PersonItemProcessor processor,
-                      ItemWriter<Person> writer,
-                      TaskExecutor taskExecutor) {
+                      ItemWriter<Person> writer) {
         return new StepBuilder("step1", jobRepository)
                 .<Person, Person>chunk(10, transactionManager)
                 .reader(reader)
                 .processor(processor)
                 .writer(writer)
-                .taskExecutor(taskExecutor)
                 .build();
     }
 }

@@ -1,5 +1,3 @@
-TODO. 根据需求设计Job以及Step的执行配置
-
 Job (name): 执行任务 => 由JobLauncher启动执行
   -> JobRepository (dataSource)
   => JobExecutionListener (beforeJob, afterJob) 监听器/拦截器
