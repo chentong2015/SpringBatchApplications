@@ -1,4 +1,4 @@
-package csv_to_xml.config;
+package csv_to_xml.chunk;
 
 import csv_to_xml.processing.TransactionItemProcessor;
 import csv_to_xml.listener.MyJobExecutionListener;

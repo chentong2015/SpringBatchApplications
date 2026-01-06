@@ -1,4 +1,4 @@
-package batch_auto_configure;
+package autoconfigure;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -1,4 +1,4 @@
-package batch_auto_configure;
+package autoconfigure;
 
 import org.springframework.batch.core.explore.JobExplorer;
 import org.springframework.batch.core.launch.JobLauncher;

@@ -1,7 +1,7 @@
 package csv_to_xml;
 
 import csv_to_xml.config.BatchConfiguration;
-import csv_to_xml.config.ChunkJobStepConfiguration;
+import csv_to_xml.chunk.ChunkJobStepConfiguration;
 import csv_to_xml.config.ReaderWriterConfiguration;
 import csv_to_xml.config.TaskletJobStepConfiguration;
 import org.springframework.batch.core.Job;
