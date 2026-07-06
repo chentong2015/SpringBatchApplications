@@ -1,0 +1,3 @@
+TODO. 文件处理系统设计: 基于实战项目
+- 自定义文件处理流程(Validation, Parsing/Read, Processing, Persistence)
+- 基于Spring Batch框架批处理数据(Reader, Processor, Writer)
