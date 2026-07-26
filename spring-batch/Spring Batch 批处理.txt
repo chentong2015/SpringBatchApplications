@@ -1,4 +1,4 @@
-TODO. Spring Batch 数据批量操作模板
+TODO. Spring Batch 批量操作模板
 数据格式: .csv .xml .json
 https://github.com/eugenp/tutorials/tree/master/spring-batch
 
