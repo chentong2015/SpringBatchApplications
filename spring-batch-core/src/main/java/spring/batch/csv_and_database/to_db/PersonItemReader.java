@@ -14,7 +14,7 @@ public class PersonItemReader {
 
     @Bean
     public FlatFileItemReader<Person> read() {
-        Resource resource = new ClassPathResource("csv/sample-data.csv");
+        Resource resource = new ClassPathResource("csv/persons-data.csv");
         return new FlatFileItemReaderBuilder<Person>()
                 .name("personItemReader")
                 .resource(resource)

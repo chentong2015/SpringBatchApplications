@@ -1,5 +1,6 @@
 package spring.batch.csv_and_database.to_csv;
 
+import org.springframework.context.annotation.Configuration;
 import spring.batch.csv_and_database.bean.Person;
 import org.springframework.batch.infrastructure.item.ItemWriter;
 import org.springframework.batch.infrastructure.item.file.FlatFileItemWriter;
@@ -11,9 +12,10 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.core.io.Resource;
 import org.springframework.core.io.WritableResource;
 
+@Configuration
 public class PersonItemWriter {
 
-    @Value("file:spring-batch-example/src/main/resources/csv/output.csv")
+    @Value("file:spring-batch-example/src/main/resources/csv/persons-output.csv")
     private Resource outputCsv;
 
     // 将读取的数据写入指定的文件, 依次批量处理Chunk的数据量
