@@ -18,9 +18,9 @@ public class TransactionItemReader {
     @Value("csv/transactions.csv")
     private Resource inputCsv;
 
+    // 自定义CSV文件读取的Delimited分隔符标识, 用于FieldSetMapper解析时通过名称读取
     @Bean
     public ItemReader<Transaction> itemReader() {
-        // 自定义CSV文件读取的Delimited分隔符标识, 用于FieldSetMapper解析时同通过名称读取
         DelimitedLineTokenizer lineTokenizer = new DelimitedLineTokenizer();
         lineTokenizer.setNames("username", "id", "date", "amount");
 

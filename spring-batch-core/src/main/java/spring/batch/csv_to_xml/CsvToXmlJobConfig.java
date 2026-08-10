@@ -20,7 +20,7 @@ public class CsvToXmlJobConfig {
     // TODO. 定义要执行的Job, 相同Job名称只会在BATCH_JOB_INSTANCE中记录一次
     @Bean(name = "convertCsvToXmlJob")
     public Job job(JobRepository jobRepository, Step convertStep) {
-        return new JobBuilder("convertCsvToXmlJob2", jobRepository)
+        return new JobBuilder("convertCsvToXmlJob", jobRepository)
                 .preventRestart()
                 .listener(MyJobExecutionListener.class)
                 .start(convertStep)
