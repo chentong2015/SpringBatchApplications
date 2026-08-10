@@ -9,6 +9,8 @@
     <file url="file://$PROJECT_DIR$/spring-batch-example/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-batch-jdbc/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-batch-jdbc/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-batch-no-database/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-batch-no-database/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-batch-project/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-batch-project/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-boot-starter-batch-demo/src/main/java" charset="UTF-8" />

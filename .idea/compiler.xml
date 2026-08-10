@@ -9,6 +9,7 @@
         <module name="spring-batch-autoconfigure" />
         <module name="spring-batch-project" />
         <module name="spring-batch-example" />
+        <module name="spring-batch-no-database" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
