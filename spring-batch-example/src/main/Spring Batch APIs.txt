@@ -1,3 +1,6 @@
+数据格式: .csv .xml .json
+https://github.com/eugenp/tutorials/tree/master/spring-batch
+
 TODO. 定义Job任务以及任务执行的Step步骤
 Job (name): 执行任务, 由JobLauncher启动执行
   -> JobRepository (dataSource)
