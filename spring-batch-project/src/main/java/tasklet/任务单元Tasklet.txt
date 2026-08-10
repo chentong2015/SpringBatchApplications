@@ -1,0 +1,2 @@
+TODO. 该Tasklet工作单元: 和Data Processing数据流处理无关
+Tasklet能够完成自定义的准备工作(clean file, call a stored procedure, run SQL update)

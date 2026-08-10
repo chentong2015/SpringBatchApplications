@@ -1,0 +1,38 @@
+数据格式: .csv .xml .json
+https://github.com/eugenp/tutorials/tree/master/spring-batch
+
+TODO. 定义Job任务以及任务执行的Step步骤
+Job (name): 执行任务, 由JobLauncher启动执行
+  -> JobRepository (dataSource)
+   => JobExecutionListener (beforeJob, afterJob) 监听器/拦截器
+   .start() SimpleJobBuilder 用于指定依次执行的Steps
+   .next()
+   .build()
+
+   .flow() JobFlowBuilder 用于指定依次执行的Steps
+   .next()
+   .end()
+   .build()
+
+   -> Step0 (name): Tasklet 任务步骤(准备工作)，可能不涉及数据操作
+     => StepExecutionListener (beforeStep, afterStep)
+      -> .tasklet(MyTasklet())
+
+   TODO. 定义Step执行步骤: Reader -> Processor -> Writer
+   -> Step1 (name): Chunk<I, O> 块执行步骤, 完整的读写数据流程
+     => StepExecutionListener (beforeStep, afterStep)
+       -> ItemReader
+         => ItemReadListener (beforeRead, afterRead, onReadError)
+         -> FieldSetMapper     原始文件中数据映射到读取对象
+         -> FlatFileItemReader 从文件中读取数据
+         -> JdbcCursorItemReader 从DB中获取数据
+
+       -> ItemProcessor
+         => ItemProcessListener (beforeProcess, afterProcess)
+         -> ItemMapper      从读取对象映射到目标对象
+         -> SourceExtractor 从原始对象中解析出适配内容
+
+       -> ItemWriter
+         => ItemWriteListener (beforeWrite, afterWrite, onWriteError)
+         -> StaxEventItemWriter 写入XML文件中
+         -> JdbcBatchItemWriter 存储到DB中

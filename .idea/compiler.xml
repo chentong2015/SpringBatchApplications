@@ -6,13 +6,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="spring-batch-autoconfigure" />
+        <module name="spring-batch-core" />
         <module name="spring-batch-project" />
-        <module name="spring-batch-example" />
-        <module name="spring-batch-no-database" />
+        <module name="spring-boot-batch-resourceless" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="spring-batch-autoconfigure" target="17" />
       <module name="spring-batch-core-migration" target="17" />
       <module name="spring-batch-jdbc" target="17" />
       <module name="spring-boot-starter-batch-demo" target="17" />
