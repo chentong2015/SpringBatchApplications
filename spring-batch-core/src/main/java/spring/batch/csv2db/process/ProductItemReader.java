@@ -10,7 +10,7 @@ import spring.batch.csv2db.bean.Product;
 public class ProductItemReader extends FlatFileItemReader<Product> {
 
     public ProductItemReader(LineMapper<Product> productLineMapper) {
-        super(new ClassPathResource("csv/productData.csv"), productLineMapper );
+        super(new ClassPathResource("csv/productData.csv"), productLineMapper);
         setLinesToSkip(1);
     }
 }

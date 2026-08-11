@@ -10,6 +10,9 @@ import org.springframework.batch.infrastructure.item.ItemReader;
 import org.springframework.batch.infrastructure.item.ItemWriter;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.core.io.ClassPathResource;
+import org.springframework.oxm.Unmarshaller;
+import org.springframework.oxm.jaxb.Jaxb2Marshaller;
 import spring.batch.xml2db.bean.DbRecord;
 import spring.batch.xml2db.bean.Record;
 import spring.batch.xml2db.process.RecordItemProcessor;
@@ -38,5 +41,17 @@ public class XmlToDbConfiguration {
                 .processor(itemProcessor)
                 .writer(writer)
                 .build();
+    }
+
+    // 读取XML文件: 配置Schema格式和解析出来的Class类型
+    @Bean
+    public Unmarshaller xmlUnmarshaller() throws Exception {
+        Jaxb2Marshaller unmarshaller = new Jaxb2Marshaller();
+        unmarshaller.setClassesToBeBound(Record.class);
+        unmarshaller.setSchema(new ClassPathResource("xml/records.xml"));
+
+        // Activate XML validation among other initializations
+        unmarshaller.afterPropertiesSet();
+        return unmarshaller;
     }
 }

@@ -1,4 +1,4 @@
-package spring.batch.json2json;
+package spring.batch.json2json.process;
 
 import org.springframework.batch.infrastructure.item.json.JacksonJsonObjectReader;
 import org.springframework.batch.infrastructure.item.json.JsonItemReader;

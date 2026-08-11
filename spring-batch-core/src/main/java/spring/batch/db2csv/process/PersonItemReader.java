@@ -5,7 +5,6 @@ import org.springframework.jdbc.core.RowMapper;
 import org.springframework.stereotype.Component;
 import spring.batch.db2csv.bean.Person;
 import org.springframework.batch.infrastructure.item.ItemReader;
-import spring.batch.db2csv.mapper.PersonRowMapper;
 
 import javax.sql.DataSource;
 
@@ -13,18 +12,14 @@ import javax.sql.DataSource;
 @Component
 public class PersonItemReader extends JdbcCursorItemReader<Person> {
 
-    private String query = "SELECT first_name, last_name FROM people";
-
-    public PersonItemReader(DataSource dataSource) {
-        super(dataSource, null, new PersonRowMapper());
-        setSql(query);
+    public PersonItemReader(DataSource dataSource, RowMapper<Person> personRowMapper) {
+        super(dataSource, "SELECT first_name, last_name FROM people", personRowMapper);
     }
 
     // 测试: 生成带参数的PreparedStatement动态查询语句
-    public ItemReader<Person> testReader(DataSource dataSource) {
+    public ItemReader<Person> testReader(DataSource dataSource, RowMapper<Person> personRowMapper) {
         String query = "SELECT ID, ALTERNATE_ID FROM CHECKSUM WHERE ORIGIN = ? AND STATUS <> ?";
-        RowMapper<Person> rowMapper = new PersonRowMapper();
-        JdbcCursorItemReader<Person> reader = new JdbcCursorItemReader<>(dataSource, query, rowMapper);
+        JdbcCursorItemReader<Person> reader = new JdbcCursorItemReader<>(dataSource, query, personRowMapper);
         reader.setPreparedStatementSetter(ps -> {
             ps.setString(1, "AB");
             ps.setString(2, "OK");

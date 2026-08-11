@@ -48,4 +48,14 @@ public class Trade {
     public void setCustomer(String customer) {
         this.customer = customer;
     }
+
+    @Override
+    public String toString() {
+        return "Trade{" +
+                "isin=" + isin +
+                ", quantity=" + quantity +
+                ", price=" + price +
+                ", customer='" + customer + '\'' +
+                '}';
+    }
 }
