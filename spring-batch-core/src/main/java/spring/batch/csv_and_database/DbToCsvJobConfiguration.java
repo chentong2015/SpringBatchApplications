@@ -27,14 +27,14 @@ public class DbToCsvJobConfiguration {
 
     @Bean
     public Step retrieveUserStep(JobRepository jobRepository,
-                                 ItemReader<Person> reader,
-                                 PersonItemProcessor processor,
-                                 ItemWriter<Person> writer) {
+                                 ItemReader<Person> personItemReader,
+                                 PersonItemProcessor personItemProcessor,
+                                 ItemWriter<Person> personItemWriter) {
         return new StepBuilder("Retrieve User from DB", jobRepository)
                 .<Person, Person>chunk(3)
-                .reader(reader)
-                .processor(processor)
-                .writer(writer)
+                .reader(personItemReader)
+                .processor(personItemProcessor)
+                .writer(personItemWriter)
                 .build();
     }
 }

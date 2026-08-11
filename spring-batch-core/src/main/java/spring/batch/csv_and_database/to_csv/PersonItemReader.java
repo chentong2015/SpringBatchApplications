@@ -14,7 +14,7 @@ import javax.sql.DataSource;
 public class PersonItemReader {
 
     // 直接从DB中读取数据并mapper解析到Java对象
-    @Bean
+    @Bean(name = "personItemReader")
     public ItemReader<Person> read(DataSource dataSource) {
         String query = "SELECT first_name, last_name FROM people";
         RowMapper<Person> rowMapper = new PersonRowMapper();

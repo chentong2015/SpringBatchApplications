@@ -12,7 +12,7 @@ import javax.sql.DataSource;
 @Configuration
 public class ProductItemWriter {
 
-    @Bean
+    @Bean(name = "productItemWriter")
     public JdbcBatchItemWriter<Product> write(DataSource dataSource) {
         return new JdbcBatchItemWriterBuilder<Product>()
                 .itemSqlParameterSourceProvider(new BeanPropertyItemSqlParameterSourceProvider<>())

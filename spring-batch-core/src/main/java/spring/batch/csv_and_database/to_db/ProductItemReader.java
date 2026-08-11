@@ -14,7 +14,7 @@ public class ProductItemReader {
 
     private Resource resource = new ClassPathResource("csv/productData.csv");
 
-    @Bean
+    @Bean(name = "productItemReader")
     public FlatFileItemReader<Product> read() {
         return new FlatFileItemReaderBuilder<Product>()
                 .name("productItemReader")

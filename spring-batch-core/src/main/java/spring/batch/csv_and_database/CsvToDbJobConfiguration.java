@@ -26,12 +26,15 @@ public class CsvToDbJobConfiguration {
     }
 
     @Bean
-    public Step step1(JobRepository jobRepository, ItemReader<Product> reader, ProductItemProcessor processor, ItemWriter<Product> writer) {
+    public Step step1(JobRepository jobRepository,
+                      ItemReader<Product> productItemReader,
+                      ProductItemProcessor productItemProcessor,
+                      ItemWriter<Product> productItemWriter) {
         return new StepBuilder("step1", jobRepository)
                 .<Product, Product>chunk(2)
-                .reader(reader)
-                .processor(processor)
-                .writer(writer)
+                .reader(productItemReader)
+                .processor(productItemProcessor)
+                .writer(productItemWriter)
                 .build();
     }
 }

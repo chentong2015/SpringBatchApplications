@@ -19,7 +19,7 @@ public class PersonItemWriter {
     private Resource outputCsv;
 
     // 将读取的数据写入指定的文件, 依次批量处理Chunk的数据量
-    @Bean
+    @Bean(name = "personItemWriter")
     public ItemWriter<Person> write() {
         FlatFileItemWriter<Person> fileItemWriter = new FlatFileItemWriter<>(getCsvLineAggregator());
         fileItemWriter.setResource((WritableResource) outputCsv);
