@@ -30,7 +30,7 @@
             <scope>compile</scope>
         </dependency>
 
-        <!-- 提供XML文件绑定API, 以支持映射和读取数据 -->
+        <!-- 提供XML文件绑定API, 支持文件数据映射到Java对象 -->
         <dependency>
             <groupId>jakarta.xml.bind</groupId>
             <artifactId>jakarta.xml.bind-api</artifactId>
@@ -42,7 +42,7 @@
             <version>3.0.1</version>
         </dependency>
 
-        <!-- 提供Jaxb2Marshaller生成xml文件 -->
+        <!-- 提供Jaxb2 Marshaller生成和Unmarshaller解析XML文件 -->
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-oxm</artifactId>

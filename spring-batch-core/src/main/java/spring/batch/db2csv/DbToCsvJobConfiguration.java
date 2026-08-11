@@ -1,0 +1,40 @@
+package spring.batch.db2csv;
+
+import org.springframework.batch.core.job.parameters.RunIdIncrementer;
+import org.springframework.batch.infrastructure.item.ItemReader;
+import org.springframework.batch.infrastructure.item.ItemWriter;
+import spring.batch.db2csv.bean.Person;
+import spring.batch.db2csv.process.PersonItemProcessor;
+import org.springframework.batch.core.job.Job;
+import org.springframework.batch.core.job.builder.JobBuilder;
+import org.springframework.batch.core.repository.JobRepository;
+import org.springframework.batch.core.step.Step;
+import org.springframework.batch.core.step.builder.StepBuilder;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+public class DbToCsvJobConfiguration {
+
+    @Bean
+    public Job retrieveUserJob(JobRepository jobRepository, Step retrieveUserStep) {
+        return new JobBuilder("Retrieve User Job", jobRepository)
+                .incrementer(new RunIdIncrementer())
+                .flow(retrieveUserStep)
+                .end()
+                .build();
+    }
+
+    @Bean
+    public Step retrieveUserStep(JobRepository jobRepository,
+                                 ItemReader<Person> personItemReader,
+                                 PersonItemProcessor personItemProcessor,
+                                 ItemWriter<Person> personItemWriter) {
+        return new StepBuilder("Retrieve User from DB", jobRepository)
+                .<Person, Person>chunk(3)
+                .reader(personItemReader)
+                .processor(personItemProcessor)
+                .writer(personItemWriter)
+                .build();
+    }
+}
