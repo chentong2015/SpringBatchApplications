@@ -1,4 +1,4 @@
-package tasklet;
+package spring.batch.tasklet;
 
 import org.springframework.batch.core.scope.context.ChunkContext;
 import org.springframework.batch.core.step.StepContribution;
@@ -11,11 +11,12 @@ import java.io.File;
 import java.io.IOException;
 import java.util.Objects;
 
-public class WorkTaskletCleanFiles implements Tasklet {
+// 删除项目构建的/target结果目录中/clean的文件
+public class DeleteFileTasklet implements Tasklet {
 
     private File directory;
 
-    public WorkTaskletCleanFiles(Resource resource) {
+    public DeleteFileTasklet(Resource resource) {
         String errorMessage = "The resource must be a directory";
         try {
             this.directory = resource.getFile();

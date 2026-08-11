@@ -20,13 +20,33 @@
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-batch</artifactId>
+            <artifactId>spring-boot-starter-batch-jdbc</artifactId>
             <version>4.1.0</version>
         </dependency>
         <dependency>
             <groupId>org.springframework.batch</groupId>
             <artifactId>spring-batch-infrastructure</artifactId>
             <version>6.0.4</version>
+            <scope>compile</scope>
+        </dependency>
+
+        <!-- 提供XML文件绑定API, 支持文件数据映射到Java对象 -->
+        <dependency>
+            <groupId>jakarta.xml.bind</groupId>
+            <artifactId>jakarta.xml.bind-api</artifactId>
+            <version>3.0.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.glassfish.jaxb</groupId>
+            <artifactId>jaxb-runtime</artifactId>
+            <version>3.0.1</version>
+        </dependency>
+
+        <!-- 提供Jaxb2 Marshaller生成和Unmarshaller解析XML文件 -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-oxm</artifactId>
+            <version>7.0.8</version>
             <scope>compile</scope>
         </dependency>
 

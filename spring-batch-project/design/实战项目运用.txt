@@ -1,5 +1,6 @@
 Spring Batch 实战运用:
 - 定义数据处理的标准化流程(Processor)
-- 分批并发处理，提高处理性能
 - 文件格式转换: 支持多种文件格式的数据转换(Reader, Writer)
-- 超大文件拆分: 并发处理每个Split文件(按照Batch批处理流程)
+
+- 并发高性能处理(taskExecutor)
+- 超大文件拆分: 并发处理Split文件(按照Batch批处理流程)

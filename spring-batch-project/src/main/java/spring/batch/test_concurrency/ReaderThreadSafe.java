@@ -1,3 +1,4 @@
+package spring.batch.test_concurrency;
 
 import org.springframework.batch.infrastructure.item.ExecutionContext;
 import org.springframework.batch.infrastructure.item.ItemReader;
@@ -6,7 +7,7 @@ import org.springframework.batch.infrastructure.item.ItemStreamReader;
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.util.Assert;
 
-// 在Step中使用线程安全地Reader来获取数据
+// TODO. 包装ItemReader在并发场景下保证数据读取安全
 public class ReaderThreadSafe<T> implements ItemStreamReader<T>, InitializingBean {
 
     private ItemReader<T> itemReader;
@@ -19,7 +20,6 @@ public class ReaderThreadSafe<T> implements ItemStreamReader<T>, InitializingBea
         }
     }
 
-    // TODO. 包装Reader在并发情况数据的被有序地读取
     @Override
     public synchronized T read() throws Exception {
         return itemReader.read();
