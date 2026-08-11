@@ -1,6 +1,5 @@
 package spring.batch.csv_to_xml.process;
 
-import spring.batch.csv_to_xml.mapper.CsvFieldSetMapper;
 import spring.batch.csv_to_xml.bean.Transaction;
 import org.springframework.batch.infrastructure.item.ItemReader;
 import org.springframework.batch.infrastructure.item.file.FlatFileItemReader;

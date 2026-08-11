@@ -15,13 +15,13 @@ import spring.batch.xml_to_database.bean.Record;
 import spring.batch.xml_to_database.process.RecordItemProcessor;
 
 @Configuration
-public class BatchConfiguration {
+public class XmlToDbConfiguration {
 
     // TODO. SpringBoot启动后会默认执行Job对应的Step, 可通过属性配置关闭
     // 在应用启动后，更加参数条件来选择执行Job和特定的Step
-    @Bean(name = "loadXmlToDbJob30")
+    @Bean(name = "loadXmlToDbJob")
     public Job job(JobRepository jobRepository, Step importRecords) {
-        return new JobBuilder("loadXmlToDbJob30", jobRepository)
+        return new JobBuilder("loadXmlToDbJob", jobRepository)
                 .preventRestart()
                 .start(importRecords)
                 .build();

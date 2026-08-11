@@ -14,7 +14,7 @@ import org.springframework.oxm.jaxb.Jaxb2Marshaller;
 public class TransactionItemWriter {
 
     // WritableResource输出资源的路径定位在项目路径下
-    @Value("file:spring-batch-example/src/main/resources/xml/transactions_output.xml")
+    @Value("file:spring-batch-example/src/main/resources/xml/transactionsOutput.xml")
     private Resource outputXml;
 
     @Bean

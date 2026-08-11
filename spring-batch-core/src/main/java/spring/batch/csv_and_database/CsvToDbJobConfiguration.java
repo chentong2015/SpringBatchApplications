@@ -1,6 +1,5 @@
 package spring.batch.csv_and_database;
 
-import spring.batch.csv_and_database.bean.Person;
 import org.springframework.batch.core.job.Job;
 import org.springframework.batch.core.job.builder.JobBuilder;
 import org.springframework.batch.core.job.parameters.RunIdIncrementer;
@@ -11,10 +10,11 @@ import org.springframework.batch.infrastructure.item.ItemReader;
 import org.springframework.batch.infrastructure.item.ItemWriter;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import spring.batch.csv_and_database.to_db.PersonItemProcessor;
+import spring.batch.csv_and_database.bean.Product;
+import spring.batch.csv_and_database.to_db.ProductItemProcessor;
 
 @Configuration
-public class CsvToDbJobConfig {
+public class CsvToDbJobConfiguration {
 
     @Bean
     public Job importUserJob(JobRepository jobRepository, Step step1) {
@@ -26,9 +26,9 @@ public class CsvToDbJobConfig {
     }
 
     @Bean
-    public Step step1(JobRepository jobRepository, ItemReader<Person> reader, PersonItemProcessor processor, ItemWriter<Person> writer) {
+    public Step step1(JobRepository jobRepository, ItemReader<Product> reader, ProductItemProcessor processor, ItemWriter<Product> writer) {
         return new StepBuilder("step1", jobRepository)
-                .<Person, Person>chunk(10)
+                .<Product, Product>chunk(2)
                 .reader(reader)
                 .processor(processor)
                 .writer(writer)

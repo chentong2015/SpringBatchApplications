@@ -14,7 +14,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-public class DbToCsvJobConfig {
+public class DbToCsvJobConfiguration {
 
     @Bean
     public Job retrieveUserJob(JobRepository jobRepository, Step retrieveUserStep) {
@@ -26,7 +26,10 @@ public class DbToCsvJobConfig {
     }
 
     @Bean
-    public Step retrieveUserStep(JobRepository jobRepository, ItemReader<Person> reader, PersonItemProcessor processor, ItemWriter<Person> writer) {
+    public Step retrieveUserStep(JobRepository jobRepository,
+                                 ItemReader<Person> reader,
+                                 PersonItemProcessor processor,
+                                 ItemWriter<Person> writer) {
         return new StepBuilder("Retrieve User from DB", jobRepository)
                 .<Person, Person>chunk(3)
                 .reader(reader)

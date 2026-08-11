@@ -15,7 +15,7 @@ import org.springframework.core.io.WritableResource;
 @Configuration
 public class PersonItemWriter {
 
-    @Value("file:spring-batch-example/src/main/resources/csv/persons-output.csv")
+    @Value("file:spring-batch-example/src/main/resources/csv/personsOutput.csv")
     private Resource outputCsv;
 
     // 将读取的数据写入指定的文件, 依次批量处理Chunk的数据量

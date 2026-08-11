@@ -1,6 +1,5 @@
 package spring.batch.csv_and_database.to_db;
 
-import spring.batch.csv_and_database.bean.Person;
 import org.springframework.batch.infrastructure.item.file.FlatFileItemReader;
 import org.springframework.batch.infrastructure.item.file.builder.FlatFileItemReaderBuilder;
 import org.springframework.batch.infrastructure.item.file.mapping.BeanWrapperFieldSetMapper;
@@ -8,20 +7,22 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.core.io.Resource;
+import spring.batch.csv_and_database.bean.Product;
 
 @Configuration
-public class PersonItemReader {
+public class ProductItemReader {
+
+    private Resource resource = new ClassPathResource("csv/productData.csv");
 
     @Bean
-    public FlatFileItemReader<Person> read() {
-        Resource resource = new ClassPathResource("csv/persons-data.csv");
-        return new FlatFileItemReaderBuilder<Person>()
-                .name("personItemReader")
+    public FlatFileItemReader<Product> read() {
+        return new FlatFileItemReaderBuilder<Product>()
+                .name("productItemReader")
                 .resource(resource)
                 .delimited()
-                .names("firstName", "lastName")
+                .names("name", "value")
                 .fieldSetMapper(new BeanWrapperFieldSetMapper<>() {{
-                    setTargetType(Person.class);
+                    setTargetType(Product.class);
                 }})
                 .build();
     }

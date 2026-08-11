@@ -1,18 +1,17 @@
 数据格式: .csv .xml .json
 https://github.com/eugenp/tutorials/tree/master/spring-batch
 
-TODO. 定义Job任务以及任务执行的Step步骤
+TODO. 运行前的Health Check检测Schema是否正确
+https://docs.spring.io/spring-batch/reference/schema-appendix.html
+
+TODO. 定义要执行的Job及Step步骤, 相同Job名称只会在BATCH_JOB_INSTANCE中记录一次
 Job (name): 执行任务, 由JobLauncher启动执行
   -> JobRepository (dataSource)
-   => JobExecutionListener (beforeJob, afterJob) 监听器/拦截器
-   .start() SimpleJobBuilder 用于指定依次执行的Steps
-   .next()
-   .build()
-
-   .flow() JobFlowBuilder 用于指定依次执行的Steps
-   .next()
-   .end()
-   .build()
+    => JobExecutionListener (beforeJob, afterJob) 监听器/拦截器
+    JobBuilder   SimpleJobBuilder   JobFlowBuilder
+                  .start()           .start()
+                  .next()            .flow()
+                  .build()           .build()
 
    -> Step0 (name): Tasklet 任务步骤(准备工作)，可能不涉及数据操作
      => StepExecutionListener (beforeStep, afterStep)
