@@ -82,7 +82,7 @@ public class CsvToXmlJobConfiguration {
     }
 
     // 输出到XML文件: 定义Marshaller编制器
-    @Bean
+    @Bean(name = "transactionMarshaller")
     public Jaxb2Marshaller transactionMarshaller() {
         Jaxb2Marshaller marshaller = new Jaxb2Marshaller();
         marshaller.setClassesToBeBound(Transaction.class);

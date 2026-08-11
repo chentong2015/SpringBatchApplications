@@ -55,14 +55,11 @@ public class CsvToDbJobConfiguration {
 
     @Bean
     public FieldSetMapper<Product> productFieldSetMapper() {
-        return new FieldSetMapper<Product>() {
-            @Override
-            public Product mapFieldSet(FieldSet fieldSet) throws BindException {
-                Product product = new Product();
-                product.setName(fieldSet.readString(0));
-                product.setValue(fieldSet.readString(1));
-                return product;
-            }
+        return fieldSet -> {
+            Product product = new Product();
+            product.setName(fieldSet.readString(0));
+            product.setValue(fieldSet.readString(1));
+            return product;
         };
     }
 }

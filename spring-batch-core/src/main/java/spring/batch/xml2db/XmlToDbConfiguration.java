@@ -10,12 +10,15 @@ import org.springframework.batch.infrastructure.item.ItemReader;
 import org.springframework.batch.infrastructure.item.ItemWriter;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.core.io.ClassPathResource;
+import org.springframework.core.io.FileSystemResource;
 import org.springframework.oxm.Unmarshaller;
 import org.springframework.oxm.jaxb.Jaxb2Marshaller;
 import spring.batch.xml2db.bean.DbRecord;
 import spring.batch.xml2db.bean.Record;
 import spring.batch.xml2db.process.RecordItemProcessor;
+
+import java.nio.file.FileSystems;
+import java.nio.file.Path;
 
 @Configuration
 public class XmlToDbConfiguration {
@@ -44,11 +47,13 @@ public class XmlToDbConfiguration {
     }
 
     // 读取XML文件: 配置Schema格式和解析出来的Class类型
-    @Bean
+    @Bean(name = "xmlUnmarshaller")
     public Unmarshaller xmlUnmarshaller() throws Exception {
+        Path filepath = FileSystems.getDefault().getPath("drive_folder/xml/records.xml");
+
         Jaxb2Marshaller unmarshaller = new Jaxb2Marshaller();
         unmarshaller.setClassesToBeBound(Record.class);
-        unmarshaller.setSchema(new ClassPathResource("xml/records.xml"));
+        unmarshaller.setSchema(new FileSystemResource(filepath));
 
         // Activate XML validation among other initializations
         unmarshaller.afterPropertiesSet();
