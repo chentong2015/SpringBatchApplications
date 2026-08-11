@@ -8,6 +8,7 @@ import org.springframework.batch.core.step.Step;
 import org.springframework.batch.core.step.StepContribution;
 import org.springframework.batch.core.step.builder.StepBuilder;
 import org.springframework.batch.infrastructure.repeat.RepeatStatus;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -15,7 +16,7 @@ import org.springframework.context.annotation.Configuration;
 public class BatchJobConfiguration {
 
     @Bean("sampleJobName")
-    public Job samplejob(JobRepository jobRepository, Step firstEmptyStep) {
+    public Job samplejob(JobRepository jobRepository, @Qualifier("firstEmptyStep") Step firstEmptyStep) {
         return new JobBuilder("tasklet Job", jobRepository)
                 .preventRestart()
                 .flow(firstEmptyStep)

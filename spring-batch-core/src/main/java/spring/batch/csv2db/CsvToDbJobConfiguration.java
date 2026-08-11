@@ -12,28 +12,30 @@ import org.springframework.batch.infrastructure.item.file.LineMapper;
 import org.springframework.batch.infrastructure.item.file.mapping.DefaultLineMapper;
 import org.springframework.batch.infrastructure.item.file.mapping.FieldSetMapper;
 import org.springframework.batch.infrastructure.item.file.transform.DelimitedLineTokenizer;
-import org.springframework.batch.infrastructure.item.file.transform.FieldSet;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.validation.BindException;
 import spring.batch.csv2db.bean.Product;
 import spring.batch.csv2db.process.ProductItemProcessor;
 
 @Configuration
 public class CsvToDbJobConfiguration {
 
-    @Bean
-    public Job importUserJob(JobRepository jobRepository, Step step1) {
-        return new JobBuilder("importUserJob1", jobRepository)
+    @Bean(name = "csvToDbJob")
+    public Job csvToDbJob(JobRepository jobRepository, @Qualifier("csvToDbStep") Step csv2DbStep) {
+        return new JobBuilder("Csv To DB Jpb", jobRepository)
                 .incrementer(new RunIdIncrementer())
-                .flow(step1)
+                .flow(csv2DbStep)
                 .end()
                 .build();
     }
 
-    @Bean
-    public Step step1(JobRepository jobRepository, ItemReader<Product> productItemReader, ProductItemProcessor productItemProcessor, ItemWriter<Product> productItemWriter) {
-        return new StepBuilder("step1", jobRepository)
+    @Bean(name = "csvToDbStep")
+    public Step csvToDbStep(JobRepository jobRepository,
+                            ItemReader<Product> productItemReader,
+                            ProductItemProcessor productItemProcessor,
+                            ItemWriter<Product> productItemWriter) {
+        return new StepBuilder("Csv To DB Step", jobRepository)
                 .<Product, Product>chunk(2)
                 .reader(productItemReader)
                 .processor(productItemProcessor)

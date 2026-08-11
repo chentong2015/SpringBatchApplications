@@ -8,9 +8,8 @@ import org.springframework.batch.infrastructure.item.file.LineMapper;
 import org.springframework.batch.infrastructure.item.file.mapping.DefaultLineMapper;
 import org.springframework.batch.infrastructure.item.file.mapping.FieldSetMapper;
 import org.springframework.batch.infrastructure.item.file.transform.DelimitedLineTokenizer;
-import org.springframework.batch.infrastructure.item.file.transform.FieldSet;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.oxm.jaxb.Jaxb2Marshaller;
-import org.springframework.validation.BindException;
 import spring.batch.csv2xml.bean.Transaction;
 import spring.batch.csv2xml.listener.MyItemProcessorListener;
 import spring.batch.csv2xml.process.TransactionItemProcessor;
@@ -28,21 +27,21 @@ import java.time.format.DateTimeFormatter;
 @Configuration
 public class CsvToXmlJobConfiguration {
 
-    @Bean(name = "convertCsvToXmlJob")
-    public Job job(JobRepository jobRepository, Step convertStep) {
-        return new JobBuilder("convertCsvToXmlJob", jobRepository)
+    @Bean(name = "csvToXmlJob")
+    public Job csvToXmljob(JobRepository jobRepository, @Qualifier("csvToXmlStep") Step csvToXmlStep) {
+        return new JobBuilder("Csv To Xml Job", jobRepository)
                 .preventRestart()
                 .listener(MyJobExecutionListener.class) // Job Listener
-                .start(convertStep)
+                .start(csvToXmlStep)
                 .build();
     }
 
-    @Bean(name = "convertStep")
-    public Step convertStep(JobRepository jobRepository,
+    @Bean(name = "csvToXmlStep")
+    public Step csvToXmlStep(JobRepository jobRepository,
                             ItemReader<Transaction> reader,
                             TransactionItemProcessor itemProcessor,
                             ItemWriter<Transaction> writer) {
-        return new StepBuilder("convertCsvToXmlStep", jobRepository)
+        return new StepBuilder("Csv To Xml Step", jobRepository)
                 .listener(MyStepExecutionListener.class) // Step Listener
                 .<Transaction, Transaction>chunk(3)
                 .reader(reader)

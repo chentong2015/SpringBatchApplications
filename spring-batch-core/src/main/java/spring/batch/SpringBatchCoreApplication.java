@@ -14,10 +14,12 @@ public class SpringBatchCoreApplication {
 
     public static void main(String[] args) throws Exception {
         ConfigurableApplicationContext context = new SpringApplication(SpringBatchCoreApplication.class).run();
-        JobRepository jobRepository = context.getBean(JobRepository.class); //
+        // 连接DB的JobRepository类型
+        JobRepository jobRepository = context.getBean(JobRepository.class);
         JobOperator jobOperator = context.getBean(JobOperator.class);
 
-        Job job = (Job) context.getBean("convertCsvToXmlJob");
+        // 选择特定的JOB来执行
+        Job job = (Job) context.getBean("csvToXmlJob");
         JobExecution execution = jobOperator.start(job, new JobParameters());
         System.out.println("Job Status : " + execution.getStatus());
         System.out.println("Job completed");

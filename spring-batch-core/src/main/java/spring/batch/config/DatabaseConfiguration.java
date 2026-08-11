@@ -33,7 +33,7 @@ public class DatabaseConfiguration extends DefaultBatchConfiguration {
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
         dataSource.setDriverClassName("org.postgresql.Driver");
         dataSource.setUsername("postgres");
-        dataSource.setPassword("");
+        dataSource.setPassword("postgres");
         dataSource.setUrl("jdbc:postgresql://localhost:5432/spring_batch");
         return dataSource;
     }

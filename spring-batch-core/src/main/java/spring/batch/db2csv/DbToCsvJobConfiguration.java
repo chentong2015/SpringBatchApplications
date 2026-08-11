@@ -6,6 +6,7 @@ import org.springframework.batch.infrastructure.item.ItemWriter;
 import org.springframework.batch.infrastructure.item.file.transform.BeanWrapperFieldExtractor;
 import org.springframework.batch.infrastructure.item.file.transform.DelimitedLineAggregator;
 import org.springframework.batch.infrastructure.item.file.transform.LineAggregator;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.jdbc.core.RowMapper;
 import spring.batch.db2csv.bean.Person;
 import spring.batch.db2csv.process.PersonItemProcessor;
@@ -23,21 +24,21 @@ import java.sql.SQLException;
 @Configuration
 public class DbToCsvJobConfiguration {
 
-    @Bean
-    public Job retrieveUserJob(JobRepository jobRepository, Step retrieveUserStep) {
-        return new JobBuilder("Retrieve User Job", jobRepository)
+    @Bean(name = "dbToCsvJob")
+    public Job dbToCsvJob(JobRepository jobRepository, @Qualifier("dbToCsvStep") Step dbToCsvStep) {
+        return new JobBuilder("Db to Csv Job", jobRepository)
                 .incrementer(new RunIdIncrementer())
-                .flow(retrieveUserStep)
+                .flow(dbToCsvStep)
                 .end()
                 .build();
     }
 
-    @Bean
-    public Step retrieveUserStep(JobRepository jobRepository,
-                                 ItemReader<Person> personItemReader,
-                                 PersonItemProcessor personItemProcessor,
-                                 ItemWriter<Person> personItemWriter) {
-        return new StepBuilder("Retrieve User from DB", jobRepository)
+    @Bean(name = "dbToCsvStep")
+    public Step dbToCsvStep(JobRepository jobRepository,
+                            ItemReader<Person> personItemReader,
+                            PersonItemProcessor personItemProcessor,
+                            ItemWriter<Person> personItemWriter) {
+        return new StepBuilder("Db To Csv Step", jobRepository)
                 .<Person, Person>chunk(3)
                 .reader(personItemReader)
                 .processor(personItemProcessor)

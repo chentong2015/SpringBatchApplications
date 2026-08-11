@@ -7,6 +7,7 @@ import org.springframework.stereotype.Component;
 
 import java.util.List;
 
+// TODO. 写入时获取单批次处理的chunk, 确定操作数量
 @Component
 public class RecordItemWriter implements ItemWriter<DbRecord> {
 
@@ -16,7 +17,6 @@ public class RecordItemWriter implements ItemWriter<DbRecord> {
         this.repositoryService = repositoryService;
     }
 
-    // TODO. 获取单批次处理的chunk, 确定操作数量
     @Override
     public void write(Chunk<? extends DbRecord> chunk) {
         System.out.println("Batch chunk: " + chunk.size());

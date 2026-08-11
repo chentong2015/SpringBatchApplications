@@ -8,6 +8,7 @@ import org.springframework.batch.core.step.Step;
 import org.springframework.batch.core.step.builder.StepBuilder;
 import org.springframework.batch.infrastructure.item.ItemReader;
 import org.springframework.batch.infrastructure.item.ItemWriter;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.io.FileSystemResource;
@@ -23,18 +24,17 @@ import java.nio.file.Path;
 @Configuration
 public class XmlToDbConfiguration {
 
-    @Bean(name = "loadXmlToDbJob")
-    public Job job(JobRepository jobRepository, Step importRecords) {
+    @Bean(name = "xmlToDbJob")
+    public Job xmlToDbjob(JobRepository jobRepository, @Qualifier("xmlToDbStep") Step xmlToDbStep) {
         return new JobBuilder("loadXmlToDbJob", jobRepository)
                 .preventRestart()
-                .start(importRecords)
+                .start(xmlToDbStep)
                 .build();
     }
 
-    // TODO. 读取XmL中的<record标签并解析成DbRecord对象
-    // 以chunk块的方式进行批量操作并写入到数据库中
-    @Bean
-    public Step importRecords(JobRepository jobRepository,
+    // TODO. 读取XmL中的<record>标签并解析成DbRecord对象
+    @Bean(name = "xmlToDbStep")
+    public Step xmlToDbStep(JobRepository jobRepository,
                               ItemReader<Record> reader,
                               RecordItemProcessor itemProcessor,
                               ItemWriter<DbRecord> writer) {
@@ -46,11 +46,12 @@ public class XmlToDbConfiguration {
                 .build();
     }
 
-    // 读取XML文件: 配置Schema格式和解析出来的Class类型
+    // 读取XML文件: 配置Schema XSD格式, 验证提交的文件数据符合规范
     @Bean(name = "xmlUnmarshaller")
     public Unmarshaller xmlUnmarshaller() throws Exception {
-        Path filepath = FileSystems.getDefault().getPath("drive_folder/xml/records.xml");
+        Path filepath = FileSystems.getDefault().getPath("drive_folder/xml/records.xsd");
 
+        // JAXB只负责把xml数据反序列化成Java对象
         Jaxb2Marshaller unmarshaller = new Jaxb2Marshaller();
         unmarshaller.setClassesToBeBound(Record.class);
         unmarshaller.setSchema(new FileSystemResource(filepath));
