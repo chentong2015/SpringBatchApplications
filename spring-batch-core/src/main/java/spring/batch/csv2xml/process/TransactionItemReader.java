@@ -17,5 +17,7 @@ public class TransactionItemReader extends FlatFileItemReader<Transaction> {
 
         Path filepath = FileSystems.getDefault().getPath("drive_folder/csv/transactions.csv");
         setResource(new FileSystemResource(filepath));
+
+        setLinesToSkip(0);
     }
 }
