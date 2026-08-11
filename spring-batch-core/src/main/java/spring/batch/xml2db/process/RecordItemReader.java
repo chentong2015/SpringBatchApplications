@@ -10,10 +10,10 @@ import org.springframework.batch.infrastructure.item.xml.StaxEventItemReader;
 import java.nio.file.FileSystems;
 import java.nio.file.Path;
 
-// 输入并从指定的XML文件中读取数据
 @Component
 public class RecordItemReader extends StaxEventItemReader<Record> {
 
+    // TODO. 从XML取特定标签映射到Object对象
     public RecordItemReader(@Qualifier("xmlUnmarshaller") Unmarshaller xmlUnmarshaller) throws Exception {
         super(xmlUnmarshaller);
 

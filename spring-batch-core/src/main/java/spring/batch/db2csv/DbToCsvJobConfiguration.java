@@ -26,7 +26,7 @@ public class DbToCsvJobConfiguration {
 
     @Bean(name = "dbToCsvJob")
     public Job dbToCsvJob(JobRepository jobRepository, @Qualifier("dbToCsvStep") Step dbToCsvStep) {
-        return new JobBuilder("Db to Csv Job", jobRepository)
+        return new JobBuilder("Db to Csv Job 1", jobRepository)
                 .incrementer(new RunIdIncrementer())
                 .flow(dbToCsvStep)
                 .end()
@@ -56,7 +56,7 @@ public class DbToCsvJobConfiguration {
     @Bean(name = "csvLineAggregator")
     public LineAggregator<Person> csvLineAggregator() {
         BeanWrapperFieldExtractor<Person> fieldExtractor = new BeanWrapperFieldExtractor<>();
-        fieldExtractor.setNames(new String[]{"lastName", "firstName"});
+        fieldExtractor.setNames(new String[]{"firstName", "lastName"});
 
         // 设置CSV文件一行数据的格式分隔符
         DelimitedLineAggregator<Person> lineAggregator = new DelimitedLineAggregator<>();

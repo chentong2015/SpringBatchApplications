@@ -18,7 +18,7 @@ public class SpringBatchCoreApplication {
         JobRepository jobRepository = context.getBean(JobRepository.class); // Proxy JobRepository
         JobOperator jobOperator = context.getBean(JobOperator.class);
 
-        Job job = (Job) context.getBean("csvToXmlJob");
+        Job job = (Job) context.getBean("xmlToDbJob");
         JobExecution execution = jobOperator.start(job, new JobParameters());
         System.out.println("Job Status : " + execution.getStatus());
         System.out.println("Job completed");

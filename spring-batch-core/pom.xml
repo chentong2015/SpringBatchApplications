@@ -17,9 +17,10 @@
     </properties>
 
     <dependencies>
+        <!-- TODO. 提供JDBC支持和数据库, Schema初始化和配置 -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-batch</artifactId>
+            <artifactId>spring-boot-starter-batch-jdbc</artifactId>
             <version>4.1.0</version>
         </dependency>
         <!-- A set of low-level components, interfaces and tools for batch processing applications and optimisations -->

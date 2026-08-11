@@ -1,16 +1,23 @@
 package spring.batch.csv2xml.bean;
 
+import jakarta.xml.bind.annotation.XmlAccessType;
+import jakarta.xml.bind.annotation.XmlAccessorType;
 import jakarta.xml.bind.annotation.XmlRootElement;
+import jakarta.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
 import java.time.LocalDate;
 
 // 定义XML Root头标签的名称
-@XmlRootElement(name = "transactionRecord")
+@XmlRootElement(name = "transaction")
+@XmlAccessorType(XmlAccessType.FIELD)
 public class Transaction {
 
     private String username;
     private int id;
+
+    @XmlJavaTypeAdapter(LocalDateXmlAdapter.class)
     private LocalDate date;
+
     private double amount;
 
     public Transaction() {

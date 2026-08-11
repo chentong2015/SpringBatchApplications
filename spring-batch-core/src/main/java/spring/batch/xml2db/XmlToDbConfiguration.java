@@ -26,7 +26,7 @@ public class XmlToDbConfiguration {
 
     @Bean(name = "xmlToDbJob")
     public Job xmlToDbjob(JobRepository jobRepository, @Qualifier("xmlToDbStep") Step xmlToDbStep) {
-        return new JobBuilder("loadXmlToDbJob", jobRepository)
+        return new JobBuilder("Xml To Db Job 2", jobRepository)
                 .preventRestart()
                 .start(xmlToDbStep)
                 .build();
@@ -38,7 +38,7 @@ public class XmlToDbConfiguration {
                               ItemReader<Record> reader,
                               RecordItemProcessor itemProcessor,
                               ItemWriter<DbRecord> writer) {
-        return new StepBuilder("importRecords", jobRepository)
+        return new StepBuilder("Xml To Db Step", jobRepository)
                 .<Record, DbRecord>chunk(10)
                 .reader(reader)
                 .processor(itemProcessor)

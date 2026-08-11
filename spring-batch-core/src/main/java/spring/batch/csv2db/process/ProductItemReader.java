@@ -15,7 +15,7 @@ public class ProductItemReader extends FlatFileItemReader<Product> {
     public ProductItemReader(LineMapper<Product> productLineMapper) {
         super(productLineMapper);
 
-        Path filepath = FileSystems.getDefault().getPath("drive_folder/csv/productData.csv");
+        Path filepath = FileSystems.getDefault().getPath("drive_folder/csv/products.csv");
         setResource(new FileSystemResource(filepath));
 
         setLinesToSkip(1);

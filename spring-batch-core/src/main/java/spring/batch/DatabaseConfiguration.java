@@ -10,15 +10,15 @@ import org.springframework.jdbc.datasource.DriverManagerDataSource;
 
 import javax.sql.DataSource;
 
-// 注入JobRepository: 取消无用设置, 修改事务隔离级别"ISOLATION_SERIALIZABLE"以支持事务并发
 @Configuration
 public class DatabaseConfiguration extends DefaultBatchConfiguration {
 
-    @Override
-    public JobRepository jobRepository() throws BatchConfigurationException {
+    // 注入JobRepository: 修改事务隔离级别"ISOLATION_SERIALIZABLE"以支持事务并发
+    @Bean
+    public JobRepository jobRepository(DataSource dataSource) throws BatchConfigurationException {
         try {
             JdbcJobRepositoryFactoryBean factory = new JdbcJobRepositoryFactoryBean();
-            factory.setDataSource(dataSource());
+            factory.setDataSource(dataSource);
             factory.setTransactionManager(getTransactionManager());
             factory.setIsolationLevelForCreate("ISOLATION_READ_COMMITTED");
             factory.afterPropertiesSet();

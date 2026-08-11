@@ -29,7 +29,7 @@ public class CsvToXmlJobConfiguration {
 
     @Bean(name = "csvToXmlJob")
     public Job csvToXmljob(JobRepository jobRepository, @Qualifier("csvToXmlStep") Step csvToXmlStep) {
-        return new JobBuilder("Csv To Xml Job", jobRepository)
+        return new JobBuilder("Csv To Xml Job 1", jobRepository)
                 .preventRestart()
                 .listener(MyJobExecutionListener.class) // Job Listener
                 .start(csvToXmlStep)
@@ -73,9 +73,9 @@ public class CsvToXmlJobConfiguration {
             transaction.setAmount(fieldSet.readDouble(3));
 
             // 必须严格匹配Date日期的格式化，才能解析并读取
-            String dateString = fieldSet.readString(2);
             DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
-            transaction.setDate(LocalDate.parse(dateString, formatter));
+            LocalDate localDate = LocalDate.parse(fieldSet.readString("date"), formatter);
+            transaction.setDate(localDate);
             return transaction;
         };
     }

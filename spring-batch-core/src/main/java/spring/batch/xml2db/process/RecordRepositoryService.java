@@ -21,8 +21,8 @@ public class RecordRepositoryService {
     }
 
     public void batchInsert(List<DbRecord> recordDBList) {
-        String sql = "Insert into record_db (username, id, amount) VALUES (:username, :id, :amount)";
+        String sql = "insert into record_db (username, id, amount) VALUES (:username, :id, :amount)";
         SqlParameterSource[] params = SqlParameterSourceUtils.createBatch(recordDBList);
-        namedParameterJdbcTemplate.batchUpdate(sql, params);
+        this.namedParameterJdbcTemplate.batchUpdate(sql, params);
     }
 }
