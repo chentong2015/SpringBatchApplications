@@ -15,7 +15,7 @@ import org.springframework.core.io.ClassPathResource;
 import org.springframework.core.io.Resource;
 import org.springframework.transaction.PlatformTransactionManager;
 
-// TODO. Tasklet Job工作单元: 完成自定义工作, 可能与真正数据流操作无关
+// TODO. Tasklet工作单元: 完成自定义工作, 可能与真正数据流操作无关
 @Configuration
 public class TaskletJobConfiguration {
 
@@ -23,7 +23,7 @@ public class TaskletJobConfiguration {
     public Job taskletJob(JobRepository jobRepository,
                           @Qualifier("firstEmptyStep") Step firstEmptyStep,
                           @Qualifier("nextTaskletStep") Step nextTaskletStep) {
-        return new JobBuilder("taskletJob3", jobRepository)
+        return new JobBuilder("Tasklet Job", jobRepository)
                 .preventRestart()
                 .flow(firstEmptyStep)
                 .next(nextTaskletStep)
