@@ -1,4 +1,4 @@
-package spring.batch.csv2db.process;
+package spring.batch.csv2db.mapper;
 
 import org.springframework.batch.infrastructure.item.file.mapping.FieldSetMapper;
 import org.springframework.batch.infrastructure.item.file.transform.FieldSet;

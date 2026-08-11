@@ -1,4 +1,4 @@
-package spring.batch.csv2xml.process;
+package spring.batch.csv2xml.mapper;
 
 import spring.batch.csv2xml.bean.Transaction;
 import org.springframework.batch.infrastructure.item.file.mapping.FieldSetMapper;

@@ -5,6 +5,7 @@ import org.springframework.jdbc.core.RowMapper;
 import org.springframework.stereotype.Component;
 import spring.batch.db2csv.bean.Person;
 import org.springframework.batch.infrastructure.item.ItemReader;
+import spring.batch.db2csv.mapper.PersonRowMapper;
 
 import javax.sql.DataSource;
 

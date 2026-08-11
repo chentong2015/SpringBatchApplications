@@ -9,8 +9,7 @@ public class ProductItemProcessor implements ItemProcessor<Product, Product> {
 
     @Override
     public Product process(final Product product) {
-        Product transformedProduct = new Product(product.getName().toUpperCase(),
-                product.getValue().toUpperCase());
+        Product transformedProduct = new Product(product.getName().toUpperCase(), product.getValue().toUpperCase());
 
         System.out.println("Converting (" + product + ") into (" + transformedProduct + ")");
         return transformedProduct;

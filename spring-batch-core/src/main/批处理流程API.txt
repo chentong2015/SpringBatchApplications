@@ -26,7 +26,7 @@ Job (name): 执行任务, 由JobLauncher启动执行
          -> FlatFileItemReader 从文件中读取数据
          -> JdbcCursorItemReader 从DB中获取数据
 
-       -> ItemProcessor
+       -> ItemProcessor<I, O>解析器: 从Input数据到Output加工过程
          => ItemProcessListener (beforeProcess, afterProcess)
          -> ItemMapper      从读取对象映射到目标对象
          -> SourceExtractor 从原始对象中解析出适配内容

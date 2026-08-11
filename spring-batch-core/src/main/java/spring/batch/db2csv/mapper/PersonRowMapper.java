@@ -1,4 +1,4 @@
-package spring.batch.db2csv.process;
+package spring.batch.db2csv.mapper;
 
 import org.springframework.jdbc.core.RowMapper;
 import spring.batch.db2csv.bean.Person;
