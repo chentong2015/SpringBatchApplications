@@ -39,7 +39,7 @@ public class XmlToDbConfiguration {
                               RecordItemProcessor itemProcessor,
                               ItemWriter<DbRecord> writer) {
         return new StepBuilder("Xml To Db Step", jobRepository)
-                .<Record, DbRecord>chunk(10)
+                .<Record, DbRecord>chunk(100)
                 .reader(reader)
                 .processor(itemProcessor)
                 .writer(writer)

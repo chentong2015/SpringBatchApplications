@@ -10,6 +10,7 @@ import org.springframework.batch.infrastructure.item.xml.StaxEventItemReader;
 import java.nio.file.FileSystems;
 import java.nio.file.Path;
 
+// StaxEventItemReader底层是有状态的XML Stream Reader, 必须按照顺序读取
 @Component
 public class RecordItemReader extends StaxEventItemReader<Record> {
 

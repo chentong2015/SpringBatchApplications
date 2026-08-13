@@ -19,7 +19,12 @@ public class RecordItemWriter implements ItemWriter<DbRecord> {
     // TODO. 写入时获取单批次处理的chunk, 确定操作数量
     @Override
     public void write(Chunk<? extends DbRecord> chunk) {
-        System.out.println("Batch chunk: " + chunk.size());
+        System.out.println(Thread.currentThread().getName() + "write batch chunk: " + chunk.size());
+        try {
+            Thread.sleep(5000);
+        } catch (InterruptedException exception) {
+            exception.printStackTrace();
+        }
         this.repositoryService.batchInsert((List<DbRecord>) chunk.getItems());
     }
 }

@@ -10,6 +10,7 @@ import project.base_bean.Record;
 import java.nio.file.FileSystems;
 import java.nio.file.Path;
 
+// TODO. XML Stream流式读取不适合多线程共享并发读取
 @Component
 public class RecordItemReader extends StaxEventItemReader<Record> {
 
