@@ -1,6 +1,6 @@
 Spring Batch 实战运用:
-- 定义数据处理的标准化流程(Processor)
-- 文件格式转换: 支持多种文件格式的数据转换(Reader, Writer)
+1. 并发处理Chunk数据块
+2. 自定义并发处理Chunk数据块
+3. 超大文件拆分: 并发处理每个Split文件的Chunk数据块
 
-- 并发高性能处理(taskExecutor)
-- 超大文件拆分: 并发处理Split文件(按照Batch批处理流程)
+TODO. 文件的并发IO读写需要加锁, DB读取和插入支持并发执行

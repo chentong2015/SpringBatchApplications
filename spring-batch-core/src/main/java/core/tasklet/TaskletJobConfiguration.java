@@ -1,4 +1,4 @@
-package spring.batch.tasklet;
+package core.tasklet;
 
 import org.springframework.batch.core.job.Job;
 import org.springframework.batch.core.job.builder.JobBuilder;
@@ -13,9 +13,8 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.core.io.Resource;
-import org.springframework.transaction.PlatformTransactionManager;
 
-// TODO. Tasklet工作单元: 完成自定义工作, 可能与真正数据流操作无关
+
 @Configuration
 public class TaskletJobConfiguration {
 

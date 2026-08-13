@@ -1,4 +1,4 @@
-package spring.batch.tasklet;
+package core.tasklet;
 
 import org.springframework.batch.core.scope.context.ChunkContext;
 import org.springframework.batch.core.step.StepContribution;
@@ -28,7 +28,7 @@ public class DeleteFileTasklet implements Tasklet {
 
     // TODO. execute()方法将被重复调用
     // 返回RepeatStatus.FINISHED或者抛出Exception标记Task执行结束
-    // execute()返回RepeatStatus.CONTINUABLE标明将会持续被调用
+    // 返回RepeatStatus.CONTINUABLE标明将会持续被调用
     @Override
     public RepeatStatus execute(StepContribution contribution, ChunkContext chunkContext) throws Exception {
         File[] files = directory.listFiles();

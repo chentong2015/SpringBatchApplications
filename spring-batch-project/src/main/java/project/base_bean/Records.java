@@ -1,4 +1,4 @@
-package spring.batch.test_concurrency.bean;
+package project.base_bean;
 
 import jakarta.xml.bind.annotation.XmlAccessType;
 import jakarta.xml.bind.annotation.XmlAccessorType;

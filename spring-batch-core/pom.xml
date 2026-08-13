@@ -23,7 +23,7 @@
             <artifactId>spring-boot-starter-batch-jdbc</artifactId>
             <version>4.1.0</version>
         </dependency>
-        <!-- A set of low-level components, interfaces and tools for batch processing applications and optimisations -->
+        <!-- A set of low-level components, interfaces and tools for core processing applications and optimisations -->
         <dependency>
             <groupId>org.springframework.batch</groupId>
             <artifactId>spring-batch-infrastructure</artifactId>

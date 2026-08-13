@@ -1,17 +1,17 @@
-package spring.batch.test_concurrency.bean;
+package project.base_bean;
 
 public class DbRecord {
 
-    private String username;
     private int id;
+    private String username;
     private double amount;
 
     public DbRecord() {
     }
 
-    public DbRecord(String username, int id, double amount) {
-        this.username = username;
+    public DbRecord(int id, String username, double amount) {
         this.id = id;
+        this.username = username;
         this.amount = amount;
     }
 

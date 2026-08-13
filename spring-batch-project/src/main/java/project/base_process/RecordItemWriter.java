@@ -1,9 +1,9 @@
-package spring.batch.test_concurrency.process;
+package project.base_process;
 
 import org.springframework.batch.infrastructure.item.Chunk;
 import org.springframework.batch.infrastructure.item.ItemWriter;
 import org.springframework.stereotype.Component;
-import spring.batch.test_concurrency.bean.DbRecord;
+import project.base_bean.DbRecord;
 
 import java.util.List;
 
@@ -16,10 +16,15 @@ public class RecordItemWriter implements ItemWriter<DbRecord> {
         this.repositoryService = repositoryService;
     }
 
-    // TODO. 写入时获取单批次处理的chunk, 确定操作数量
+    // TODO. 多线程并发执行写入操作
     @Override
     public void write(Chunk<? extends DbRecord> chunk) {
-        System.out.println("Batch chunk: " + chunk.size());
+        System.out.println(Thread.currentThread().getName() + "write batch chunk: " + chunk.size());
+        try {
+            Thread.sleep(5000);
+        } catch (InterruptedException exception) {
+            exception.printStackTrace();
+        }
         this.repositoryService.batchInsert((List<DbRecord>) chunk.getItems());
     }
 }

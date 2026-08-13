@@ -1,6 +1,6 @@
 TODO. Batch批执行任务由Job和Step步骤组成
 Job:
-  JobBuilder(name, jobRepository) 相同Job名称只会在BATCH_JOB_INSTANCE中记录一次
+  JobBuilder(name, jobRepository)
     - JobExecutionListener (beforeJob, afterJob) 监听器/拦截器
   SimpleJobBuilder   JobFlowBuilder
     .start()           .start()
@@ -30,6 +30,3 @@ Job:
          - ItemWriteListener (beforeWrite, afterWrite, onWriteError)
          - StaxEventItemWriter 写入XML文件中
          - JdbcBatchItemWriter 存储到DB中
-
-数据格式: .csv .xml .json
-https://github.com/eugenp/tutorials/tree/master/spring-batch

@@ -1,4 +1,0 @@
-并发执行: Scaling and Parallel Processing
-https://docs.spring.io/spring-batch/reference/scalability.html
-
-TODO. 并发读取文件需要加锁，并发写入文件也必须同步控制 !!

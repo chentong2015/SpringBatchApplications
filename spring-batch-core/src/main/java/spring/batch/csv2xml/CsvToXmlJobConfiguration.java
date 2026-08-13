@@ -29,7 +29,7 @@ public class CsvToXmlJobConfiguration {
 
     @Bean(name = "csvToXmlJob")
     public Job csvToXmljob(JobRepository jobRepository, @Qualifier("csvToXmlStep") Step csvToXmlStep) {
-        return new JobBuilder("Csv To Xml Job 1", jobRepository)
+        return new JobBuilder("Csv To Xml Job", jobRepository)
                 .preventRestart()
                 .listener(MyJobExecutionListener.class) // Job Listener
                 .start(csvToXmlStep)

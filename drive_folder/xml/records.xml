@@ -1,33 +1,5403 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <records>
     <record>
-        <username>dev1</username>
-        <id>1234565</id>
-        <date>15-12-1980 18:09:09</date>
-        <amount>10000.0</amount>
+        <id>1</id>
+        <username>user615477</username>
+        <date>13-07-2019 07:03:24</date>
+        <amount>12509.5</amount>
     </record>
     <record>
-        <username>dev2</username>
-        <id>123421</id>
-        <date>15-12-1980 18:09:09</date>
-        <amount>100200.0</amount>
+        <id>2</id>
+        <username>user442350</username>
+        <date>15-08-2016 18:51:33</date>
+        <amount>85515.3</amount>
     </record>
     <record>
-        <username>dev3</username>
-        <id>123442</id>
-        <date>15-12-1980 18:09:09</date>
-        <amount>1002100.0</amount>
+        <id>3</id>
+        <username>user873091</username>
+        <date>21-05-2005 23:03:38</date>
+        <amount>98814.1</amount>
     </record>
     <record>
-        <username>dev4</username>
-        <id>1234098</id>
-        <date>15-12-1980 18:09:09</date>
-        <amount>10000.0</amount>
+        <id>4</id>
+        <username>user321119</username>
+        <date>02-01-1997 13:52:25</date>
+        <amount>22319.3</amount>
     </record>
     <record>
-        <username>dev5</username>
-        <id>1234565</id>
-        <date>15-12-1980 18:09:09</date>
-        <amount>10000.0</amount>
+        <id>5</id>
+        <username>user825639</username>
+        <date>03-07-2019 20:18:15</date>
+        <amount>52194.5</amount>
+    </record>
+    <record>
+        <id>6</id>
+        <username>user898735</username>
+        <date>09-07-1979 23:48:49</date>
+        <amount>27816.6</amount>
+    </record>
+    <record>
+        <id>7</id>
+        <username>user130361</username>
+        <date>22-04-1987 18:20:50</date>
+        <amount>62231.0</amount>
+    </record>
+    <record>
+        <id>8</id>
+        <username>user206746</username>
+        <date>22-06-1979 12:42:01</date>
+        <amount>30859.4</amount>
+    </record>
+    <record>
+        <id>9</id>
+        <username>user418210</username>
+        <date>25-04-2003 02:37:05</date>
+        <amount>35157.1</amount>
+    </record>
+    <record>
+        <id>10</id>
+        <username>user460062</username>
+        <date>04-10-1985 19:38:13</date>
+        <amount>44454.9</amount>
+    </record>
+    <record>
+        <id>11</id>
+        <username>user690304</username>
+        <date>10-02-1978 11:43:35</date>
+        <amount>35951.3</amount>
+    </record>
+    <record>
+        <id>12</id>
+        <username>user230538</username>
+        <date>29-05-1974 13:15:45</date>
+        <amount>37018.7</amount>
+    </record>
+    <record>
+        <id>13</id>
+        <username>user861539</username>
+        <date>21-09-1981 02:04:43</date>
+        <amount>46477.8</amount>
+    </record>
+    <record>
+        <id>14</id>
+        <username>user861426</username>
+        <date>16-11-2012 18:51:47</date>
+        <amount>502.7</amount>
+    </record>
+    <record>
+        <id>15</id>
+        <username>user645710</username>
+        <date>08-02-2019 15:17:26</date>
+        <amount>55848.8</amount>
+    </record>
+    <record>
+        <id>16</id>
+        <username>user297254</username>
+        <date>28-04-2000 08:45:45</date>
+        <amount>13785.6</amount>
+    </record>
+    <record>
+        <id>17</id>
+        <username>user291118</username>
+        <date>25-12-1994 17:45:27</date>
+        <amount>73662.6</amount>
+    </record>
+    <record>
+        <id>18</id>
+        <username>user810301</username>
+        <date>30-05-2014 00:38:58</date>
+        <amount>6291.0</amount>
+    </record>
+    <record>
+        <id>19</id>
+        <username>user785667</username>
+        <date>15-09-2017 00:36:33</date>
+        <amount>19735.4</amount>
+    </record>
+    <record>
+        <id>20</id>
+        <username>user572146</username>
+        <date>04-04-2002 22:01:23</date>
+        <amount>35516.5</amount>
+    </record>
+    <record>
+        <id>21</id>
+        <username>user884324</username>
+        <date>15-05-2016 23:39:45</date>
+        <amount>62706.1</amount>
+    </record>
+    <record>
+        <id>22</id>
+        <username>user428220</username>
+        <date>11-12-1990 06:50:59</date>
+        <amount>12243.4</amount>
+    </record>
+    <record>
+        <id>23</id>
+        <username>user654884</username>
+        <date>09-01-1970 05:50:10</date>
+        <amount>18932.9</amount>
+    </record>
+    <record>
+        <id>24</id>
+        <username>user408658</username>
+        <date>28-11-1976 04:33:50</date>
+        <amount>24231.2</amount>
+    </record>
+    <record>
+        <id>25</id>
+        <username>user575059</username>
+        <date>20-04-1996 06:40:22</date>
+        <amount>84232.8</amount>
+    </record>
+    <record>
+        <id>26</id>
+        <username>user802466</username>
+        <date>08-10-1984 10:47:51</date>
+        <amount>42008.7</amount>
+    </record>
+    <record>
+        <id>27</id>
+        <username>user713513</username>
+        <date>28-07-1988 16:44:12</date>
+        <amount>27030.4</amount>
+    </record>
+    <record>
+        <id>28</id>
+        <username>user151710</username>
+        <date>30-03-2002 01:45:49</date>
+        <amount>67225.5</amount>
+    </record>
+    <record>
+        <id>29</id>
+        <username>user391261</username>
+        <date>01-03-1988 04:43:23</date>
+        <amount>22979.7</amount>
+    </record>
+    <record>
+        <id>30</id>
+        <username>user734906</username>
+        <date>19-03-2012 10:59:14</date>
+        <amount>30741.8</amount>
+    </record>
+    <record>
+        <id>31</id>
+        <username>user646187</username>
+        <date>25-01-1971 19:08:13</date>
+        <amount>95764.0</amount>
+    </record>
+    <record>
+        <id>32</id>
+        <username>user351304</username>
+        <date>20-02-2008 20:19:48</date>
+        <amount>27641.1</amount>
+    </record>
+    <record>
+        <id>33</id>
+        <username>user908744</username>
+        <date>13-07-2008 03:52:31</date>
+        <amount>51460.8</amount>
+    </record>
+    <record>
+        <id>34</id>
+        <username>user114871</username>
+        <date>18-06-1987 05:46:16</date>
+        <amount>55824.0</amount>
+    </record>
+    <record>
+        <id>35</id>
+        <username>user948674</username>
+        <date>02-01-2010 02:02:10</date>
+        <amount>57859.7</amount>
+    </record>
+    <record>
+        <id>36</id>
+        <username>user756814</username>
+        <date>02-07-2023 11:13:34</date>
+        <amount>78992.4</amount>
+    </record>
+    <record>
+        <id>37</id>
+        <username>user877322</username>
+        <date>15-10-1984 20:05:14</date>
+        <amount>50297.1</amount>
+    </record>
+    <record>
+        <id>38</id>
+        <username>user404786</username>
+        <date>20-09-1991 17:48:29</date>
+        <amount>17486.8</amount>
+    </record>
+    <record>
+        <id>39</id>
+        <username>user298435</username>
+        <date>12-11-1991 09:46:29</date>
+        <amount>42098.0</amount>
+    </record>
+    <record>
+        <id>40</id>
+        <username>user470721</username>
+        <date>02-10-1982 10:19:35</date>
+        <amount>17774.0</amount>
+    </record>
+    <record>
+        <id>41</id>
+        <username>user238856</username>
+        <date>12-08-1988 23:55:32</date>
+        <amount>44775.9</amount>
+    </record>
+    <record>
+        <id>42</id>
+        <username>user302960</username>
+        <date>18-03-1990 03:08:58</date>
+        <amount>85943.0</amount>
+    </record>
+    <record>
+        <id>43</id>
+        <username>user204376</username>
+        <date>05-04-1981 11:12:39</date>
+        <amount>18504.3</amount>
+    </record>
+    <record>
+        <id>44</id>
+        <username>user144984</username>
+        <date>27-01-2003 11:55:22</date>
+        <amount>8816.1</amount>
+    </record>
+    <record>
+        <id>45</id>
+        <username>user828315</username>
+        <date>22-12-1989 04:55:47</date>
+        <amount>20801.6</amount>
+    </record>
+    <record>
+        <id>46</id>
+        <username>user293030</username>
+        <date>08-08-1979 01:35:33</date>
+        <amount>87449.5</amount>
+    </record>
+    <record>
+        <id>47</id>
+        <username>user431981</username>
+        <date>08-03-1993 17:50:31</date>
+        <amount>77631.8</amount>
+    </record>
+    <record>
+        <id>48</id>
+        <username>user854183</username>
+        <date>21-03-1996 21:46:26</date>
+        <amount>8998.4</amount>
+    </record>
+    <record>
+        <id>49</id>
+        <username>user145114</username>
+        <date>29-08-1995 08:09:05</date>
+        <amount>24322.2</amount>
+    </record>
+    <record>
+        <id>50</id>
+        <username>user517742</username>
+        <date>09-03-1991 01:12:15</date>
+        <amount>11815.7</amount>
+    </record>
+    <record>
+        <id>51</id>
+        <username>user928560</username>
+        <date>10-01-2012 16:35:46</date>
+        <amount>95956.1</amount>
+    </record>
+    <record>
+        <id>52</id>
+        <username>user982438</username>
+        <date>04-01-1986 23:11:19</date>
+        <amount>18271.8</amount>
+    </record>
+    <record>
+        <id>53</id>
+        <username>user661259</username>
+        <date>02-08-2021 12:09:47</date>
+        <amount>50300.6</amount>
+    </record>
+    <record>
+        <id>54</id>
+        <username>user568109</username>
+        <date>23-01-1998 06:43:51</date>
+        <amount>14854.2</amount>
+    </record>
+    <record>
+        <id>55</id>
+        <username>user593386</username>
+        <date>01-02-2009 23:01:02</date>
+        <amount>28901.4</amount>
+    </record>
+    <record>
+        <id>56</id>
+        <username>user271467</username>
+        <date>07-03-1993 22:29:33</date>
+        <amount>75807.3</amount>
+    </record>
+    <record>
+        <id>57</id>
+        <username>user231790</username>
+        <date>22-05-1994 14:35:12</date>
+        <amount>13456.9</amount>
+    </record>
+    <record>
+        <id>58</id>
+        <username>user786682</username>
+        <date>21-07-1991 11:35:27</date>
+        <amount>57560.9</amount>
+    </record>
+    <record>
+        <id>59</id>
+        <username>user744237</username>
+        <date>10-06-2007 04:18:10</date>
+        <amount>64165.4</amount>
+    </record>
+    <record>
+        <id>60</id>
+        <username>user832241</username>
+        <date>28-12-2006 20:47:34</date>
+        <amount>36100.4</amount>
+    </record>
+    <record>
+        <id>61</id>
+        <username>user325261</username>
+        <date>05-01-1982 15:12:54</date>
+        <amount>48627.5</amount>
+    </record>
+    <record>
+        <id>62</id>
+        <username>user411965</username>
+        <date>27-12-1971 06:58:34</date>
+        <amount>55567.3</amount>
+    </record>
+    <record>
+        <id>63</id>
+        <username>user593821</username>
+        <date>23-02-2016 04:19:00</date>
+        <amount>16820.1</amount>
+    </record>
+    <record>
+        <id>64</id>
+        <username>user436336</username>
+        <date>02-03-2014 18:36:32</date>
+        <amount>98268.9</amount>
+    </record>
+    <record>
+        <id>65</id>
+        <username>user475102</username>
+        <date>06-04-2019 19:26:33</date>
+        <amount>52830.3</amount>
+    </record>
+    <record>
+        <id>66</id>
+        <username>user176645</username>
+        <date>26-02-1981 22:18:42</date>
+        <amount>37420.6</amount>
+    </record>
+    <record>
+        <id>67</id>
+        <username>user353692</username>
+        <date>04-07-1984 16:24:58</date>
+        <amount>34163.8</amount>
+    </record>
+    <record>
+        <id>68</id>
+        <username>user392586</username>
+        <date>10-03-2020 23:50:54</date>
+        <amount>8620.7</amount>
+    </record>
+    <record>
+        <id>69</id>
+        <username>user711359</username>
+        <date>16-01-2020 00:16:48</date>
+        <amount>99078.9</amount>
+    </record>
+    <record>
+        <id>70</id>
+        <username>user199065</username>
+        <date>13-04-2011 08:20:12</date>
+        <amount>4149.8</amount>
+    </record>
+    <record>
+        <id>71</id>
+        <username>user204871</username>
+        <date>14-06-1976 23:06:48</date>
+        <amount>9754.0</amount>
+    </record>
+    <record>
+        <id>72</id>
+        <username>user551662</username>
+        <date>14-06-2009 23:26:40</date>
+        <amount>26512.6</amount>
+    </record>
+    <record>
+        <id>73</id>
+        <username>user550814</username>
+        <date>09-01-2022 06:51:24</date>
+        <amount>91277.5</amount>
+    </record>
+    <record>
+        <id>74</id>
+        <username>user308819</username>
+        <date>20-09-2000 06:47:53</date>
+        <amount>26625.8</amount>
+    </record>
+    <record>
+        <id>75</id>
+        <username>user476422</username>
+        <date>24-07-2000 02:44:01</date>
+        <amount>41419.6</amount>
+    </record>
+    <record>
+        <id>76</id>
+        <username>user404120</username>
+        <date>16-09-1996 12:31:47</date>
+        <amount>88781.3</amount>
+    </record>
+    <record>
+        <id>77</id>
+        <username>user146914</username>
+        <date>21-02-1996 04:52:51</date>
+        <amount>58158.5</amount>
+    </record>
+    <record>
+        <id>78</id>
+        <username>user845662</username>
+        <date>14-08-2018 10:10:09</date>
+        <amount>31308.7</amount>
+    </record>
+    <record>
+        <id>79</id>
+        <username>user632833</username>
+        <date>19-07-1989 05:08:40</date>
+        <amount>68799.0</amount>
+    </record>
+    <record>
+        <id>80</id>
+        <username>user577706</username>
+        <date>05-03-2002 05:48:04</date>
+        <amount>67313.2</amount>
+    </record>
+    <record>
+        <id>81</id>
+        <username>user710866</username>
+        <date>01-01-2023 11:16:40</date>
+        <amount>7350.4</amount>
+    </record>
+    <record>
+        <id>82</id>
+        <username>user693104</username>
+        <date>24-12-2003 13:24:14</date>
+        <amount>93718.8</amount>
+    </record>
+    <record>
+        <id>83</id>
+        <username>user904340</username>
+        <date>19-01-2015 15:03:30</date>
+        <amount>71747.4</amount>
+    </record>
+    <record>
+        <id>84</id>
+        <username>user540358</username>
+        <date>12-10-2014 10:28:07</date>
+        <amount>80616.1</amount>
+    </record>
+    <record>
+        <id>85</id>
+        <username>user180368</username>
+        <date>24-08-2018 13:57:15</date>
+        <amount>84221.9</amount>
+    </record>
+    <record>
+        <id>86</id>
+        <username>user916396</username>
+        <date>02-07-1985 08:50:33</date>
+        <amount>68460.0</amount>
+    </record>
+    <record>
+        <id>87</id>
+        <username>user988970</username>
+        <date>06-07-2020 00:58:37</date>
+        <amount>93544.7</amount>
+    </record>
+    <record>
+        <id>88</id>
+        <username>user812084</username>
+        <date>01-04-2002 05:53:44</date>
+        <amount>75267.9</amount>
+    </record>
+    <record>
+        <id>89</id>
+        <username>user144044</username>
+        <date>29-09-1979 20:12:17</date>
+        <amount>62618.1</amount>
+    </record>
+    <record>
+        <id>90</id>
+        <username>user229406</username>
+        <date>02-04-1981 03:23:07</date>
+        <amount>57934.3</amount>
+    </record>
+    <record>
+        <id>91</id>
+        <username>user630538</username>
+        <date>19-05-1985 13:00:09</date>
+        <amount>45058.0</amount>
+    </record>
+    <record>
+        <id>92</id>
+        <username>user711218</username>
+        <date>05-07-1997 03:22:29</date>
+        <amount>54363.0</amount>
+    </record>
+    <record>
+        <id>93</id>
+        <username>user445276</username>
+        <date>23-02-2015 11:18:19</date>
+        <amount>26441.2</amount>
+    </record>
+    <record>
+        <id>94</id>
+        <username>user719081</username>
+        <date>17-05-2003 21:21:22</date>
+        <amount>59288.5</amount>
+    </record>
+    <record>
+        <id>95</id>
+        <username>user878576</username>
+        <date>14-04-2006 12:58:23</date>
+        <amount>43215.7</amount>
+    </record>
+    <record>
+        <id>96</id>
+        <username>user413900</username>
+        <date>16-04-2011 05:51:39</date>
+        <amount>41658.1</amount>
+    </record>
+    <record>
+        <id>97</id>
+        <username>user806504</username>
+        <date>07-08-1972 02:52:49</date>
+        <amount>85231.4</amount>
+    </record>
+    <record>
+        <id>98</id>
+        <username>user472033</username>
+        <date>26-12-1978 14:55:20</date>
+        <amount>31381.8</amount>
+    </record>
+    <record>
+        <id>99</id>
+        <username>user756023</username>
+        <date>03-06-2020 01:43:49</date>
+        <amount>96360.9</amount>
+    </record>
+    <record>
+        <id>100</id>
+        <username>user260632</username>
+        <date>20-12-2012 20:09:21</date>
+        <amount>36235.1</amount>
+    </record>
+    <record>
+        <id>101</id>
+        <username>user125447</username>
+        <date>20-02-2003 15:10:16</date>
+        <amount>23533.5</amount>
+    </record>
+    <record>
+        <id>102</id>
+        <username>user455930</username>
+        <date>07-12-2022 21:10:13</date>
+        <amount>2792.2</amount>
+    </record>
+    <record>
+        <id>103</id>
+        <username>user512475</username>
+        <date>07-08-1999 15:07:23</date>
+        <amount>33744.6</amount>
+    </record>
+    <record>
+        <id>104</id>
+        <username>user480508</username>
+        <date>05-03-1982 12:31:31</date>
+        <amount>23423.0</amount>
+    </record>
+    <record>
+        <id>105</id>
+        <username>user930868</username>
+        <date>31-07-2017 11:15:18</date>
+        <amount>74652.3</amount>
+    </record>
+    <record>
+        <id>106</id>
+        <username>user594095</username>
+        <date>28-09-2014 09:17:01</date>
+        <amount>61233.0</amount>
+    </record>
+    <record>
+        <id>107</id>
+        <username>user821419</username>
+        <date>24-10-2016 09:14:22</date>
+        <amount>8621.4</amount>
+    </record>
+    <record>
+        <id>108</id>
+        <username>user289978</username>
+        <date>13-03-2020 23:48:08</date>
+        <amount>70364.2</amount>
+    </record>
+    <record>
+        <id>109</id>
+        <username>user285700</username>
+        <date>31-12-2009 17:05:10</date>
+        <amount>40411.0</amount>
+    </record>
+    <record>
+        <id>110</id>
+        <username>user770385</username>
+        <date>25-11-2024 10:10:41</date>
+        <amount>45651.7</amount>
+    </record>
+    <record>
+        <id>111</id>
+        <username>user733171</username>
+        <date>07-07-1993 11:31:33</date>
+        <amount>72532.1</amount>
+    </record>
+    <record>
+        <id>112</id>
+        <username>user662208</username>
+        <date>22-03-1997 07:19:37</date>
+        <amount>2157.7</amount>
+    </record>
+    <record>
+        <id>113</id>
+        <username>user839989</username>
+        <date>21-01-1977 07:13:48</date>
+        <amount>36179.3</amount>
+    </record>
+    <record>
+        <id>114</id>
+        <username>user890091</username>
+        <date>19-02-1983 18:27:20</date>
+        <amount>11890.4</amount>
+    </record>
+    <record>
+        <id>115</id>
+        <username>user466899</username>
+        <date>20-05-2013 17:54:18</date>
+        <amount>49203.4</amount>
+    </record>
+    <record>
+        <id>116</id>
+        <username>user207895</username>
+        <date>27-02-1981 01:26:46</date>
+        <amount>19914.4</amount>
+    </record>
+    <record>
+        <id>117</id>
+        <username>user214646</username>
+        <date>23-05-2017 18:18:47</date>
+        <amount>70196.4</amount>
+    </record>
+    <record>
+        <id>118</id>
+        <username>user923980</username>
+        <date>03-09-1974 16:59:53</date>
+        <amount>63760.9</amount>
+    </record>
+    <record>
+        <id>119</id>
+        <username>user210547</username>
+        <date>18-04-1977 04:34:24</date>
+        <amount>66425.3</amount>
+    </record>
+    <record>
+        <id>120</id>
+        <username>user983093</username>
+        <date>10-11-2000 21:14:06</date>
+        <amount>67655.8</amount>
+    </record>
+    <record>
+        <id>121</id>
+        <username>user991638</username>
+        <date>22-11-2000 18:56:19</date>
+        <amount>7416.0</amount>
+    </record>
+    <record>
+        <id>122</id>
+        <username>user539220</username>
+        <date>13-08-2012 15:41:55</date>
+        <amount>7711.7</amount>
+    </record>
+    <record>
+        <id>123</id>
+        <username>user225695</username>
+        <date>25-05-2022 23:13:04</date>
+        <amount>67180.4</amount>
+    </record>
+    <record>
+        <id>124</id>
+        <username>user947747</username>
+        <date>04-01-1994 08:41:50</date>
+        <amount>51799.7</amount>
+    </record>
+    <record>
+        <id>125</id>
+        <username>user350268</username>
+        <date>17-06-2009 07:56:52</date>
+        <amount>35395.0</amount>
+    </record>
+    <record>
+        <id>126</id>
+        <username>user308845</username>
+        <date>02-04-1974 19:37:41</date>
+        <amount>42665.2</amount>
+    </record>
+    <record>
+        <id>127</id>
+        <username>user564846</username>
+        <date>03-05-1984 01:11:08</date>
+        <amount>5890.7</amount>
+    </record>
+    <record>
+        <id>128</id>
+        <username>user517583</username>
+        <date>25-05-2006 07:19:42</date>
+        <amount>37747.9</amount>
+    </record>
+    <record>
+        <id>129</id>
+        <username>user931337</username>
+        <date>27-04-2009 09:12:27</date>
+        <amount>7885.5</amount>
+    </record>
+    <record>
+        <id>130</id>
+        <username>user477910</username>
+        <date>28-06-1998 08:23:41</date>
+        <amount>9295.7</amount>
+    </record>
+    <record>
+        <id>131</id>
+        <username>user532161</username>
+        <date>26-12-2020 02:09:42</date>
+        <amount>91089.5</amount>
+    </record>
+    <record>
+        <id>132</id>
+        <username>user221709</username>
+        <date>26-06-1974 21:49:35</date>
+        <amount>23203.6</amount>
+    </record>
+    <record>
+        <id>133</id>
+        <username>user658727</username>
+        <date>21-12-1999 09:48:56</date>
+        <amount>97090.2</amount>
+    </record>
+    <record>
+        <id>134</id>
+        <username>user149027</username>
+        <date>03-05-2019 01:56:57</date>
+        <amount>27208.7</amount>
+    </record>
+    <record>
+        <id>135</id>
+        <username>user227812</username>
+        <date>08-08-1998 19:46:03</date>
+        <amount>19232.6</amount>
+    </record>
+    <record>
+        <id>136</id>
+        <username>user199393</username>
+        <date>15-12-1980 01:45:31</date>
+        <amount>35108.3</amount>
+    </record>
+    <record>
+        <id>137</id>
+        <username>user228545</username>
+        <date>29-01-1982 13:20:34</date>
+        <amount>67017.6</amount>
+    </record>
+    <record>
+        <id>138</id>
+        <username>user323027</username>
+        <date>15-02-2014 00:51:43</date>
+        <amount>83474.2</amount>
+    </record>
+    <record>
+        <id>139</id>
+        <username>user225021</username>
+        <date>10-07-2006 10:52:01</date>
+        <amount>27626.5</amount>
+    </record>
+    <record>
+        <id>140</id>
+        <username>user852464</username>
+        <date>20-05-1998 07:37:23</date>
+        <amount>3078.5</amount>
+    </record>
+    <record>
+        <id>141</id>
+        <username>user244951</username>
+        <date>10-12-1993 09:18:48</date>
+        <amount>80882.5</amount>
+    </record>
+    <record>
+        <id>142</id>
+        <username>user690120</username>
+        <date>14-05-2008 11:33:48</date>
+        <amount>61003.2</amount>
+    </record>
+    <record>
+        <id>143</id>
+        <username>user736156</username>
+        <date>01-11-2017 17:22:42</date>
+        <amount>83483.8</amount>
+    </record>
+    <record>
+        <id>144</id>
+        <username>user957437</username>
+        <date>15-02-2022 07:51:49</date>
+        <amount>53464.5</amount>
+    </record>
+    <record>
+        <id>145</id>
+        <username>user935696</username>
+        <date>22-01-1972 21:25:47</date>
+        <amount>8366.8</amount>
+    </record>
+    <record>
+        <id>146</id>
+        <username>user195608</username>
+        <date>28-03-2005 19:32:42</date>
+        <amount>45352.6</amount>
+    </record>
+    <record>
+        <id>147</id>
+        <username>user192668</username>
+        <date>09-10-2005 10:15:31</date>
+        <amount>94497.2</amount>
+    </record>
+    <record>
+        <id>148</id>
+        <username>user164967</username>
+        <date>04-04-1985 11:33:17</date>
+        <amount>32410.6</amount>
+    </record>
+    <record>
+        <id>149</id>
+        <username>user543991</username>
+        <date>03-09-1991 14:07:57</date>
+        <amount>21.6</amount>
+    </record>
+    <record>
+        <id>150</id>
+        <username>user531693</username>
+        <date>16-03-2025 14:26:32</date>
+        <amount>13418.8</amount>
+    </record>
+    <record>
+        <id>151</id>
+        <username>user106876</username>
+        <date>23-02-2016 21:54:40</date>
+        <amount>58640.2</amount>
+    </record>
+    <record>
+        <id>152</id>
+        <username>user919414</username>
+        <date>22-06-2014 05:30:06</date>
+        <amount>76190.6</amount>
+    </record>
+    <record>
+        <id>153</id>
+        <username>user729613</username>
+        <date>01-04-2009 21:50:24</date>
+        <amount>99504.8</amount>
+    </record>
+    <record>
+        <id>154</id>
+        <username>user207613</username>
+        <date>06-08-1995 18:01:55</date>
+        <amount>4875.4</amount>
+    </record>
+    <record>
+        <id>155</id>
+        <username>user940647</username>
+        <date>20-04-2001 10:06:31</date>
+        <amount>76663.3</amount>
+    </record>
+    <record>
+        <id>156</id>
+        <username>user103411</username>
+        <date>16-03-2017 23:55:33</date>
+        <amount>10637.0</amount>
+    </record>
+    <record>
+        <id>157</id>
+        <username>user918548</username>
+        <date>02-06-1976 22:24:22</date>
+        <amount>44649.7</amount>
+    </record>
+    <record>
+        <id>158</id>
+        <username>user598326</username>
+        <date>31-07-1975 12:46:20</date>
+        <amount>25975.5</amount>
+    </record>
+    <record>
+        <id>159</id>
+        <username>user388924</username>
+        <date>20-04-2004 15:09:20</date>
+        <amount>54855.7</amount>
+    </record>
+    <record>
+        <id>160</id>
+        <username>user920574</username>
+        <date>15-05-2012 14:52:12</date>
+        <amount>2899.4</amount>
+    </record>
+    <record>
+        <id>161</id>
+        <username>user954136</username>
+        <date>15-03-2023 03:18:54</date>
+        <amount>5466.4</amount>
+    </record>
+    <record>
+        <id>162</id>
+        <username>user599002</username>
+        <date>08-06-2024 16:44:47</date>
+        <amount>22005.7</amount>
+    </record>
+    <record>
+        <id>163</id>
+        <username>user340965</username>
+        <date>17-10-1994 15:17:16</date>
+        <amount>14153.8</amount>
+    </record>
+    <record>
+        <id>164</id>
+        <username>user664066</username>
+        <date>30-04-2001 02:34:50</date>
+        <amount>65104.2</amount>
+    </record>
+    <record>
+        <id>165</id>
+        <username>user862824</username>
+        <date>06-05-2002 22:49:37</date>
+        <amount>96509.6</amount>
+    </record>
+    <record>
+        <id>166</id>
+        <username>user202823</username>
+        <date>30-04-1981 19:08:00</date>
+        <amount>1952.1</amount>
+    </record>
+    <record>
+        <id>167</id>
+        <username>user177988</username>
+        <date>22-03-1994 14:48:56</date>
+        <amount>81034.8</amount>
+    </record>
+    <record>
+        <id>168</id>
+        <username>user128686</username>
+        <date>12-11-2007 06:18:59</date>
+        <amount>87448.4</amount>
+    </record>
+    <record>
+        <id>169</id>
+        <username>user826983</username>
+        <date>05-07-2021 03:10:27</date>
+        <amount>81520.8</amount>
+    </record>
+    <record>
+        <id>170</id>
+        <username>user145508</username>
+        <date>12-12-1982 14:24:29</date>
+        <amount>22324.8</amount>
+    </record>
+    <record>
+        <id>171</id>
+        <username>user282645</username>
+        <date>19-03-2000 02:49:51</date>
+        <amount>95657.1</amount>
+    </record>
+    <record>
+        <id>172</id>
+        <username>user193483</username>
+        <date>26-05-1998 07:03:52</date>
+        <amount>95459.1</amount>
+    </record>
+    <record>
+        <id>173</id>
+        <username>user863396</username>
+        <date>18-08-1991 03:35:36</date>
+        <amount>36569.2</amount>
+    </record>
+    <record>
+        <id>174</id>
+        <username>user257118</username>
+        <date>10-07-2015 14:15:22</date>
+        <amount>36430.4</amount>
+    </record>
+    <record>
+        <id>175</id>
+        <username>user132888</username>
+        <date>30-07-1988 03:46:34</date>
+        <amount>96510.6</amount>
+    </record>
+    <record>
+        <id>176</id>
+        <username>user938379</username>
+        <date>31-12-1980 18:03:54</date>
+        <amount>76083.4</amount>
+    </record>
+    <record>
+        <id>177</id>
+        <username>user385202</username>
+        <date>05-01-2005 08:38:11</date>
+        <amount>18500.1</amount>
+    </record>
+    <record>
+        <id>178</id>
+        <username>user358220</username>
+        <date>06-02-1973 05:27:02</date>
+        <amount>64476.7</amount>
+    </record>
+    <record>
+        <id>179</id>
+        <username>user887301</username>
+        <date>03-10-2015 17:16:02</date>
+        <amount>84867.0</amount>
+    </record>
+    <record>
+        <id>180</id>
+        <username>user881357</username>
+        <date>25-09-2010 05:27:03</date>
+        <amount>95663.6</amount>
+    </record>
+    <record>
+        <id>181</id>
+        <username>user307308</username>
+        <date>27-12-2002 15:34:57</date>
+        <amount>66883.4</amount>
+    </record>
+    <record>
+        <id>182</id>
+        <username>user344849</username>
+        <date>13-12-1994 05:05:54</date>
+        <amount>71662.6</amount>
+    </record>
+    <record>
+        <id>183</id>
+        <username>user683472</username>
+        <date>12-06-2005 02:52:39</date>
+        <amount>13915.4</amount>
+    </record>
+    <record>
+        <id>184</id>
+        <username>user130139</username>
+        <date>20-04-2021 12:51:06</date>
+        <amount>35271.6</amount>
+    </record>
+    <record>
+        <id>185</id>
+        <username>user992738</username>
+        <date>06-02-1999 00:27:05</date>
+        <amount>88732.1</amount>
+    </record>
+    <record>
+        <id>186</id>
+        <username>user126112</username>
+        <date>16-11-1978 22:23:38</date>
+        <amount>86364.4</amount>
+    </record>
+    <record>
+        <id>187</id>
+        <username>user216195</username>
+        <date>21-09-2021 20:43:05</date>
+        <amount>82535.2</amount>
+    </record>
+    <record>
+        <id>188</id>
+        <username>user172199</username>
+        <date>10-06-2014 12:36:34</date>
+        <amount>93625.2</amount>
+    </record>
+    <record>
+        <id>189</id>
+        <username>user259088</username>
+        <date>18-08-1992 13:58:44</date>
+        <amount>40942.2</amount>
+    </record>
+    <record>
+        <id>190</id>
+        <username>user847259</username>
+        <date>21-05-1984 16:23:00</date>
+        <amount>61150.7</amount>
+    </record>
+    <record>
+        <id>191</id>
+        <username>user266069</username>
+        <date>25-11-1970 23:49:50</date>
+        <amount>45558.9</amount>
+    </record>
+    <record>
+        <id>192</id>
+        <username>user697023</username>
+        <date>21-11-2005 02:03:34</date>
+        <amount>28118.4</amount>
+    </record>
+    <record>
+        <id>193</id>
+        <username>user293048</username>
+        <date>05-12-1980 11:49:19</date>
+        <amount>22187.9</amount>
+    </record>
+    <record>
+        <id>194</id>
+        <username>user939022</username>
+        <date>04-02-2022 08:42:25</date>
+        <amount>69725.8</amount>
+    </record>
+    <record>
+        <id>195</id>
+        <username>user799305</username>
+        <date>11-05-2007 11:56:36</date>
+        <amount>30042.9</amount>
+    </record>
+    <record>
+        <id>196</id>
+        <username>user364316</username>
+        <date>09-03-2000 05:48:13</date>
+        <amount>5692.1</amount>
+    </record>
+    <record>
+        <id>197</id>
+        <username>user816484</username>
+        <date>04-09-2017 02:52:33</date>
+        <amount>82291.6</amount>
+    </record>
+    <record>
+        <id>198</id>
+        <username>user783039</username>
+        <date>13-02-2010 02:30:20</date>
+        <amount>85127.5</amount>
+    </record>
+    <record>
+        <id>199</id>
+        <username>user109327</username>
+        <date>22-02-2025 13:34:53</date>
+        <amount>58054.2</amount>
+    </record>
+    <record>
+        <id>200</id>
+        <username>user166634</username>
+        <date>09-12-2010 22:03:41</date>
+        <amount>84579.5</amount>
+    </record>
+    <record>
+        <id>201</id>
+        <username>user265814</username>
+        <date>02-07-2006 21:08:07</date>
+        <amount>53908.5</amount>
+    </record>
+    <record>
+        <id>202</id>
+        <username>user232629</username>
+        <date>01-11-1995 22:10:54</date>
+        <amount>47905.1</amount>
+    </record>
+    <record>
+        <id>203</id>
+        <username>user392778</username>
+        <date>10-12-2020 15:33:14</date>
+        <amount>22948.0</amount>
+    </record>
+    <record>
+        <id>204</id>
+        <username>user695429</username>
+        <date>13-10-2015 23:04:30</date>
+        <amount>93351.6</amount>
+    </record>
+    <record>
+        <id>205</id>
+        <username>user972185</username>
+        <date>05-10-2024 09:16:07</date>
+        <amount>63556.2</amount>
+    </record>
+    <record>
+        <id>206</id>
+        <username>user312419</username>
+        <date>25-02-1992 19:17:37</date>
+        <amount>5550.0</amount>
+    </record>
+    <record>
+        <id>207</id>
+        <username>user913502</username>
+        <date>09-09-1981 00:32:11</date>
+        <amount>55187.1</amount>
+    </record>
+    <record>
+        <id>208</id>
+        <username>user882574</username>
+        <date>16-12-1996 22:49:55</date>
+        <amount>11520.2</amount>
+    </record>
+    <record>
+        <id>209</id>
+        <username>user277603</username>
+        <date>09-12-2010 16:21:03</date>
+        <amount>90365.3</amount>
+    </record>
+    <record>
+        <id>210</id>
+        <username>user219364</username>
+        <date>08-02-2000 03:55:20</date>
+        <amount>11808.2</amount>
+    </record>
+    <record>
+        <id>211</id>
+        <username>user154367</username>
+        <date>22-10-2012 17:24:55</date>
+        <amount>91819.3</amount>
+    </record>
+    <record>
+        <id>212</id>
+        <username>user124082</username>
+        <date>19-03-1970 04:24:11</date>
+        <amount>69375.6</amount>
+    </record>
+    <record>
+        <id>213</id>
+        <username>user723746</username>
+        <date>09-04-2003 11:02:09</date>
+        <amount>90642.7</amount>
+    </record>
+    <record>
+        <id>214</id>
+        <username>user149214</username>
+        <date>20-02-2016 20:53:58</date>
+        <amount>19922.5</amount>
+    </record>
+    <record>
+        <id>215</id>
+        <username>user513774</username>
+        <date>07-08-1978 14:10:44</date>
+        <amount>48320.0</amount>
+    </record>
+    <record>
+        <id>216</id>
+        <username>user867429</username>
+        <date>23-12-1996 14:11:52</date>
+        <amount>56105.5</amount>
+    </record>
+    <record>
+        <id>217</id>
+        <username>user134748</username>
+        <date>28-08-1971 22:30:22</date>
+        <amount>83641.9</amount>
+    </record>
+    <record>
+        <id>218</id>
+        <username>user457794</username>
+        <date>01-08-2000 15:23:47</date>
+        <amount>73111.4</amount>
+    </record>
+    <record>
+        <id>219</id>
+        <username>user813927</username>
+        <date>05-05-1979 01:35:26</date>
+        <amount>50806.4</amount>
+    </record>
+    <record>
+        <id>220</id>
+        <username>user482222</username>
+        <date>13-03-1997 19:44:40</date>
+        <amount>96620.1</amount>
+    </record>
+    <record>
+        <id>221</id>
+        <username>user696363</username>
+        <date>04-01-1978 01:02:13</date>
+        <amount>70664.4</amount>
+    </record>
+    <record>
+        <id>222</id>
+        <username>user163676</username>
+        <date>30-09-2011 05:22:54</date>
+        <amount>53164.5</amount>
+    </record>
+    <record>
+        <id>223</id>
+        <username>user636319</username>
+        <date>22-02-2019 03:31:41</date>
+        <amount>64519.8</amount>
+    </record>
+    <record>
+        <id>224</id>
+        <username>user586072</username>
+        <date>27-11-2008 12:14:09</date>
+        <amount>67463.0</amount>
+    </record>
+    <record>
+        <id>225</id>
+        <username>user979996</username>
+        <date>02-01-1974 15:50:17</date>
+        <amount>43644.3</amount>
+    </record>
+    <record>
+        <id>226</id>
+        <username>user456583</username>
+        <date>19-06-2000 15:45:47</date>
+        <amount>33059.3</amount>
+    </record>
+    <record>
+        <id>227</id>
+        <username>user669029</username>
+        <date>21-09-1971 16:46:38</date>
+        <amount>76922.2</amount>
+    </record>
+    <record>
+        <id>228</id>
+        <username>user331599</username>
+        <date>30-07-2019 11:25:51</date>
+        <amount>24773.9</amount>
+    </record>
+    <record>
+        <id>229</id>
+        <username>user467846</username>
+        <date>08-01-1980 01:47:01</date>
+        <amount>23666.5</amount>
+    </record>
+    <record>
+        <id>230</id>
+        <username>user883154</username>
+        <date>23-11-1997 14:03:23</date>
+        <amount>79141.4</amount>
+    </record>
+    <record>
+        <id>231</id>
+        <username>user628040</username>
+        <date>23-05-2002 18:10:47</date>
+        <amount>15074.3</amount>
+    </record>
+    <record>
+        <id>232</id>
+        <username>user704112</username>
+        <date>24-01-1979 22:11:43</date>
+        <amount>94034.6</amount>
+    </record>
+    <record>
+        <id>233</id>
+        <username>user708407</username>
+        <date>21-08-2008 15:47:57</date>
+        <amount>15567.9</amount>
+    </record>
+    <record>
+        <id>234</id>
+        <username>user996120</username>
+        <date>01-12-1982 22:19:16</date>
+        <amount>4445.0</amount>
+    </record>
+    <record>
+        <id>235</id>
+        <username>user595574</username>
+        <date>14-11-1989 06:48:46</date>
+        <amount>95272.2</amount>
+    </record>
+    <record>
+        <id>236</id>
+        <username>user426130</username>
+        <date>29-09-2012 18:48:37</date>
+        <amount>25876.4</amount>
+    </record>
+    <record>
+        <id>237</id>
+        <username>user588540</username>
+        <date>10-10-1982 17:26:59</date>
+        <amount>69778.2</amount>
+    </record>
+    <record>
+        <id>238</id>
+        <username>user329519</username>
+        <date>02-08-1987 08:29:34</date>
+        <amount>82184.8</amount>
+    </record>
+    <record>
+        <id>239</id>
+        <username>user778745</username>
+        <date>10-07-1975 05:52:58</date>
+        <amount>79872.5</amount>
+    </record>
+    <record>
+        <id>240</id>
+        <username>user481430</username>
+        <date>25-04-1993 11:38:07</date>
+        <amount>54399.1</amount>
+    </record>
+    <record>
+        <id>241</id>
+        <username>user923215</username>
+        <date>01-04-2002 01:14:17</date>
+        <amount>82923.0</amount>
+    </record>
+    <record>
+        <id>242</id>
+        <username>user662416</username>
+        <date>09-11-1994 14:21:37</date>
+        <amount>91949.3</amount>
+    </record>
+    <record>
+        <id>243</id>
+        <username>user219051</username>
+        <date>02-02-2010 04:18:20</date>
+        <amount>43209.7</amount>
+    </record>
+    <record>
+        <id>244</id>
+        <username>user942096</username>
+        <date>18-05-1997 02:09:09</date>
+        <amount>55009.5</amount>
+    </record>
+    <record>
+        <id>245</id>
+        <username>user885510</username>
+        <date>04-05-1994 18:35:27</date>
+        <amount>79271.8</amount>
+    </record>
+    <record>
+        <id>246</id>
+        <username>user363511</username>
+        <date>12-09-1987 07:49:27</date>
+        <amount>51697.1</amount>
+    </record>
+    <record>
+        <id>247</id>
+        <username>user736998</username>
+        <date>13-06-1992 23:16:14</date>
+        <amount>4863.3</amount>
+    </record>
+    <record>
+        <id>248</id>
+        <username>user838765</username>
+        <date>22-03-1993 18:37:38</date>
+        <amount>83903.5</amount>
+    </record>
+    <record>
+        <id>249</id>
+        <username>user709834</username>
+        <date>13-07-2025 17:06:05</date>
+        <amount>13263.7</amount>
+    </record>
+    <record>
+        <id>250</id>
+        <username>user145214</username>
+        <date>02-11-1971 00:32:38</date>
+        <amount>37124.9</amount>
+    </record>
+    <record>
+        <id>251</id>
+        <username>user800642</username>
+        <date>28-02-1990 17:53:30</date>
+        <amount>52377.0</amount>
+    </record>
+    <record>
+        <id>252</id>
+        <username>user774987</username>
+        <date>23-12-1985 06:26:04</date>
+        <amount>42676.4</amount>
+    </record>
+    <record>
+        <id>253</id>
+        <username>user170648</username>
+        <date>24-02-1984 18:15:08</date>
+        <amount>21383.3</amount>
+    </record>
+    <record>
+        <id>254</id>
+        <username>user251234</username>
+        <date>17-05-1983 03:42:08</date>
+        <amount>8958.8</amount>
+    </record>
+    <record>
+        <id>255</id>
+        <username>user745527</username>
+        <date>31-10-2001 23:06:02</date>
+        <amount>99292.4</amount>
+    </record>
+    <record>
+        <id>256</id>
+        <username>user720388</username>
+        <date>10-12-1975 23:04:19</date>
+        <amount>39001.5</amount>
+    </record>
+    <record>
+        <id>257</id>
+        <username>user386298</username>
+        <date>21-11-2025 00:28:51</date>
+        <amount>15268.5</amount>
+    </record>
+    <record>
+        <id>258</id>
+        <username>user341683</username>
+        <date>19-01-1979 02:55:09</date>
+        <amount>4795.0</amount>
+    </record>
+    <record>
+        <id>259</id>
+        <username>user397768</username>
+        <date>19-06-1973 02:08:41</date>
+        <amount>38277.3</amount>
+    </record>
+    <record>
+        <id>260</id>
+        <username>user923959</username>
+        <date>28-08-2014 16:03:08</date>
+        <amount>66727.3</amount>
+    </record>
+    <record>
+        <id>261</id>
+        <username>user631205</username>
+        <date>13-01-1986 14:00:58</date>
+        <amount>69614.9</amount>
+    </record>
+    <record>
+        <id>262</id>
+        <username>user567783</username>
+        <date>22-07-1976 22:25:43</date>
+        <amount>66104.3</amount>
+    </record>
+    <record>
+        <id>263</id>
+        <username>user228897</username>
+        <date>20-07-1987 16:53:38</date>
+        <amount>31084.6</amount>
+    </record>
+    <record>
+        <id>264</id>
+        <username>user113873</username>
+        <date>12-05-1985 13:28:07</date>
+        <amount>45099.1</amount>
+    </record>
+    <record>
+        <id>265</id>
+        <username>user270275</username>
+        <date>11-08-1978 00:59:09</date>
+        <amount>17020.6</amount>
+    </record>
+    <record>
+        <id>266</id>
+        <username>user735548</username>
+        <date>07-03-2026 19:44:05</date>
+        <amount>28361.4</amount>
+    </record>
+    <record>
+        <id>267</id>
+        <username>user981319</username>
+        <date>26-11-1977 23:16:57</date>
+        <amount>4736.3</amount>
+    </record>
+    <record>
+        <id>268</id>
+        <username>user547140</username>
+        <date>15-05-2002 11:41:51</date>
+        <amount>43451.8</amount>
+    </record>
+    <record>
+        <id>269</id>
+        <username>user896137</username>
+        <date>21-06-2004 15:15:55</date>
+        <amount>71480.4</amount>
+    </record>
+    <record>
+        <id>270</id>
+        <username>user327446</username>
+        <date>04-12-1999 17:55:58</date>
+        <amount>49787.9</amount>
+    </record>
+    <record>
+        <id>271</id>
+        <username>user494383</username>
+        <date>25-02-2024 01:42:52</date>
+        <amount>6630.8</amount>
+    </record>
+    <record>
+        <id>272</id>
+        <username>user101489</username>
+        <date>06-04-1998 16:44:43</date>
+        <amount>37413.8</amount>
+    </record>
+    <record>
+        <id>273</id>
+        <username>user827446</username>
+        <date>12-10-1990 01:57:44</date>
+        <amount>15825.2</amount>
+    </record>
+    <record>
+        <id>274</id>
+        <username>user415978</username>
+        <date>26-01-2009 08:01:17</date>
+        <amount>10192.7</amount>
+    </record>
+    <record>
+        <id>275</id>
+        <username>user233026</username>
+        <date>10-11-1970 00:36:22</date>
+        <amount>972.2</amount>
+    </record>
+    <record>
+        <id>276</id>
+        <username>user716846</username>
+        <date>28-03-1987 07:11:23</date>
+        <amount>99799.0</amount>
+    </record>
+    <record>
+        <id>277</id>
+        <username>user515331</username>
+        <date>27-11-1996 20:30:39</date>
+        <amount>37666.6</amount>
+    </record>
+    <record>
+        <id>278</id>
+        <username>user637972</username>
+        <date>07-10-1979 02:25:14</date>
+        <amount>90120.4</amount>
+    </record>
+    <record>
+        <id>279</id>
+        <username>user766270</username>
+        <date>23-03-1999 19:53:40</date>
+        <amount>85902.3</amount>
+    </record>
+    <record>
+        <id>280</id>
+        <username>user783842</username>
+        <date>15-07-1975 11:15:42</date>
+        <amount>3265.2</amount>
+    </record>
+    <record>
+        <id>281</id>
+        <username>user708626</username>
+        <date>02-05-1989 13:38:14</date>
+        <amount>14774.4</amount>
+    </record>
+    <record>
+        <id>282</id>
+        <username>user904820</username>
+        <date>11-11-2004 07:59:32</date>
+        <amount>43464.6</amount>
+    </record>
+    <record>
+        <id>283</id>
+        <username>user533165</username>
+        <date>07-02-1999 05:22:26</date>
+        <amount>17839.7</amount>
+    </record>
+    <record>
+        <id>284</id>
+        <username>user204782</username>
+        <date>27-02-1971 04:00:28</date>
+        <amount>84157.8</amount>
+    </record>
+    <record>
+        <id>285</id>
+        <username>user241588</username>
+        <date>07-11-1991 15:27:06</date>
+        <amount>96517.8</amount>
+    </record>
+    <record>
+        <id>286</id>
+        <username>user331919</username>
+        <date>01-04-1980 05:38:53</date>
+        <amount>25329.1</amount>
+    </record>
+    <record>
+        <id>287</id>
+        <username>user569645</username>
+        <date>19-11-2015 06:43:05</date>
+        <amount>96488.6</amount>
+    </record>
+    <record>
+        <id>288</id>
+        <username>user698845</username>
+        <date>07-08-2004 12:54:25</date>
+        <amount>96535.6</amount>
+    </record>
+    <record>
+        <id>289</id>
+        <username>user802987</username>
+        <date>06-09-1990 06:41:15</date>
+        <amount>28093.5</amount>
+    </record>
+    <record>
+        <id>290</id>
+        <username>user476257</username>
+        <date>31-01-2022 01:34:04</date>
+        <amount>66369.2</amount>
+    </record>
+    <record>
+        <id>291</id>
+        <username>user934614</username>
+        <date>30-05-2016 06:10:18</date>
+        <amount>11544.8</amount>
+    </record>
+    <record>
+        <id>292</id>
+        <username>user713225</username>
+        <date>24-04-1983 14:41:07</date>
+        <amount>80665.0</amount>
+    </record>
+    <record>
+        <id>293</id>
+        <username>user222841</username>
+        <date>05-10-1993 22:56:45</date>
+        <amount>13937.3</amount>
+    </record>
+    <record>
+        <id>294</id>
+        <username>user111504</username>
+        <date>05-03-1972 02:52:13</date>
+        <amount>66045.5</amount>
+    </record>
+    <record>
+        <id>295</id>
+        <username>user205710</username>
+        <date>19-08-1986 22:26:00</date>
+        <amount>12696.5</amount>
+    </record>
+    <record>
+        <id>296</id>
+        <username>user374435</username>
+        <date>14-03-1977 10:14:47</date>
+        <amount>34589.8</amount>
+    </record>
+    <record>
+        <id>297</id>
+        <username>user208110</username>
+        <date>13-04-2017 09:22:40</date>
+        <amount>17042.5</amount>
+    </record>
+    <record>
+        <id>298</id>
+        <username>user713610</username>
+        <date>24-05-1979 16:54:07</date>
+        <amount>69637.7</amount>
+    </record>
+    <record>
+        <id>299</id>
+        <username>user866517</username>
+        <date>06-03-2001 14:54:18</date>
+        <amount>95492.5</amount>
+    </record>
+    <record>
+        <id>300</id>
+        <username>user864518</username>
+        <date>09-04-2014 21:41:20</date>
+        <amount>87622.3</amount>
+    </record>
+    <record>
+        <id>301</id>
+        <username>user753323</username>
+        <date>16-06-1998 15:15:36</date>
+        <amount>70919.0</amount>
+    </record>
+    <record>
+        <id>302</id>
+        <username>user977350</username>
+        <date>12-04-2001 01:07:30</date>
+        <amount>21041.6</amount>
+    </record>
+    <record>
+        <id>303</id>
+        <username>user963035</username>
+        <date>27-06-1975 08:31:16</date>
+        <amount>80570.1</amount>
+    </record>
+    <record>
+        <id>304</id>
+        <username>user622635</username>
+        <date>06-05-1979 17:16:48</date>
+        <amount>85040.1</amount>
+    </record>
+    <record>
+        <id>305</id>
+        <username>user235316</username>
+        <date>19-06-2008 14:52:05</date>
+        <amount>80326.1</amount>
+    </record>
+    <record>
+        <id>306</id>
+        <username>user227684</username>
+        <date>09-04-2010 11:47:57</date>
+        <amount>59178.8</amount>
+    </record>
+    <record>
+        <id>307</id>
+        <username>user574710</username>
+        <date>23-08-2003 04:54:20</date>
+        <amount>85167.6</amount>
+    </record>
+    <record>
+        <id>308</id>
+        <username>user558471</username>
+        <date>08-11-1999 03:21:46</date>
+        <amount>74468.6</amount>
+    </record>
+    <record>
+        <id>309</id>
+        <username>user806633</username>
+        <date>19-02-2011 07:57:31</date>
+        <amount>37556.4</amount>
+    </record>
+    <record>
+        <id>310</id>
+        <username>user935946</username>
+        <date>08-04-1971 20:48:09</date>
+        <amount>1325.3</amount>
+    </record>
+    <record>
+        <id>311</id>
+        <username>user910535</username>
+        <date>08-02-1971 22:31:46</date>
+        <amount>20425.4</amount>
+    </record>
+    <record>
+        <id>312</id>
+        <username>user256939</username>
+        <date>07-05-1995 07:14:59</date>
+        <amount>47223.1</amount>
+    </record>
+    <record>
+        <id>313</id>
+        <username>user794705</username>
+        <date>25-05-2010 13:46:41</date>
+        <amount>51260.5</amount>
+    </record>
+    <record>
+        <id>314</id>
+        <username>user967607</username>
+        <date>28-06-1990 04:44:59</date>
+        <amount>29782.8</amount>
+    </record>
+    <record>
+        <id>315</id>
+        <username>user931085</username>
+        <date>06-06-2011 03:49:52</date>
+        <amount>32862.3</amount>
+    </record>
+    <record>
+        <id>316</id>
+        <username>user568790</username>
+        <date>14-03-2009 23:23:29</date>
+        <amount>59287.4</amount>
+    </record>
+    <record>
+        <id>317</id>
+        <username>user842288</username>
+        <date>20-09-2017 00:53:10</date>
+        <amount>8292.1</amount>
+    </record>
+    <record>
+        <id>318</id>
+        <username>user514123</username>
+        <date>03-12-1987 17:09:26</date>
+        <amount>80458.6</amount>
+    </record>
+    <record>
+        <id>319</id>
+        <username>user142175</username>
+        <date>24-10-1989 22:17:50</date>
+        <amount>70873.1</amount>
+    </record>
+    <record>
+        <id>320</id>
+        <username>user702619</username>
+        <date>07-02-2009 11:30:37</date>
+        <amount>93540.9</amount>
+    </record>
+    <record>
+        <id>321</id>
+        <username>user449823</username>
+        <date>13-08-2017 20:48:20</date>
+        <amount>37387.4</amount>
+    </record>
+    <record>
+        <id>322</id>
+        <username>user745596</username>
+        <date>01-02-1976 19:21:14</date>
+        <amount>36080.1</amount>
+    </record>
+    <record>
+        <id>323</id>
+        <username>user753884</username>
+        <date>27-07-2013 11:58:28</date>
+        <amount>54136.3</amount>
+    </record>
+    <record>
+        <id>324</id>
+        <username>user301334</username>
+        <date>08-02-1992 00:24:46</date>
+        <amount>52507.0</amount>
+    </record>
+    <record>
+        <id>325</id>
+        <username>user476623</username>
+        <date>15-06-2020 09:25:03</date>
+        <amount>74751.5</amount>
+    </record>
+    <record>
+        <id>326</id>
+        <username>user470891</username>
+        <date>01-10-2024 14:59:48</date>
+        <amount>76002.6</amount>
+    </record>
+    <record>
+        <id>327</id>
+        <username>user349413</username>
+        <date>30-05-1987 05:28:27</date>
+        <amount>84121.3</amount>
+    </record>
+    <record>
+        <id>328</id>
+        <username>user843076</username>
+        <date>30-07-1973 20:21:55</date>
+        <amount>19071.1</amount>
+    </record>
+    <record>
+        <id>329</id>
+        <username>user483889</username>
+        <date>03-11-2022 11:14:51</date>
+        <amount>88612.3</amount>
+    </record>
+    <record>
+        <id>330</id>
+        <username>user400926</username>
+        <date>14-03-1974 19:45:44</date>
+        <amount>70647.5</amount>
+    </record>
+    <record>
+        <id>331</id>
+        <username>user536665</username>
+        <date>18-03-1995 05:45:39</date>
+        <amount>47736.3</amount>
+    </record>
+    <record>
+        <id>332</id>
+        <username>user647881</username>
+        <date>04-03-2013 16:03:07</date>
+        <amount>56471.1</amount>
+    </record>
+    <record>
+        <id>333</id>
+        <username>user246322</username>
+        <date>03-07-2000 20:27:25</date>
+        <amount>65643.0</amount>
+    </record>
+    <record>
+        <id>334</id>
+        <username>user109388</username>
+        <date>31-01-2006 23:22:52</date>
+        <amount>37212.2</amount>
+    </record>
+    <record>
+        <id>335</id>
+        <username>user115874</username>
+        <date>23-10-1972 01:20:53</date>
+        <amount>68548.5</amount>
+    </record>
+    <record>
+        <id>336</id>
+        <username>user176227</username>
+        <date>11-11-2009 15:23:41</date>
+        <amount>10594.0</amount>
+    </record>
+    <record>
+        <id>337</id>
+        <username>user486192</username>
+        <date>30-07-1991 12:38:42</date>
+        <amount>41391.9</amount>
+    </record>
+    <record>
+        <id>338</id>
+        <username>user774032</username>
+        <date>10-08-1996 23:06:09</date>
+        <amount>28221.3</amount>
+    </record>
+    <record>
+        <id>339</id>
+        <username>user146248</username>
+        <date>11-03-1983 13:46:46</date>
+        <amount>93596.2</amount>
+    </record>
+    <record>
+        <id>340</id>
+        <username>user723341</username>
+        <date>05-12-1974 14:14:22</date>
+        <amount>18328.9</amount>
+    </record>
+    <record>
+        <id>341</id>
+        <username>user139859</username>
+        <date>08-10-1983 16:43:51</date>
+        <amount>19891.1</amount>
+    </record>
+    <record>
+        <id>342</id>
+        <username>user600981</username>
+        <date>01-08-2016 03:03:56</date>
+        <amount>34722.0</amount>
+    </record>
+    <record>
+        <id>343</id>
+        <username>user259509</username>
+        <date>24-04-1999 07:31:12</date>
+        <amount>41105.0</amount>
+    </record>
+    <record>
+        <id>344</id>
+        <username>user144168</username>
+        <date>30-11-1975 10:54:09</date>
+        <amount>46739.5</amount>
+    </record>
+    <record>
+        <id>345</id>
+        <username>user740259</username>
+        <date>07-11-2010 02:25:59</date>
+        <amount>98333.6</amount>
+    </record>
+    <record>
+        <id>346</id>
+        <username>user241623</username>
+        <date>17-09-1978 07:37:32</date>
+        <amount>23841.8</amount>
+    </record>
+    <record>
+        <id>347</id>
+        <username>user683307</username>
+        <date>04-09-1988 00:02:59</date>
+        <amount>15120.5</amount>
+    </record>
+    <record>
+        <id>348</id>
+        <username>user484372</username>
+        <date>20-03-2021 00:21:10</date>
+        <amount>29880.3</amount>
+    </record>
+    <record>
+        <id>349</id>
+        <username>user681289</username>
+        <date>21-03-1998 12:46:54</date>
+        <amount>9392.4</amount>
+    </record>
+    <record>
+        <id>350</id>
+        <username>user272044</username>
+        <date>19-11-2021 21:53:52</date>
+        <amount>68784.8</amount>
+    </record>
+    <record>
+        <id>351</id>
+        <username>user914264</username>
+        <date>22-07-1983 10:25:51</date>
+        <amount>34746.6</amount>
+    </record>
+    <record>
+        <id>352</id>
+        <username>user446830</username>
+        <date>19-05-2000 08:37:42</date>
+        <amount>62209.0</amount>
+    </record>
+    <record>
+        <id>353</id>
+        <username>user437833</username>
+        <date>02-02-1971 00:50:53</date>
+        <amount>9957.0</amount>
+    </record>
+    <record>
+        <id>354</id>
+        <username>user162136</username>
+        <date>26-06-1977 00:45:33</date>
+        <amount>43199.3</amount>
+    </record>
+    <record>
+        <id>355</id>
+        <username>user243607</username>
+        <date>13-02-1999 18:10:06</date>
+        <amount>27658.6</amount>
+    </record>
+    <record>
+        <id>356</id>
+        <username>user819915</username>
+        <date>27-03-1970 00:13:05</date>
+        <amount>91209.2</amount>
+    </record>
+    <record>
+        <id>357</id>
+        <username>user202917</username>
+        <date>06-08-1994 21:51:21</date>
+        <amount>18914.7</amount>
+    </record>
+    <record>
+        <id>358</id>
+        <username>user466791</username>
+        <date>29-10-1990 08:29:32</date>
+        <amount>27009.5</amount>
+    </record>
+    <record>
+        <id>359</id>
+        <username>user288827</username>
+        <date>09-01-2002 11:35:14</date>
+        <amount>46814.7</amount>
+    </record>
+    <record>
+        <id>360</id>
+        <username>user720179</username>
+        <date>05-09-2008 09:30:18</date>
+        <amount>28235.2</amount>
+    </record>
+    <record>
+        <id>361</id>
+        <username>user599817</username>
+        <date>19-01-1970 02:18:04</date>
+        <amount>83588.8</amount>
+    </record>
+    <record>
+        <id>362</id>
+        <username>user372320</username>
+        <date>08-01-1985 12:37:28</date>
+        <amount>33929.4</amount>
+    </record>
+    <record>
+        <id>363</id>
+        <username>user109867</username>
+        <date>11-01-1990 08:07:24</date>
+        <amount>4618.4</amount>
+    </record>
+    <record>
+        <id>364</id>
+        <username>user620155</username>
+        <date>20-04-1996 03:51:16</date>
+        <amount>25918.4</amount>
+    </record>
+    <record>
+        <id>365</id>
+        <username>user677462</username>
+        <date>23-12-1970 12:32:05</date>
+        <amount>15010.6</amount>
+    </record>
+    <record>
+        <id>366</id>
+        <username>user237890</username>
+        <date>22-08-2000 16:59:46</date>
+        <amount>49698.8</amount>
+    </record>
+    <record>
+        <id>367</id>
+        <username>user916153</username>
+        <date>05-01-1971 22:07:05</date>
+        <amount>33931.6</amount>
+    </record>
+    <record>
+        <id>368</id>
+        <username>user270212</username>
+        <date>01-06-2021 02:49:12</date>
+        <amount>59769.2</amount>
+    </record>
+    <record>
+        <id>369</id>
+        <username>user843808</username>
+        <date>02-02-2002 23:46:42</date>
+        <amount>33242.9</amount>
+    </record>
+    <record>
+        <id>370</id>
+        <username>user831839</username>
+        <date>23-05-2020 23:49:27</date>
+        <amount>14123.1</amount>
+    </record>
+    <record>
+        <id>371</id>
+        <username>user805092</username>
+        <date>16-01-2026 01:05:36</date>
+        <amount>41889.4</amount>
+    </record>
+    <record>
+        <id>372</id>
+        <username>user297834</username>
+        <date>21-01-1999 16:46:15</date>
+        <amount>56327.5</amount>
+    </record>
+    <record>
+        <id>373</id>
+        <username>user892345</username>
+        <date>17-03-1982 05:11:21</date>
+        <amount>42847.1</amount>
+    </record>
+    <record>
+        <id>374</id>
+        <username>user250244</username>
+        <date>13-09-1975 00:21:55</date>
+        <amount>83836.3</amount>
+    </record>
+    <record>
+        <id>375</id>
+        <username>user878608</username>
+        <date>20-02-1997 16:49:13</date>
+        <amount>66149.9</amount>
+    </record>
+    <record>
+        <id>376</id>
+        <username>user877038</username>
+        <date>27-12-2002 15:33:55</date>
+        <amount>27582.2</amount>
+    </record>
+    <record>
+        <id>377</id>
+        <username>user968729</username>
+        <date>27-12-1991 03:27:02</date>
+        <amount>47623.8</amount>
+    </record>
+    <record>
+        <id>378</id>
+        <username>user506781</username>
+        <date>21-12-1970 12:10:45</date>
+        <amount>95027.2</amount>
+    </record>
+    <record>
+        <id>379</id>
+        <username>user806827</username>
+        <date>14-12-1975 18:07:02</date>
+        <amount>81664.4</amount>
+    </record>
+    <record>
+        <id>380</id>
+        <username>user987555</username>
+        <date>22-10-1992 01:09:49</date>
+        <amount>99644.4</amount>
+    </record>
+    <record>
+        <id>381</id>
+        <username>user639814</username>
+        <date>12-05-1994 08:33:37</date>
+        <amount>35976.6</amount>
+    </record>
+    <record>
+        <id>382</id>
+        <username>user831843</username>
+        <date>08-06-1992 14:29:39</date>
+        <amount>80878.4</amount>
+    </record>
+    <record>
+        <id>383</id>
+        <username>user391546</username>
+        <date>28-04-1988 01:59:05</date>
+        <amount>40807.7</amount>
+    </record>
+    <record>
+        <id>384</id>
+        <username>user159716</username>
+        <date>19-02-1990 20:20:56</date>
+        <amount>83011.4</amount>
+    </record>
+    <record>
+        <id>385</id>
+        <username>user786160</username>
+        <date>10-08-1973 14:16:52</date>
+        <amount>23846.7</amount>
+    </record>
+    <record>
+        <id>386</id>
+        <username>user252518</username>
+        <date>11-05-2026 11:54:33</date>
+        <amount>3731.6</amount>
+    </record>
+    <record>
+        <id>387</id>
+        <username>user364921</username>
+        <date>11-10-2001 00:42:29</date>
+        <amount>34288.9</amount>
+    </record>
+    <record>
+        <id>388</id>
+        <username>user839762</username>
+        <date>23-02-2026 09:39:51</date>
+        <amount>79225.2</amount>
+    </record>
+    <record>
+        <id>389</id>
+        <username>user775118</username>
+        <date>03-12-1987 20:36:38</date>
+        <amount>4943.8</amount>
+    </record>
+    <record>
+        <id>390</id>
+        <username>user428954</username>
+        <date>02-11-1981 13:06:40</date>
+        <amount>68114.9</amount>
+    </record>
+    <record>
+        <id>391</id>
+        <username>user691564</username>
+        <date>15-08-1974 16:30:33</date>
+        <amount>25003.8</amount>
+    </record>
+    <record>
+        <id>392</id>
+        <username>user360254</username>
+        <date>02-10-2024 16:14:50</date>
+        <amount>87471.3</amount>
+    </record>
+    <record>
+        <id>393</id>
+        <username>user686635</username>
+        <date>21-05-1996 17:35:53</date>
+        <amount>7970.1</amount>
+    </record>
+    <record>
+        <id>394</id>
+        <username>user899457</username>
+        <date>05-03-2014 06:44:15</date>
+        <amount>30511.2</amount>
+    </record>
+    <record>
+        <id>395</id>
+        <username>user253842</username>
+        <date>09-03-2013 16:33:08</date>
+        <amount>54698.9</amount>
+    </record>
+    <record>
+        <id>396</id>
+        <username>user905287</username>
+        <date>26-05-1992 18:35:32</date>
+        <amount>18827.8</amount>
+    </record>
+    <record>
+        <id>397</id>
+        <username>user574720</username>
+        <date>02-11-1997 08:12:23</date>
+        <amount>53128.6</amount>
+    </record>
+    <record>
+        <id>398</id>
+        <username>user909709</username>
+        <date>14-05-1986 21:20:04</date>
+        <amount>81078.6</amount>
+    </record>
+    <record>
+        <id>399</id>
+        <username>user423080</username>
+        <date>21-10-2022 15:23:04</date>
+        <amount>42402.7</amount>
+    </record>
+    <record>
+        <id>400</id>
+        <username>user376913</username>
+        <date>09-09-2007 15:40:06</date>
+        <amount>30509.8</amount>
+    </record>
+    <record>
+        <id>401</id>
+        <username>user904393</username>
+        <date>10-09-2012 06:33:10</date>
+        <amount>7649.0</amount>
+    </record>
+    <record>
+        <id>402</id>
+        <username>user297851</username>
+        <date>27-12-2004 11:46:23</date>
+        <amount>28756.6</amount>
+    </record>
+    <record>
+        <id>403</id>
+        <username>user385887</username>
+        <date>23-03-2022 19:03:50</date>
+        <amount>25130.8</amount>
+    </record>
+    <record>
+        <id>404</id>
+        <username>user913425</username>
+        <date>29-01-2015 11:18:45</date>
+        <amount>58095.6</amount>
+    </record>
+    <record>
+        <id>405</id>
+        <username>user630079</username>
+        <date>21-01-2026 21:02:09</date>
+        <amount>64298.1</amount>
+    </record>
+    <record>
+        <id>406</id>
+        <username>user802701</username>
+        <date>07-07-1993 09:10:33</date>
+        <amount>52591.9</amount>
+    </record>
+    <record>
+        <id>407</id>
+        <username>user528224</username>
+        <date>16-08-2020 10:35:01</date>
+        <amount>24704.1</amount>
+    </record>
+    <record>
+        <id>408</id>
+        <username>user691695</username>
+        <date>29-09-1984 21:09:52</date>
+        <amount>64747.2</amount>
+    </record>
+    <record>
+        <id>409</id>
+        <username>user856075</username>
+        <date>18-12-2021 17:56:44</date>
+        <amount>27545.5</amount>
+    </record>
+    <record>
+        <id>410</id>
+        <username>user416721</username>
+        <date>26-03-1998 09:50:24</date>
+        <amount>90499.6</amount>
+    </record>
+    <record>
+        <id>411</id>
+        <username>user613630</username>
+        <date>21-11-1981 13:59:48</date>
+        <amount>56433.2</amount>
+    </record>
+    <record>
+        <id>412</id>
+        <username>user546056</username>
+        <date>14-10-2023 06:29:24</date>
+        <amount>68708.5</amount>
+    </record>
+    <record>
+        <id>413</id>
+        <username>user576480</username>
+        <date>05-06-2003 08:45:13</date>
+        <amount>75300.2</amount>
+    </record>
+    <record>
+        <id>414</id>
+        <username>user845049</username>
+        <date>17-07-2019 12:10:06</date>
+        <amount>44736.7</amount>
+    </record>
+    <record>
+        <id>415</id>
+        <username>user777753</username>
+        <date>08-11-1979 15:40:56</date>
+        <amount>92103.9</amount>
+    </record>
+    <record>
+        <id>416</id>
+        <username>user476980</username>
+        <date>24-09-1998 23:31:13</date>
+        <amount>38695.1</amount>
+    </record>
+    <record>
+        <id>417</id>
+        <username>user993186</username>
+        <date>08-05-1989 18:14:38</date>
+        <amount>46226.9</amount>
+    </record>
+    <record>
+        <id>418</id>
+        <username>user249107</username>
+        <date>25-04-2013 15:53:54</date>
+        <amount>48078.2</amount>
+    </record>
+    <record>
+        <id>419</id>
+        <username>user753822</username>
+        <date>28-08-2018 07:59:20</date>
+        <amount>29365.2</amount>
+    </record>
+    <record>
+        <id>420</id>
+        <username>user433247</username>
+        <date>17-10-1985 08:01:08</date>
+        <amount>76421.3</amount>
+    </record>
+    <record>
+        <id>421</id>
+        <username>user121942</username>
+        <date>02-12-2018 21:03:24</date>
+        <amount>27890.8</amount>
+    </record>
+    <record>
+        <id>422</id>
+        <username>user311905</username>
+        <date>03-05-2025 07:11:36</date>
+        <amount>81901.1</amount>
+    </record>
+    <record>
+        <id>423</id>
+        <username>user419326</username>
+        <date>05-10-1971 21:03:29</date>
+        <amount>69470.4</amount>
+    </record>
+    <record>
+        <id>424</id>
+        <username>user802194</username>
+        <date>15-09-1991 21:55:15</date>
+        <amount>41626.9</amount>
+    </record>
+    <record>
+        <id>425</id>
+        <username>user563700</username>
+        <date>18-08-2001 14:11:58</date>
+        <amount>87862.9</amount>
+    </record>
+    <record>
+        <id>426</id>
+        <username>user492751</username>
+        <date>22-05-2012 18:18:11</date>
+        <amount>20920.1</amount>
+    </record>
+    <record>
+        <id>427</id>
+        <username>user272125</username>
+        <date>28-05-1993 16:22:35</date>
+        <amount>62865.2</amount>
+    </record>
+    <record>
+        <id>428</id>
+        <username>user222127</username>
+        <date>20-04-2014 20:38:15</date>
+        <amount>9213.8</amount>
+    </record>
+    <record>
+        <id>429</id>
+        <username>user647928</username>
+        <date>28-11-2013 11:26:46</date>
+        <amount>80431.8</amount>
+    </record>
+    <record>
+        <id>430</id>
+        <username>user370248</username>
+        <date>13-01-2006 16:22:24</date>
+        <amount>92348.4</amount>
+    </record>
+    <record>
+        <id>431</id>
+        <username>user744699</username>
+        <date>29-09-2012 11:37:28</date>
+        <amount>63760.7</amount>
+    </record>
+    <record>
+        <id>432</id>
+        <username>user154858</username>
+        <date>02-05-2008 19:30:38</date>
+        <amount>894.8</amount>
+    </record>
+    <record>
+        <id>433</id>
+        <username>user301381</username>
+        <date>23-10-2002 23:39:13</date>
+        <amount>11845.5</amount>
+    </record>
+    <record>
+        <id>434</id>
+        <username>user418868</username>
+        <date>17-03-2007 21:10:08</date>
+        <amount>30249.4</amount>
+    </record>
+    <record>
+        <id>435</id>
+        <username>user311030</username>
+        <date>23-03-2001 07:55:24</date>
+        <amount>81104.4</amount>
+    </record>
+    <record>
+        <id>436</id>
+        <username>user280669</username>
+        <date>06-09-1992 08:51:48</date>
+        <amount>58723.5</amount>
+    </record>
+    <record>
+        <id>437</id>
+        <username>user449559</username>
+        <date>11-06-2024 23:16:30</date>
+        <amount>97508.4</amount>
+    </record>
+    <record>
+        <id>438</id>
+        <username>user222382</username>
+        <date>11-02-2024 01:18:39</date>
+        <amount>55422.2</amount>
+    </record>
+    <record>
+        <id>439</id>
+        <username>user895557</username>
+        <date>02-11-2008 07:31:50</date>
+        <amount>83846.3</amount>
+    </record>
+    <record>
+        <id>440</id>
+        <username>user303691</username>
+        <date>06-08-1971 13:16:38</date>
+        <amount>45996.7</amount>
+    </record>
+    <record>
+        <id>441</id>
+        <username>user311703</username>
+        <date>31-12-1998 20:55:02</date>
+        <amount>39474.0</amount>
+    </record>
+    <record>
+        <id>442</id>
+        <username>user487424</username>
+        <date>19-03-2004 12:48:46</date>
+        <amount>34198.2</amount>
+    </record>
+    <record>
+        <id>443</id>
+        <username>user123648</username>
+        <date>11-12-1976 02:46:05</date>
+        <amount>73757.7</amount>
+    </record>
+    <record>
+        <id>444</id>
+        <username>user894958</username>
+        <date>20-07-2009 22:56:32</date>
+        <amount>60862.8</amount>
+    </record>
+    <record>
+        <id>445</id>
+        <username>user643420</username>
+        <date>20-01-1970 07:06:10</date>
+        <amount>21698.0</amount>
+    </record>
+    <record>
+        <id>446</id>
+        <username>user521882</username>
+        <date>22-09-1985 21:32:59</date>
+        <amount>59103.5</amount>
+    </record>
+    <record>
+        <id>447</id>
+        <username>user890772</username>
+        <date>14-07-1985 23:44:08</date>
+        <amount>25211.1</amount>
+    </record>
+    <record>
+        <id>448</id>
+        <username>user415765</username>
+        <date>16-09-2002 14:19:24</date>
+        <amount>69012.4</amount>
+    </record>
+    <record>
+        <id>449</id>
+        <username>user891321</username>
+        <date>17-01-1982 04:28:33</date>
+        <amount>572.3</amount>
+    </record>
+    <record>
+        <id>450</id>
+        <username>user911115</username>
+        <date>07-11-1989 02:10:16</date>
+        <amount>27077.4</amount>
+    </record>
+    <record>
+        <id>451</id>
+        <username>user600716</username>
+        <date>04-12-1996 13:08:50</date>
+        <amount>44603.7</amount>
+    </record>
+    <record>
+        <id>452</id>
+        <username>user683106</username>
+        <date>23-03-2017 07:01:10</date>
+        <amount>45800.7</amount>
+    </record>
+    <record>
+        <id>453</id>
+        <username>user907402</username>
+        <date>09-10-2022 05:00:36</date>
+        <amount>59402.8</amount>
+    </record>
+    <record>
+        <id>454</id>
+        <username>user329063</username>
+        <date>23-03-2018 01:36:21</date>
+        <amount>67960.5</amount>
+    </record>
+    <record>
+        <id>455</id>
+        <username>user249754</username>
+        <date>28-05-2025 20:01:59</date>
+        <amount>80111.5</amount>
+    </record>
+    <record>
+        <id>456</id>
+        <username>user407014</username>
+        <date>28-03-2014 05:27:10</date>
+        <amount>68598.1</amount>
+    </record>
+    <record>
+        <id>457</id>
+        <username>user437158</username>
+        <date>07-04-2016 11:26:17</date>
+        <amount>87995.8</amount>
+    </record>
+    <record>
+        <id>458</id>
+        <username>user166617</username>
+        <date>06-11-2013 12:59:47</date>
+        <amount>23184.3</amount>
+    </record>
+    <record>
+        <id>459</id>
+        <username>user688195</username>
+        <date>03-05-1982 22:47:10</date>
+        <amount>5536.6</amount>
+    </record>
+    <record>
+        <id>460</id>
+        <username>user227648</username>
+        <date>15-08-1973 09:14:03</date>
+        <amount>87142.5</amount>
+    </record>
+    <record>
+        <id>461</id>
+        <username>user953539</username>
+        <date>16-07-2016 18:03:47</date>
+        <amount>21595.2</amount>
+    </record>
+    <record>
+        <id>462</id>
+        <username>user461383</username>
+        <date>07-10-1998 11:41:10</date>
+        <amount>3686.6</amount>
+    </record>
+    <record>
+        <id>463</id>
+        <username>user165370</username>
+        <date>24-06-1970 09:49:49</date>
+        <amount>28232.9</amount>
+    </record>
+    <record>
+        <id>464</id>
+        <username>user757115</username>
+        <date>22-08-2015 08:43:42</date>
+        <amount>6996.6</amount>
+    </record>
+    <record>
+        <id>465</id>
+        <username>user836512</username>
+        <date>11-12-2001 13:15:42</date>
+        <amount>93535.5</amount>
+    </record>
+    <record>
+        <id>466</id>
+        <username>user338718</username>
+        <date>29-04-2021 08:40:43</date>
+        <amount>61284.6</amount>
+    </record>
+    <record>
+        <id>467</id>
+        <username>user455341</username>
+        <date>27-10-2014 00:22:07</date>
+        <amount>70661.6</amount>
+    </record>
+    <record>
+        <id>468</id>
+        <username>user723620</username>
+        <date>24-12-2007 16:30:55</date>
+        <amount>57669.6</amount>
+    </record>
+    <record>
+        <id>469</id>
+        <username>user144826</username>
+        <date>18-10-2017 18:09:45</date>
+        <amount>22887.8</amount>
+    </record>
+    <record>
+        <id>470</id>
+        <username>user222409</username>
+        <date>01-07-2007 14:01:50</date>
+        <amount>58592.9</amount>
+    </record>
+    <record>
+        <id>471</id>
+        <username>user511557</username>
+        <date>14-02-1995 03:43:56</date>
+        <amount>71003.0</amount>
+    </record>
+    <record>
+        <id>472</id>
+        <username>user823807</username>
+        <date>30-01-2017 22:28:58</date>
+        <amount>6770.1</amount>
+    </record>
+    <record>
+        <id>473</id>
+        <username>user755420</username>
+        <date>17-11-1992 23:36:03</date>
+        <amount>6308.9</amount>
+    </record>
+    <record>
+        <id>474</id>
+        <username>user846708</username>
+        <date>07-03-1973 05:16:55</date>
+        <amount>92189.4</amount>
+    </record>
+    <record>
+        <id>475</id>
+        <username>user949609</username>
+        <date>12-12-1985 00:58:56</date>
+        <amount>17705.8</amount>
+    </record>
+    <record>
+        <id>476</id>
+        <username>user967375</username>
+        <date>06-07-2018 17:39:23</date>
+        <amount>41005.4</amount>
+    </record>
+    <record>
+        <id>477</id>
+        <username>user210454</username>
+        <date>19-09-1994 21:35:12</date>
+        <amount>912.3</amount>
+    </record>
+    <record>
+        <id>478</id>
+        <username>user230048</username>
+        <date>30-12-2004 03:26:45</date>
+        <amount>30173.7</amount>
+    </record>
+    <record>
+        <id>479</id>
+        <username>user115047</username>
+        <date>23-04-2006 13:09:07</date>
+        <amount>78767.3</amount>
+    </record>
+    <record>
+        <id>480</id>
+        <username>user751829</username>
+        <date>30-03-2007 02:13:24</date>
+        <amount>56997.5</amount>
+    </record>
+    <record>
+        <id>481</id>
+        <username>user411618</username>
+        <date>29-05-1975 21:20:22</date>
+        <amount>11198.4</amount>
+    </record>
+    <record>
+        <id>482</id>
+        <username>user613668</username>
+        <date>26-05-1971 09:06:08</date>
+        <amount>92698.4</amount>
+    </record>
+    <record>
+        <id>483</id>
+        <username>user877864</username>
+        <date>13-08-2000 23:02:54</date>
+        <amount>43158.5</amount>
+    </record>
+    <record>
+        <id>484</id>
+        <username>user685232</username>
+        <date>08-07-1987 03:18:23</date>
+        <amount>39748.7</amount>
+    </record>
+    <record>
+        <id>485</id>
+        <username>user408195</username>
+        <date>20-03-2026 23:21:26</date>
+        <amount>97005.5</amount>
+    </record>
+    <record>
+        <id>486</id>
+        <username>user871005</username>
+        <date>24-07-2010 23:00:19</date>
+        <amount>19189.0</amount>
+    </record>
+    <record>
+        <id>487</id>
+        <username>user367235</username>
+        <date>24-08-1996 02:11:07</date>
+        <amount>92619.2</amount>
+    </record>
+    <record>
+        <id>488</id>
+        <username>user457130</username>
+        <date>20-11-2020 20:23:02</date>
+        <amount>39889.9</amount>
+    </record>
+    <record>
+        <id>489</id>
+        <username>user394452</username>
+        <date>27-12-1995 06:27:06</date>
+        <amount>42183.6</amount>
+    </record>
+    <record>
+        <id>490</id>
+        <username>user413275</username>
+        <date>10-08-1983 21:35:31</date>
+        <amount>29337.6</amount>
+    </record>
+    <record>
+        <id>491</id>
+        <username>user481523</username>
+        <date>23-10-2019 11:31:29</date>
+        <amount>10038.4</amount>
+    </record>
+    <record>
+        <id>492</id>
+        <username>user686720</username>
+        <date>10-09-1983 21:43:03</date>
+        <amount>33086.2</amount>
+    </record>
+    <record>
+        <id>493</id>
+        <username>user520562</username>
+        <date>20-05-2026 14:06:32</date>
+        <amount>51624.7</amount>
+    </record>
+    <record>
+        <id>494</id>
+        <username>user931656</username>
+        <date>12-03-1999 10:07:22</date>
+        <amount>92329.3</amount>
+    </record>
+    <record>
+        <id>495</id>
+        <username>user555631</username>
+        <date>06-05-1978 04:01:11</date>
+        <amount>49575.5</amount>
+    </record>
+    <record>
+        <id>496</id>
+        <username>user620284</username>
+        <date>07-07-1974 02:41:31</date>
+        <amount>76394.8</amount>
+    </record>
+    <record>
+        <id>497</id>
+        <username>user429606</username>
+        <date>05-12-1993 18:32:11</date>
+        <amount>37825.1</amount>
+    </record>
+    <record>
+        <id>498</id>
+        <username>user902773</username>
+        <date>22-02-2002 10:05:02</date>
+        <amount>42497.9</amount>
+    </record>
+    <record>
+        <id>499</id>
+        <username>user486475</username>
+        <date>05-06-1997 23:47:14</date>
+        <amount>20541.4</amount>
+    </record>
+    <record>
+        <id>500</id>
+        <username>user416796</username>
+        <date>20-05-2009 08:05:22</date>
+        <amount>6323.2</amount>
+    </record>
+    <record>
+        <id>501</id>
+        <username>user743732</username>
+        <date>18-11-2024 00:39:30</date>
+        <amount>43014.8</amount>
+    </record>
+    <record>
+        <id>502</id>
+        <username>user548854</username>
+        <date>05-03-1982 12:21:40</date>
+        <amount>78787.7</amount>
+    </record>
+    <record>
+        <id>503</id>
+        <username>user560424</username>
+        <date>15-07-2010 17:27:08</date>
+        <amount>58745.0</amount>
+    </record>
+    <record>
+        <id>504</id>
+        <username>user958167</username>
+        <date>11-03-2003 04:32:18</date>
+        <amount>38212.2</amount>
+    </record>
+    <record>
+        <id>505</id>
+        <username>user666022</username>
+        <date>30-03-2015 18:12:37</date>
+        <amount>87331.6</amount>
+    </record>
+    <record>
+        <id>506</id>
+        <username>user693946</username>
+        <date>11-02-1972 20:12:21</date>
+        <amount>12823.6</amount>
+    </record>
+    <record>
+        <id>507</id>
+        <username>user990298</username>
+        <date>24-01-1972 10:03:43</date>
+        <amount>99054.6</amount>
+    </record>
+    <record>
+        <id>508</id>
+        <username>user554102</username>
+        <date>11-10-2004 03:14:26</date>
+        <amount>81215.2</amount>
+    </record>
+    <record>
+        <id>509</id>
+        <username>user218933</username>
+        <date>07-06-1976 01:56:58</date>
+        <amount>43060.0</amount>
+    </record>
+    <record>
+        <id>510</id>
+        <username>user895262</username>
+        <date>05-07-1972 02:49:04</date>
+        <amount>48879.8</amount>
+    </record>
+    <record>
+        <id>511</id>
+        <username>user860237</username>
+        <date>08-06-2018 14:01:39</date>
+        <amount>45807.5</amount>
+    </record>
+    <record>
+        <id>512</id>
+        <username>user426559</username>
+        <date>08-03-1998 15:04:27</date>
+        <amount>24753.9</amount>
+    </record>
+    <record>
+        <id>513</id>
+        <username>user975742</username>
+        <date>29-10-1990 06:16:35</date>
+        <amount>74966.7</amount>
+    </record>
+    <record>
+        <id>514</id>
+        <username>user616738</username>
+        <date>26-01-1984 01:16:54</date>
+        <amount>23489.7</amount>
+    </record>
+    <record>
+        <id>515</id>
+        <username>user706971</username>
+        <date>19-07-2020 19:54:39</date>
+        <amount>24546.6</amount>
+    </record>
+    <record>
+        <id>516</id>
+        <username>user147039</username>
+        <date>03-02-2003 10:13:20</date>
+        <amount>52693.4</amount>
+    </record>
+    <record>
+        <id>517</id>
+        <username>user271728</username>
+        <date>02-11-2015 08:04:19</date>
+        <amount>54225.1</amount>
+    </record>
+    <record>
+        <id>518</id>
+        <username>user244086</username>
+        <date>07-12-2022 10:11:58</date>
+        <amount>65905.2</amount>
+    </record>
+    <record>
+        <id>519</id>
+        <username>user310031</username>
+        <date>29-08-2001 08:05:38</date>
+        <amount>22848.1</amount>
+    </record>
+    <record>
+        <id>520</id>
+        <username>user316749</username>
+        <date>31-07-2016 15:03:12</date>
+        <amount>25490.0</amount>
+    </record>
+    <record>
+        <id>521</id>
+        <username>user327023</username>
+        <date>08-11-1986 11:43:06</date>
+        <amount>30120.8</amount>
+    </record>
+    <record>
+        <id>522</id>
+        <username>user825569</username>
+        <date>23-11-2007 22:42:36</date>
+        <amount>34944.9</amount>
+    </record>
+    <record>
+        <id>523</id>
+        <username>user357437</username>
+        <date>18-12-1988 07:25:51</date>
+        <amount>88131.7</amount>
+    </record>
+    <record>
+        <id>524</id>
+        <username>user614643</username>
+        <date>25-06-1983 06:26:01</date>
+        <amount>61752.7</amount>
+    </record>
+    <record>
+        <id>525</id>
+        <username>user732936</username>
+        <date>04-11-1983 09:33:40</date>
+        <amount>66457.3</amount>
+    </record>
+    <record>
+        <id>526</id>
+        <username>user540141</username>
+        <date>13-08-2001 19:52:10</date>
+        <amount>83729.0</amount>
+    </record>
+    <record>
+        <id>527</id>
+        <username>user934259</username>
+        <date>22-09-1985 17:42:56</date>
+        <amount>53959.4</amount>
+    </record>
+    <record>
+        <id>528</id>
+        <username>user508530</username>
+        <date>28-01-1998 20:45:01</date>
+        <amount>89567.7</amount>
+    </record>
+    <record>
+        <id>529</id>
+        <username>user938236</username>
+        <date>12-05-1986 00:29:16</date>
+        <amount>28508.1</amount>
+    </record>
+    <record>
+        <id>530</id>
+        <username>user332641</username>
+        <date>13-07-1975 15:46:12</date>
+        <amount>76466.2</amount>
+    </record>
+    <record>
+        <id>531</id>
+        <username>user451448</username>
+        <date>09-03-1991 13:34:19</date>
+        <amount>84245.9</amount>
+    </record>
+    <record>
+        <id>532</id>
+        <username>user559683</username>
+        <date>10-07-1983 18:32:21</date>
+        <amount>54203.9</amount>
+    </record>
+    <record>
+        <id>533</id>
+        <username>user349906</username>
+        <date>24-01-1987 12:21:14</date>
+        <amount>94855.2</amount>
+    </record>
+    <record>
+        <id>534</id>
+        <username>user723087</username>
+        <date>23-11-2013 16:22:53</date>
+        <amount>37015.9</amount>
+    </record>
+    <record>
+        <id>535</id>
+        <username>user416113</username>
+        <date>15-12-2023 06:09:14</date>
+        <amount>54937.4</amount>
+    </record>
+    <record>
+        <id>536</id>
+        <username>user150518</username>
+        <date>24-06-2026 11:58:04</date>
+        <amount>2849.9</amount>
+    </record>
+    <record>
+        <id>537</id>
+        <username>user377998</username>
+        <date>15-03-2017 09:23:36</date>
+        <amount>23506.6</amount>
+    </record>
+    <record>
+        <id>538</id>
+        <username>user274772</username>
+        <date>03-08-2007 14:26:56</date>
+        <amount>14513.5</amount>
+    </record>
+    <record>
+        <id>539</id>
+        <username>user295204</username>
+        <date>13-02-1996 17:48:44</date>
+        <amount>80736.2</amount>
+    </record>
+    <record>
+        <id>540</id>
+        <username>user872202</username>
+        <date>04-08-1985 14:54:41</date>
+        <amount>67612.2</amount>
+    </record>
+    <record>
+        <id>541</id>
+        <username>user264262</username>
+        <date>05-05-2017 21:39:46</date>
+        <amount>41116.9</amount>
+    </record>
+    <record>
+        <id>542</id>
+        <username>user457671</username>
+        <date>15-06-2020 20:43:58</date>
+        <amount>13965.4</amount>
+    </record>
+    <record>
+        <id>543</id>
+        <username>user670781</username>
+        <date>24-01-1990 18:14:34</date>
+        <amount>33887.3</amount>
+    </record>
+    <record>
+        <id>544</id>
+        <username>user519697</username>
+        <date>20-08-2010 17:41:36</date>
+        <amount>52809.4</amount>
+    </record>
+    <record>
+        <id>545</id>
+        <username>user102425</username>
+        <date>16-02-1992 03:33:41</date>
+        <amount>46786.3</amount>
+    </record>
+    <record>
+        <id>546</id>
+        <username>user997154</username>
+        <date>09-02-1996 04:09:10</date>
+        <amount>91887.1</amount>
+    </record>
+    <record>
+        <id>547</id>
+        <username>user730195</username>
+        <date>21-01-2004 15:44:32</date>
+        <amount>24759.3</amount>
+    </record>
+    <record>
+        <id>548</id>
+        <username>user217701</username>
+        <date>05-02-1972 04:25:40</date>
+        <amount>6434.2</amount>
+    </record>
+    <record>
+        <id>549</id>
+        <username>user670498</username>
+        <date>21-01-2025 05:13:34</date>
+        <amount>21370.5</amount>
+    </record>
+    <record>
+        <id>550</id>
+        <username>user877712</username>
+        <date>13-09-1997 09:09:22</date>
+        <amount>32625.7</amount>
+    </record>
+    <record>
+        <id>551</id>
+        <username>user462808</username>
+        <date>18-01-1975 04:12:38</date>
+        <amount>4399.2</amount>
+    </record>
+    <record>
+        <id>552</id>
+        <username>user257830</username>
+        <date>04-09-2009 23:02:00</date>
+        <amount>71181.8</amount>
+    </record>
+    <record>
+        <id>553</id>
+        <username>user204206</username>
+        <date>14-08-2014 21:14:43</date>
+        <amount>92312.3</amount>
+    </record>
+    <record>
+        <id>554</id>
+        <username>user788863</username>
+        <date>12-10-1988 00:29:33</date>
+        <amount>17603.8</amount>
+    </record>
+    <record>
+        <id>555</id>
+        <username>user439078</username>
+        <date>21-12-2022 16:21:14</date>
+        <amount>37947.9</amount>
+    </record>
+    <record>
+        <id>556</id>
+        <username>user670004</username>
+        <date>13-09-1971 20:47:45</date>
+        <amount>31064.7</amount>
+    </record>
+    <record>
+        <id>557</id>
+        <username>user604407</username>
+        <date>23-06-1999 19:30:44</date>
+        <amount>98222.9</amount>
+    </record>
+    <record>
+        <id>558</id>
+        <username>user185690</username>
+        <date>31-08-1987 03:37:23</date>
+        <amount>44360.4</amount>
+    </record>
+    <record>
+        <id>559</id>
+        <username>user721017</username>
+        <date>02-12-1997 01:59:34</date>
+        <amount>70355.8</amount>
+    </record>
+    <record>
+        <id>560</id>
+        <username>user286591</username>
+        <date>27-10-1981 03:03:15</date>
+        <amount>45580.2</amount>
+    </record>
+    <record>
+        <id>561</id>
+        <username>user902954</username>
+        <date>06-06-1978 19:57:47</date>
+        <amount>32732.5</amount>
+    </record>
+    <record>
+        <id>562</id>
+        <username>user372882</username>
+        <date>31-07-2016 20:07:36</date>
+        <amount>48768.6</amount>
+    </record>
+    <record>
+        <id>563</id>
+        <username>user830672</username>
+        <date>08-04-1973 03:01:47</date>
+        <amount>67355.4</amount>
+    </record>
+    <record>
+        <id>564</id>
+        <username>user871608</username>
+        <date>12-01-2023 05:21:17</date>
+        <amount>90077.6</amount>
+    </record>
+    <record>
+        <id>565</id>
+        <username>user907852</username>
+        <date>27-08-1978 05:14:48</date>
+        <amount>19632.1</amount>
+    </record>
+    <record>
+        <id>566</id>
+        <username>user665881</username>
+        <date>27-03-2007 11:32:56</date>
+        <amount>3740.4</amount>
+    </record>
+    <record>
+        <id>567</id>
+        <username>user280968</username>
+        <date>20-09-1992 12:40:01</date>
+        <amount>14506.7</amount>
+    </record>
+    <record>
+        <id>568</id>
+        <username>user870095</username>
+        <date>11-05-2002 20:34:36</date>
+        <amount>67424.2</amount>
+    </record>
+    <record>
+        <id>569</id>
+        <username>user463762</username>
+        <date>09-10-1997 03:03:41</date>
+        <amount>47559.0</amount>
+    </record>
+    <record>
+        <id>570</id>
+        <username>user284745</username>
+        <date>17-09-1984 20:35:09</date>
+        <amount>53238.3</amount>
+    </record>
+    <record>
+        <id>571</id>
+        <username>user553452</username>
+        <date>28-05-1981 20:21:56</date>
+        <amount>6391.1</amount>
+    </record>
+    <record>
+        <id>572</id>
+        <username>user913461</username>
+        <date>01-01-1993 13:40:05</date>
+        <amount>36312.9</amount>
+    </record>
+    <record>
+        <id>573</id>
+        <username>user615384</username>
+        <date>01-10-2022 21:11:14</date>
+        <amount>31459.6</amount>
+    </record>
+    <record>
+        <id>574</id>
+        <username>user988648</username>
+        <date>26-03-1977 10:19:04</date>
+        <amount>26925.3</amount>
+    </record>
+    <record>
+        <id>575</id>
+        <username>user895930</username>
+        <date>04-10-2020 12:34:43</date>
+        <amount>7824.7</amount>
+    </record>
+    <record>
+        <id>576</id>
+        <username>user708662</username>
+        <date>23-10-2025 08:38:42</date>
+        <amount>94666.1</amount>
+    </record>
+    <record>
+        <id>577</id>
+        <username>user356495</username>
+        <date>20-04-2009 12:59:49</date>
+        <amount>94608.6</amount>
+    </record>
+    <record>
+        <id>578</id>
+        <username>user833096</username>
+        <date>19-03-1979 20:42:20</date>
+        <amount>62292.4</amount>
+    </record>
+    <record>
+        <id>579</id>
+        <username>user656165</username>
+        <date>13-09-1973 11:13:09</date>
+        <amount>67062.0</amount>
+    </record>
+    <record>
+        <id>580</id>
+        <username>user620965</username>
+        <date>17-05-1986 22:28:24</date>
+        <amount>74858.3</amount>
+    </record>
+    <record>
+        <id>581</id>
+        <username>user207983</username>
+        <date>14-09-1971 07:05:49</date>
+        <amount>55058.0</amount>
+    </record>
+    <record>
+        <id>582</id>
+        <username>user619261</username>
+        <date>25-09-1976 08:39:27</date>
+        <amount>51210.9</amount>
+    </record>
+    <record>
+        <id>583</id>
+        <username>user510929</username>
+        <date>08-10-2009 20:05:38</date>
+        <amount>83653.4</amount>
+    </record>
+    <record>
+        <id>584</id>
+        <username>user922573</username>
+        <date>21-01-2010 05:10:22</date>
+        <amount>32136.9</amount>
+    </record>
+    <record>
+        <id>585</id>
+        <username>user409430</username>
+        <date>06-04-2011 20:24:43</date>
+        <amount>67720.2</amount>
+    </record>
+    <record>
+        <id>586</id>
+        <username>user491980</username>
+        <date>22-09-2022 21:56:15</date>
+        <amount>87768.6</amount>
+    </record>
+    <record>
+        <id>587</id>
+        <username>user798943</username>
+        <date>03-01-2000 21:01:40</date>
+        <amount>63685.0</amount>
+    </record>
+    <record>
+        <id>588</id>
+        <username>user218676</username>
+        <date>07-09-1986 11:49:21</date>
+        <amount>83876.8</amount>
+    </record>
+    <record>
+        <id>589</id>
+        <username>user309977</username>
+        <date>23-02-2023 05:58:02</date>
+        <amount>38758.0</amount>
+    </record>
+    <record>
+        <id>590</id>
+        <username>user795416</username>
+        <date>22-03-2005 05:37:39</date>
+        <amount>45644.8</amount>
+    </record>
+    <record>
+        <id>591</id>
+        <username>user395626</username>
+        <date>14-06-2024 07:55:20</date>
+        <amount>8871.2</amount>
+    </record>
+    <record>
+        <id>592</id>
+        <username>user186901</username>
+        <date>03-05-1975 00:33:42</date>
+        <amount>25447.4</amount>
+    </record>
+    <record>
+        <id>593</id>
+        <username>user563708</username>
+        <date>24-10-1999 19:38:13</date>
+        <amount>50032.2</amount>
+    </record>
+    <record>
+        <id>594</id>
+        <username>user857044</username>
+        <date>23-11-1983 23:01:25</date>
+        <amount>46681.2</amount>
+    </record>
+    <record>
+        <id>595</id>
+        <username>user656253</username>
+        <date>09-02-1976 09:26:44</date>
+        <amount>86910.0</amount>
+    </record>
+    <record>
+        <id>596</id>
+        <username>user205056</username>
+        <date>04-10-1999 08:53:48</date>
+        <amount>37987.9</amount>
+    </record>
+    <record>
+        <id>597</id>
+        <username>user167596</username>
+        <date>02-06-2023 05:48:14</date>
+        <amount>81922.3</amount>
+    </record>
+    <record>
+        <id>598</id>
+        <username>user109023</username>
+        <date>29-04-2007 07:19:28</date>
+        <amount>64994.6</amount>
+    </record>
+    <record>
+        <id>599</id>
+        <username>user765847</username>
+        <date>30-06-1980 20:39:31</date>
+        <amount>24344.0</amount>
+    </record>
+    <record>
+        <id>600</id>
+        <username>user703777</username>
+        <date>19-02-2006 15:32:45</date>
+        <amount>57145.5</amount>
+    </record>
+    <record>
+        <id>601</id>
+        <username>user168689</username>
+        <date>24-02-1975 11:52:11</date>
+        <amount>20653.2</amount>
+    </record>
+    <record>
+        <id>602</id>
+        <username>user151737</username>
+        <date>12-11-2014 07:09:05</date>
+        <amount>36530.1</amount>
+    </record>
+    <record>
+        <id>603</id>
+        <username>user925399</username>
+        <date>01-09-1995 18:48:02</date>
+        <amount>76722.8</amount>
+    </record>
+    <record>
+        <id>604</id>
+        <username>user865201</username>
+        <date>03-05-1988 20:13:55</date>
+        <amount>46261.2</amount>
+    </record>
+    <record>
+        <id>605</id>
+        <username>user257076</username>
+        <date>28-05-1992 01:21:32</date>
+        <amount>65165.3</amount>
+    </record>
+    <record>
+        <id>606</id>
+        <username>user411913</username>
+        <date>17-08-2016 12:54:12</date>
+        <amount>97054.6</amount>
+    </record>
+    <record>
+        <id>607</id>
+        <username>user558846</username>
+        <date>19-10-1995 20:40:35</date>
+        <amount>16471.9</amount>
+    </record>
+    <record>
+        <id>608</id>
+        <username>user782859</username>
+        <date>18-01-2005 07:00:11</date>
+        <amount>61279.5</amount>
+    </record>
+    <record>
+        <id>609</id>
+        <username>user101689</username>
+        <date>13-01-1991 10:44:06</date>
+        <amount>44714.5</amount>
+    </record>
+    <record>
+        <id>610</id>
+        <username>user952490</username>
+        <date>06-01-1997 03:13:57</date>
+        <amount>67590.8</amount>
+    </record>
+    <record>
+        <id>611</id>
+        <username>user340050</username>
+        <date>04-11-2001 10:14:21</date>
+        <amount>31787.6</amount>
+    </record>
+    <record>
+        <id>612</id>
+        <username>user250114</username>
+        <date>06-05-2003 20:02:48</date>
+        <amount>56609.5</amount>
+    </record>
+    <record>
+        <id>613</id>
+        <username>user881590</username>
+        <date>15-05-1984 03:28:37</date>
+        <amount>66089.4</amount>
+    </record>
+    <record>
+        <id>614</id>
+        <username>user313478</username>
+        <date>27-06-1995 16:06:16</date>
+        <amount>67232.4</amount>
+    </record>
+    <record>
+        <id>615</id>
+        <username>user668479</username>
+        <date>22-06-2003 15:47:31</date>
+        <amount>10347.9</amount>
+    </record>
+    <record>
+        <id>616</id>
+        <username>user404513</username>
+        <date>13-09-1988 20:31:22</date>
+        <amount>36849.6</amount>
+    </record>
+    <record>
+        <id>617</id>
+        <username>user157916</username>
+        <date>19-07-1978 13:44:01</date>
+        <amount>72125.8</amount>
+    </record>
+    <record>
+        <id>618</id>
+        <username>user227161</username>
+        <date>07-11-1974 13:37:15</date>
+        <amount>25653.0</amount>
+    </record>
+    <record>
+        <id>619</id>
+        <username>user830343</username>
+        <date>04-04-2020 17:27:08</date>
+        <amount>94846.8</amount>
+    </record>
+    <record>
+        <id>620</id>
+        <username>user612563</username>
+        <date>25-05-1997 03:42:29</date>
+        <amount>17394.6</amount>
+    </record>
+    <record>
+        <id>621</id>
+        <username>user860331</username>
+        <date>20-04-2013 00:34:52</date>
+        <amount>49028.4</amount>
+    </record>
+    <record>
+        <id>622</id>
+        <username>user837431</username>
+        <date>23-03-1991 00:06:03</date>
+        <amount>63777.6</amount>
+    </record>
+    <record>
+        <id>623</id>
+        <username>user969226</username>
+        <date>11-10-2021 07:44:49</date>
+        <amount>94058.2</amount>
+    </record>
+    <record>
+        <id>624</id>
+        <username>user862652</username>
+        <date>30-11-1984 10:00:35</date>
+        <amount>15679.8</amount>
+    </record>
+    <record>
+        <id>625</id>
+        <username>user823231</username>
+        <date>29-04-1976 08:16:54</date>
+        <amount>39475.4</amount>
+    </record>
+    <record>
+        <id>626</id>
+        <username>user277267</username>
+        <date>25-07-2009 03:39:41</date>
+        <amount>75358.8</amount>
+    </record>
+    <record>
+        <id>627</id>
+        <username>user632453</username>
+        <date>25-06-2019 19:00:26</date>
+        <amount>81315.4</amount>
+    </record>
+    <record>
+        <id>628</id>
+        <username>user769412</username>
+        <date>18-02-1992 16:59:53</date>
+        <amount>81317.7</amount>
+    </record>
+    <record>
+        <id>629</id>
+        <username>user176180</username>
+        <date>17-04-2005 23:40:08</date>
+        <amount>66530.3</amount>
+    </record>
+    <record>
+        <id>630</id>
+        <username>user922888</username>
+        <date>22-01-2000 18:04:31</date>
+        <amount>94335.8</amount>
+    </record>
+    <record>
+        <id>631</id>
+        <username>user144132</username>
+        <date>21-10-1986 02:58:23</date>
+        <amount>77556.3</amount>
+    </record>
+    <record>
+        <id>632</id>
+        <username>user270059</username>
+        <date>05-12-2013 10:37:34</date>
+        <amount>39243.7</amount>
+    </record>
+    <record>
+        <id>633</id>
+        <username>user261809</username>
+        <date>16-05-2010 12:15:32</date>
+        <amount>38198.6</amount>
+    </record>
+    <record>
+        <id>634</id>
+        <username>user975183</username>
+        <date>28-08-2007 02:36:24</date>
+        <amount>7490.1</amount>
+    </record>
+    <record>
+        <id>635</id>
+        <username>user846939</username>
+        <date>13-12-2014 19:08:49</date>
+        <amount>55727.6</amount>
+    </record>
+    <record>
+        <id>636</id>
+        <username>user501930</username>
+        <date>17-11-1971 08:11:03</date>
+        <amount>59704.5</amount>
+    </record>
+    <record>
+        <id>637</id>
+        <username>user717604</username>
+        <date>06-02-1990 09:16:46</date>
+        <amount>79164.3</amount>
+    </record>
+    <record>
+        <id>638</id>
+        <username>user466541</username>
+        <date>04-09-1998 09:39:40</date>
+        <amount>99379.3</amount>
+    </record>
+    <record>
+        <id>639</id>
+        <username>user883814</username>
+        <date>15-04-1998 11:36:07</date>
+        <amount>77315.4</amount>
+    </record>
+    <record>
+        <id>640</id>
+        <username>user361322</username>
+        <date>29-03-2001 05:29:23</date>
+        <amount>89479.1</amount>
+    </record>
+    <record>
+        <id>641</id>
+        <username>user466059</username>
+        <date>26-08-2000 10:34:40</date>
+        <amount>41625.1</amount>
+    </record>
+    <record>
+        <id>642</id>
+        <username>user592026</username>
+        <date>20-07-2019 17:41:27</date>
+        <amount>21783.5</amount>
+    </record>
+    <record>
+        <id>643</id>
+        <username>user964367</username>
+        <date>23-02-2001 22:14:28</date>
+        <amount>97342.9</amount>
+    </record>
+    <record>
+        <id>644</id>
+        <username>user612586</username>
+        <date>30-07-2002 21:46:36</date>
+        <amount>31211.2</amount>
+    </record>
+    <record>
+        <id>645</id>
+        <username>user533719</username>
+        <date>26-05-2004 13:04:27</date>
+        <amount>38957.9</amount>
+    </record>
+    <record>
+        <id>646</id>
+        <username>user264091</username>
+        <date>08-01-2006 06:00:02</date>
+        <amount>70139.0</amount>
+    </record>
+    <record>
+        <id>647</id>
+        <username>user898173</username>
+        <date>04-11-2021 06:44:30</date>
+        <amount>53433.9</amount>
+    </record>
+    <record>
+        <id>648</id>
+        <username>user348315</username>
+        <date>11-05-1995 03:02:06</date>
+        <amount>41236.6</amount>
+    </record>
+    <record>
+        <id>649</id>
+        <username>user625741</username>
+        <date>16-06-2010 04:12:14</date>
+        <amount>82228.8</amount>
+    </record>
+    <record>
+        <id>650</id>
+        <username>user328502</username>
+        <date>21-03-2019 07:24:22</date>
+        <amount>79581.8</amount>
+    </record>
+    <record>
+        <id>651</id>
+        <username>user875687</username>
+        <date>12-03-1977 11:02:24</date>
+        <amount>40054.4</amount>
+    </record>
+    <record>
+        <id>652</id>
+        <username>user989123</username>
+        <date>13-05-1981 12:49:14</date>
+        <amount>7807.2</amount>
+    </record>
+    <record>
+        <id>653</id>
+        <username>user113696</username>
+        <date>08-08-2015 00:39:49</date>
+        <amount>67186.3</amount>
+    </record>
+    <record>
+        <id>654</id>
+        <username>user891498</username>
+        <date>15-02-2016 18:54:18</date>
+        <amount>44805.6</amount>
+    </record>
+    <record>
+        <id>655</id>
+        <username>user164425</username>
+        <date>29-05-2002 02:23:25</date>
+        <amount>19262.5</amount>
+    </record>
+    <record>
+        <id>656</id>
+        <username>user233104</username>
+        <date>15-03-2008 11:17:36</date>
+        <amount>29351.8</amount>
+    </record>
+    <record>
+        <id>657</id>
+        <username>user994170</username>
+        <date>25-03-1974 15:14:06</date>
+        <amount>25890.4</amount>
+    </record>
+    <record>
+        <id>658</id>
+        <username>user817907</username>
+        <date>12-06-1975 13:00:54</date>
+        <amount>91372.4</amount>
+    </record>
+    <record>
+        <id>659</id>
+        <username>user473970</username>
+        <date>31-10-1996 20:37:29</date>
+        <amount>71033.2</amount>
+    </record>
+    <record>
+        <id>660</id>
+        <username>user960353</username>
+        <date>16-05-1995 03:00:03</date>
+        <amount>26124.3</amount>
+    </record>
+    <record>
+        <id>661</id>
+        <username>user813461</username>
+        <date>12-11-2000 14:42:32</date>
+        <amount>58348.6</amount>
+    </record>
+    <record>
+        <id>662</id>
+        <username>user712691</username>
+        <date>27-05-1990 18:39:36</date>
+        <amount>58118.7</amount>
+    </record>
+    <record>
+        <id>663</id>
+        <username>user356837</username>
+        <date>12-06-1973 20:47:16</date>
+        <amount>78864.4</amount>
+    </record>
+    <record>
+        <id>664</id>
+        <username>user836909</username>
+        <date>08-11-1978 00:20:56</date>
+        <amount>27436.6</amount>
+    </record>
+    <record>
+        <id>665</id>
+        <username>user985791</username>
+        <date>07-02-1981 21:01:52</date>
+        <amount>68666.4</amount>
+    </record>
+    <record>
+        <id>666</id>
+        <username>user842993</username>
+        <date>13-05-1973 09:47:16</date>
+        <amount>52511.1</amount>
+    </record>
+    <record>
+        <id>667</id>
+        <username>user649343</username>
+        <date>11-08-2012 21:17:41</date>
+        <amount>2806.7</amount>
+    </record>
+    <record>
+        <id>668</id>
+        <username>user830582</username>
+        <date>03-02-2016 12:18:45</date>
+        <amount>19847.7</amount>
+    </record>
+    <record>
+        <id>669</id>
+        <username>user249936</username>
+        <date>17-11-2012 06:48:45</date>
+        <amount>91635.6</amount>
+    </record>
+    <record>
+        <id>670</id>
+        <username>user664117</username>
+        <date>24-04-1992 18:49:45</date>
+        <amount>8922.3</amount>
+    </record>
+    <record>
+        <id>671</id>
+        <username>user671143</username>
+        <date>30-10-1986 21:26:46</date>
+        <amount>90641.3</amount>
+    </record>
+    <record>
+        <id>672</id>
+        <username>user630446</username>
+        <date>31-01-2013 19:03:56</date>
+        <amount>1419.3</amount>
+    </record>
+    <record>
+        <id>673</id>
+        <username>user896601</username>
+        <date>02-01-2004 12:26:09</date>
+        <amount>38430.4</amount>
+    </record>
+    <record>
+        <id>674</id>
+        <username>user384113</username>
+        <date>03-02-2025 23:45:07</date>
+        <amount>1632.3</amount>
+    </record>
+    <record>
+        <id>675</id>
+        <username>user263880</username>
+        <date>23-07-1987 10:03:23</date>
+        <amount>41908.9</amount>
+    </record>
+    <record>
+        <id>676</id>
+        <username>user393260</username>
+        <date>26-10-1995 04:16:44</date>
+        <amount>12003.7</amount>
+    </record>
+    <record>
+        <id>677</id>
+        <username>user928373</username>
+        <date>30-06-2008 23:26:08</date>
+        <amount>46730.4</amount>
+    </record>
+    <record>
+        <id>678</id>
+        <username>user224758</username>
+        <date>01-09-2020 10:23:24</date>
+        <amount>19877.2</amount>
+    </record>
+    <record>
+        <id>679</id>
+        <username>user998192</username>
+        <date>08-12-1999 03:30:11</date>
+        <amount>22543.4</amount>
+    </record>
+    <record>
+        <id>680</id>
+        <username>user682493</username>
+        <date>13-02-1995 01:09:57</date>
+        <amount>94232.0</amount>
+    </record>
+    <record>
+        <id>681</id>
+        <username>user562837</username>
+        <date>07-07-2022 02:09:06</date>
+        <amount>88356.0</amount>
+    </record>
+    <record>
+        <id>682</id>
+        <username>user585061</username>
+        <date>09-08-1994 05:10:02</date>
+        <amount>92792.7</amount>
+    </record>
+    <record>
+        <id>683</id>
+        <username>user367117</username>
+        <date>13-05-2004 02:11:55</date>
+        <amount>64432.3</amount>
+    </record>
+    <record>
+        <id>684</id>
+        <username>user145620</username>
+        <date>31-07-2014 13:29:47</date>
+        <amount>88916.9</amount>
+    </record>
+    <record>
+        <id>685</id>
+        <username>user616243</username>
+        <date>24-09-1977 00:17:19</date>
+        <amount>65374.6</amount>
+    </record>
+    <record>
+        <id>686</id>
+        <username>user688652</username>
+        <date>07-10-1981 15:35:24</date>
+        <amount>16692.1</amount>
+    </record>
+    <record>
+        <id>687</id>
+        <username>user189546</username>
+        <date>17-09-1981 01:15:21</date>
+        <amount>94360.4</amount>
+    </record>
+    <record>
+        <id>688</id>
+        <username>user874987</username>
+        <date>27-08-2025 17:50:24</date>
+        <amount>85230.3</amount>
+    </record>
+    <record>
+        <id>689</id>
+        <username>user105422</username>
+        <date>11-12-1978 01:53:28</date>
+        <amount>32771.3</amount>
+    </record>
+    <record>
+        <id>690</id>
+        <username>user257559</username>
+        <date>06-11-1981 00:09:51</date>
+        <amount>69564.3</amount>
+    </record>
+    <record>
+        <id>691</id>
+        <username>user328938</username>
+        <date>12-04-1973 11:35:06</date>
+        <amount>52784.0</amount>
+    </record>
+    <record>
+        <id>692</id>
+        <username>user672204</username>
+        <date>18-06-2023 18:54:32</date>
+        <amount>9588.5</amount>
+    </record>
+    <record>
+        <id>693</id>
+        <username>user338493</username>
+        <date>20-07-2008 01:54:11</date>
+        <amount>9914.1</amount>
+    </record>
+    <record>
+        <id>694</id>
+        <username>user678706</username>
+        <date>27-08-1993 20:09:29</date>
+        <amount>50672.5</amount>
+    </record>
+    <record>
+        <id>695</id>
+        <username>user571811</username>
+        <date>19-03-1985 14:15:06</date>
+        <amount>97025.5</amount>
+    </record>
+    <record>
+        <id>696</id>
+        <username>user848707</username>
+        <date>05-10-1994 22:38:37</date>
+        <amount>47029.1</amount>
+    </record>
+    <record>
+        <id>697</id>
+        <username>user989297</username>
+        <date>09-12-1974 05:47:50</date>
+        <amount>88455.9</amount>
+    </record>
+    <record>
+        <id>698</id>
+        <username>user899799</username>
+        <date>27-01-1997 11:46:19</date>
+        <amount>37556.9</amount>
+    </record>
+    <record>
+        <id>699</id>
+        <username>user225650</username>
+        <date>04-04-2012 15:19:24</date>
+        <amount>25653.2</amount>
+    </record>
+    <record>
+        <id>700</id>
+        <username>user510135</username>
+        <date>31-07-2009 04:02:42</date>
+        <amount>18501.5</amount>
+    </record>
+    <record>
+        <id>701</id>
+        <username>user631022</username>
+        <date>10-04-2005 18:02:59</date>
+        <amount>95226.7</amount>
+    </record>
+    <record>
+        <id>702</id>
+        <username>user266076</username>
+        <date>14-04-1970 02:29:09</date>
+        <amount>16053.4</amount>
+    </record>
+    <record>
+        <id>703</id>
+        <username>user397233</username>
+        <date>06-08-1993 06:02:49</date>
+        <amount>95649.5</amount>
+    </record>
+    <record>
+        <id>704</id>
+        <username>user612728</username>
+        <date>01-11-1970 00:50:11</date>
+        <amount>59145.4</amount>
+    </record>
+    <record>
+        <id>705</id>
+        <username>user914724</username>
+        <date>11-12-2000 17:34:59</date>
+        <amount>74904.1</amount>
+    </record>
+    <record>
+        <id>706</id>
+        <username>user394795</username>
+        <date>14-07-2001 09:30:33</date>
+        <amount>56293.5</amount>
+    </record>
+    <record>
+        <id>707</id>
+        <username>user313399</username>
+        <date>30-08-1989 11:27:09</date>
+        <amount>99556.1</amount>
+    </record>
+    <record>
+        <id>708</id>
+        <username>user179969</username>
+        <date>01-04-1996 04:31:45</date>
+        <amount>38502.3</amount>
+    </record>
+    <record>
+        <id>709</id>
+        <username>user760426</username>
+        <date>19-08-2015 15:48:26</date>
+        <amount>53390.7</amount>
+    </record>
+    <record>
+        <id>710</id>
+        <username>user795858</username>
+        <date>23-06-2020 13:03:53</date>
+        <amount>89780.6</amount>
+    </record>
+    <record>
+        <id>711</id>
+        <username>user162772</username>
+        <date>17-06-2000 20:17:41</date>
+        <amount>58749.2</amount>
+    </record>
+    <record>
+        <id>712</id>
+        <username>user885854</username>
+        <date>12-06-1999 20:26:49</date>
+        <amount>16854.3</amount>
+    </record>
+    <record>
+        <id>713</id>
+        <username>user608914</username>
+        <date>26-10-2011 15:59:23</date>
+        <amount>62096.8</amount>
+    </record>
+    <record>
+        <id>714</id>
+        <username>user634021</username>
+        <date>12-12-1989 10:43:02</date>
+        <amount>35636.4</amount>
+    </record>
+    <record>
+        <id>715</id>
+        <username>user627208</username>
+        <date>22-12-1985 11:05:44</date>
+        <amount>64556.7</amount>
+    </record>
+    <record>
+        <id>716</id>
+        <username>user986810</username>
+        <date>16-03-2019 15:10:03</date>
+        <amount>28122.4</amount>
+    </record>
+    <record>
+        <id>717</id>
+        <username>user167778</username>
+        <date>03-07-1995 07:57:23</date>
+        <amount>64575.6</amount>
+    </record>
+    <record>
+        <id>718</id>
+        <username>user249729</username>
+        <date>30-09-1996 06:23:18</date>
+        <amount>45892.0</amount>
+    </record>
+    <record>
+        <id>719</id>
+        <username>user830684</username>
+        <date>06-03-2010 13:19:42</date>
+        <amount>77742.3</amount>
+    </record>
+    <record>
+        <id>720</id>
+        <username>user694970</username>
+        <date>26-06-1991 12:34:28</date>
+        <amount>3396.9</amount>
+    </record>
+    <record>
+        <id>721</id>
+        <username>user454221</username>
+        <date>11-08-1974 02:04:10</date>
+        <amount>20834.3</amount>
+    </record>
+    <record>
+        <id>722</id>
+        <username>user977053</username>
+        <date>21-10-1974 19:27:01</date>
+        <amount>87166.2</amount>
+    </record>
+    <record>
+        <id>723</id>
+        <username>user202921</username>
+        <date>17-09-1975 17:16:56</date>
+        <amount>31813.4</amount>
+    </record>
+    <record>
+        <id>724</id>
+        <username>user595235</username>
+        <date>02-01-1970 09:36:55</date>
+        <amount>74436.4</amount>
+    </record>
+    <record>
+        <id>725</id>
+        <username>user479523</username>
+        <date>12-04-2005 00:21:47</date>
+        <amount>70019.5</amount>
+    </record>
+    <record>
+        <id>726</id>
+        <username>user415797</username>
+        <date>15-07-2005 07:31:25</date>
+        <amount>93885.4</amount>
+    </record>
+    <record>
+        <id>727</id>
+        <username>user744497</username>
+        <date>21-01-1972 23:14:56</date>
+        <amount>56685.6</amount>
+    </record>
+    <record>
+        <id>728</id>
+        <username>user894470</username>
+        <date>14-02-2016 19:13:14</date>
+        <amount>9045.3</amount>
+    </record>
+    <record>
+        <id>729</id>
+        <username>user305527</username>
+        <date>03-09-2001 16:03:07</date>
+        <amount>62690.1</amount>
+    </record>
+    <record>
+        <id>730</id>
+        <username>user995847</username>
+        <date>22-02-2003 00:40:50</date>
+        <amount>92206.9</amount>
+    </record>
+    <record>
+        <id>731</id>
+        <username>user227643</username>
+        <date>28-02-1971 01:47:35</date>
+        <amount>92353.0</amount>
+    </record>
+    <record>
+        <id>732</id>
+        <username>user520682</username>
+        <date>19-03-2003 23:26:13</date>
+        <amount>5169.9</amount>
+    </record>
+    <record>
+        <id>733</id>
+        <username>user477730</username>
+        <date>28-06-2007 06:28:05</date>
+        <amount>26869.5</amount>
+    </record>
+    <record>
+        <id>734</id>
+        <username>user371992</username>
+        <date>02-05-1970 13:51:17</date>
+        <amount>80767.2</amount>
+    </record>
+    <record>
+        <id>735</id>
+        <username>user463298</username>
+        <date>26-08-1977 06:07:31</date>
+        <amount>51934.3</amount>
+    </record>
+    <record>
+        <id>736</id>
+        <username>user828610</username>
+        <date>08-11-1979 06:16:55</date>
+        <amount>86572.7</amount>
+    </record>
+    <record>
+        <id>737</id>
+        <username>user451415</username>
+        <date>28-07-2016 06:58:58</date>
+        <amount>62154.8</amount>
+    </record>
+    <record>
+        <id>738</id>
+        <username>user809608</username>
+        <date>02-09-1986 11:50:53</date>
+        <amount>57519.7</amount>
+    </record>
+    <record>
+        <id>739</id>
+        <username>user481168</username>
+        <date>10-11-2018 20:11:37</date>
+        <amount>21266.2</amount>
+    </record>
+    <record>
+        <id>740</id>
+        <username>user540282</username>
+        <date>22-11-1972 13:26:08</date>
+        <amount>53023.2</amount>
+    </record>
+    <record>
+        <id>741</id>
+        <username>user292586</username>
+        <date>28-07-1989 10:18:06</date>
+        <amount>1258.1</amount>
+    </record>
+    <record>
+        <id>742</id>
+        <username>user667719</username>
+        <date>19-01-2009 23:41:24</date>
+        <amount>67272.6</amount>
+    </record>
+    <record>
+        <id>743</id>
+        <username>user121281</username>
+        <date>12-04-2019 21:20:49</date>
+        <amount>73820.6</amount>
+    </record>
+    <record>
+        <id>744</id>
+        <username>user464960</username>
+        <date>22-02-1981 05:45:26</date>
+        <amount>3070.4</amount>
+    </record>
+    <record>
+        <id>745</id>
+        <username>user458927</username>
+        <date>02-09-2007 12:27:35</date>
+        <amount>44240.8</amount>
+    </record>
+    <record>
+        <id>746</id>
+        <username>user839910</username>
+        <date>21-01-2008 17:41:03</date>
+        <amount>20636.2</amount>
+    </record>
+    <record>
+        <id>747</id>
+        <username>user405166</username>
+        <date>23-10-1982 11:21:55</date>
+        <amount>99507.5</amount>
+    </record>
+    <record>
+        <id>748</id>
+        <username>user796022</username>
+        <date>10-01-1987 20:52:43</date>
+        <amount>78668.5</amount>
+    </record>
+    <record>
+        <id>749</id>
+        <username>user927429</username>
+        <date>19-03-1984 14:36:41</date>
+        <amount>92976.3</amount>
+    </record>
+    <record>
+        <id>750</id>
+        <username>user382263</username>
+        <date>07-10-1978 14:59:59</date>
+        <amount>82678.4</amount>
+    </record>
+    <record>
+        <id>751</id>
+        <username>user778219</username>
+        <date>08-12-1976 18:03:21</date>
+        <amount>20837.7</amount>
+    </record>
+    <record>
+        <id>752</id>
+        <username>user418004</username>
+        <date>12-09-1982 00:38:30</date>
+        <amount>37042.6</amount>
+    </record>
+    <record>
+        <id>753</id>
+        <username>user298544</username>
+        <date>09-08-2003 23:25:46</date>
+        <amount>65658.5</amount>
+    </record>
+    <record>
+        <id>754</id>
+        <username>user572600</username>
+        <date>23-04-1972 10:36:04</date>
+        <amount>17688.3</amount>
+    </record>
+    <record>
+        <id>755</id>
+        <username>user867256</username>
+        <date>26-05-2007 17:49:57</date>
+        <amount>4326.9</amount>
+    </record>
+    <record>
+        <id>756</id>
+        <username>user628646</username>
+        <date>21-06-1978 00:56:55</date>
+        <amount>8091.6</amount>
+    </record>
+    <record>
+        <id>757</id>
+        <username>user725434</username>
+        <date>17-10-1984 12:15:53</date>
+        <amount>42264.9</amount>
+    </record>
+    <record>
+        <id>758</id>
+        <username>user257089</username>
+        <date>16-05-2004 02:22:37</date>
+        <amount>57572.5</amount>
+    </record>
+    <record>
+        <id>759</id>
+        <username>user442115</username>
+        <date>21-02-1976 04:19:03</date>
+        <amount>43517.5</amount>
+    </record>
+    <record>
+        <id>760</id>
+        <username>user276308</username>
+        <date>02-05-1972 12:32:22</date>
+        <amount>54406.8</amount>
+    </record>
+    <record>
+        <id>761</id>
+        <username>user141103</username>
+        <date>03-12-1999 08:55:29</date>
+        <amount>24284.5</amount>
+    </record>
+    <record>
+        <id>762</id>
+        <username>user123384</username>
+        <date>21-03-2017 18:22:12</date>
+        <amount>56770.1</amount>
+    </record>
+    <record>
+        <id>763</id>
+        <username>user162925</username>
+        <date>22-10-1975 12:21:33</date>
+        <amount>17533.0</amount>
+    </record>
+    <record>
+        <id>764</id>
+        <username>user638757</username>
+        <date>19-12-2011 02:42:20</date>
+        <amount>65791.9</amount>
+    </record>
+    <record>
+        <id>765</id>
+        <username>user777939</username>
+        <date>04-01-2016 17:38:06</date>
+        <amount>52446.7</amount>
+    </record>
+    <record>
+        <id>766</id>
+        <username>user638741</username>
+        <date>12-08-1989 11:21:43</date>
+        <amount>46985.9</amount>
+    </record>
+    <record>
+        <id>767</id>
+        <username>user636835</username>
+        <date>12-05-2016 08:59:53</date>
+        <amount>28595.1</amount>
+    </record>
+    <record>
+        <id>768</id>
+        <username>user782533</username>
+        <date>10-08-2024 09:52:53</date>
+        <amount>23822.6</amount>
+    </record>
+    <record>
+        <id>769</id>
+        <username>user935978</username>
+        <date>19-08-2015 02:22:43</date>
+        <amount>59832.9</amount>
+    </record>
+    <record>
+        <id>770</id>
+        <username>user742888</username>
+        <date>29-06-2008 15:59:06</date>
+        <amount>80128.7</amount>
+    </record>
+    <record>
+        <id>771</id>
+        <username>user314517</username>
+        <date>08-05-2005 21:20:58</date>
+        <amount>61836.8</amount>
+    </record>
+    <record>
+        <id>772</id>
+        <username>user761370</username>
+        <date>28-07-1980 05:39:51</date>
+        <amount>39579.6</amount>
+    </record>
+    <record>
+        <id>773</id>
+        <username>user538984</username>
+        <date>02-08-1974 11:05:37</date>
+        <amount>30361.1</amount>
+    </record>
+    <record>
+        <id>774</id>
+        <username>user598217</username>
+        <date>07-06-2003 05:39:55</date>
+        <amount>75582.7</amount>
+    </record>
+    <record>
+        <id>775</id>
+        <username>user686681</username>
+        <date>27-07-2005 22:18:46</date>
+        <amount>61078.9</amount>
+    </record>
+    <record>
+        <id>776</id>
+        <username>user221464</username>
+        <date>27-03-1978 04:15:58</date>
+        <amount>38329.3</amount>
+    </record>
+    <record>
+        <id>777</id>
+        <username>user715927</username>
+        <date>02-11-1997 10:03:37</date>
+        <amount>26056.9</amount>
+    </record>
+    <record>
+        <id>778</id>
+        <username>user879862</username>
+        <date>18-10-2025 08:35:12</date>
+        <amount>16601.2</amount>
+    </record>
+    <record>
+        <id>779</id>
+        <username>user428037</username>
+        <date>29-06-1977 14:30:42</date>
+        <amount>46149.6</amount>
+    </record>
+    <record>
+        <id>780</id>
+        <username>user637918</username>
+        <date>08-04-2003 19:43:20</date>
+        <amount>23274.1</amount>
+    </record>
+    <record>
+        <id>781</id>
+        <username>user723293</username>
+        <date>22-11-2019 23:21:23</date>
+        <amount>2359.6</amount>
+    </record>
+    <record>
+        <id>782</id>
+        <username>user977105</username>
+        <date>22-06-1972 07:49:45</date>
+        <amount>61507.4</amount>
+    </record>
+    <record>
+        <id>783</id>
+        <username>user908163</username>
+        <date>05-09-1989 19:37:53</date>
+        <amount>39180.3</amount>
+    </record>
+    <record>
+        <id>784</id>
+        <username>user421635</username>
+        <date>15-06-2006 02:58:28</date>
+        <amount>1928.5</amount>
+    </record>
+    <record>
+        <id>785</id>
+        <username>user810535</username>
+        <date>28-12-1980 02:57:43</date>
+        <amount>41504.9</amount>
+    </record>
+    <record>
+        <id>786</id>
+        <username>user923252</username>
+        <date>20-12-2018 08:25:27</date>
+        <amount>19518.6</amount>
+    </record>
+    <record>
+        <id>787</id>
+        <username>user159099</username>
+        <date>21-06-2025 03:15:24</date>
+        <amount>6593.4</amount>
+    </record>
+    <record>
+        <id>788</id>
+        <username>user830117</username>
+        <date>27-08-1992 11:55:08</date>
+        <amount>39860.1</amount>
+    </record>
+    <record>
+        <id>789</id>
+        <username>user574801</username>
+        <date>30-08-2011 00:02:11</date>
+        <amount>65895.3</amount>
+    </record>
+    <record>
+        <id>790</id>
+        <username>user403444</username>
+        <date>22-03-2002 03:41:23</date>
+        <amount>73644.0</amount>
+    </record>
+    <record>
+        <id>791</id>
+        <username>user372487</username>
+        <date>06-07-1998 06:32:55</date>
+        <amount>32515.1</amount>
+    </record>
+    <record>
+        <id>792</id>
+        <username>user535237</username>
+        <date>05-02-1989 11:39:17</date>
+        <amount>16531.5</amount>
+    </record>
+    <record>
+        <id>793</id>
+        <username>user952741</username>
+        <date>02-03-1992 00:57:52</date>
+        <amount>68768.2</amount>
+    </record>
+    <record>
+        <id>794</id>
+        <username>user736894</username>
+        <date>09-09-2023 08:38:57</date>
+        <amount>10116.6</amount>
+    </record>
+    <record>
+        <id>795</id>
+        <username>user821851</username>
+        <date>25-02-1995 02:22:01</date>
+        <amount>21309.6</amount>
+    </record>
+    <record>
+        <id>796</id>
+        <username>user592270</username>
+        <date>12-07-2002 17:14:35</date>
+        <amount>18099.0</amount>
+    </record>
+    <record>
+        <id>797</id>
+        <username>user137217</username>
+        <date>11-08-2021 06:48:53</date>
+        <amount>9875.5</amount>
+    </record>
+    <record>
+        <id>798</id>
+        <username>user931048</username>
+        <date>30-11-2006 00:57:14</date>
+        <amount>68990.5</amount>
+    </record>
+    <record>
+        <id>799</id>
+        <username>user589816</username>
+        <date>19-04-1993 08:47:40</date>
+        <amount>93172.4</amount>
+    </record>
+    <record>
+        <id>800</id>
+        <username>user820887</username>
+        <date>14-11-1991 18:16:58</date>
+        <amount>79901.4</amount>
+    </record>
+    <record>
+        <id>801</id>
+        <username>user665597</username>
+        <date>05-09-2016 01:39:09</date>
+        <amount>90173.6</amount>
+    </record>
+    <record>
+        <id>802</id>
+        <username>user311753</username>
+        <date>21-02-2001 03:55:09</date>
+        <amount>74992.7</amount>
+    </record>
+    <record>
+        <id>803</id>
+        <username>user188707</username>
+        <date>25-09-1983 22:25:11</date>
+        <amount>47711.5</amount>
+    </record>
+    <record>
+        <id>804</id>
+        <username>user292342</username>
+        <date>27-07-1973 12:31:10</date>
+        <amount>37038.1</amount>
+    </record>
+    <record>
+        <id>805</id>
+        <username>user353786</username>
+        <date>04-06-1997 20:55:03</date>
+        <amount>16222.5</amount>
+    </record>
+    <record>
+        <id>806</id>
+        <username>user858339</username>
+        <date>20-10-2013 13:47:39</date>
+        <amount>86700.0</amount>
+    </record>
+    <record>
+        <id>807</id>
+        <username>user853124</username>
+        <date>26-10-2005 22:14:49</date>
+        <amount>76309.7</amount>
+    </record>
+    <record>
+        <id>808</id>
+        <username>user862381</username>
+        <date>24-10-1989 01:44:21</date>
+        <amount>8117.8</amount>
+    </record>
+    <record>
+        <id>809</id>
+        <username>user277092</username>
+        <date>20-05-1989 07:32:04</date>
+        <amount>72151.7</amount>
+    </record>
+    <record>
+        <id>810</id>
+        <username>user560598</username>
+        <date>04-04-2017 03:49:11</date>
+        <amount>73069.2</amount>
+    </record>
+    <record>
+        <id>811</id>
+        <username>user261466</username>
+        <date>27-11-2004 07:32:40</date>
+        <amount>51855.0</amount>
+    </record>
+    <record>
+        <id>812</id>
+        <username>user573860</username>
+        <date>05-06-1994 14:22:24</date>
+        <amount>61825.3</amount>
+    </record>
+    <record>
+        <id>813</id>
+        <username>user477935</username>
+        <date>15-07-1978 20:09:33</date>
+        <amount>48660.4</amount>
+    </record>
+    <record>
+        <id>814</id>
+        <username>user473317</username>
+        <date>12-04-1993 15:37:54</date>
+        <amount>1905.2</amount>
+    </record>
+    <record>
+        <id>815</id>
+        <username>user153997</username>
+        <date>19-06-1993 16:00:17</date>
+        <amount>4889.7</amount>
+    </record>
+    <record>
+        <id>816</id>
+        <username>user906606</username>
+        <date>08-05-2003 23:57:25</date>
+        <amount>45462.5</amount>
+    </record>
+    <record>
+        <id>817</id>
+        <username>user325910</username>
+        <date>17-02-2013 16:59:51</date>
+        <amount>55905.2</amount>
+    </record>
+    <record>
+        <id>818</id>
+        <username>user457201</username>
+        <date>14-01-2002 15:53:37</date>
+        <amount>58160.0</amount>
+    </record>
+    <record>
+        <id>819</id>
+        <username>user369574</username>
+        <date>09-03-1994 13:17:08</date>
+        <amount>88935.4</amount>
+    </record>
+    <record>
+        <id>820</id>
+        <username>user195669</username>
+        <date>01-06-2006 21:36:12</date>
+        <amount>23710.6</amount>
+    </record>
+    <record>
+        <id>821</id>
+        <username>user362636</username>
+        <date>31-08-1983 20:37:31</date>
+        <amount>442.5</amount>
+    </record>
+    <record>
+        <id>822</id>
+        <username>user604841</username>
+        <date>10-04-2012 22:26:49</date>
+        <amount>50978.6</amount>
+    </record>
+    <record>
+        <id>823</id>
+        <username>user408594</username>
+        <date>03-05-1996 00:10:25</date>
+        <amount>81982.8</amount>
+    </record>
+    <record>
+        <id>824</id>
+        <username>user592921</username>
+        <date>21-04-1975 19:25:40</date>
+        <amount>58789.7</amount>
+    </record>
+    <record>
+        <id>825</id>
+        <username>user162833</username>
+        <date>24-07-2003 15:36:28</date>
+        <amount>66371.3</amount>
+    </record>
+    <record>
+        <id>826</id>
+        <username>user532524</username>
+        <date>27-09-1976 17:00:53</date>
+        <amount>18146.1</amount>
+    </record>
+    <record>
+        <id>827</id>
+        <username>user719786</username>
+        <date>04-08-1987 13:42:48</date>
+        <amount>25836.2</amount>
+    </record>
+    <record>
+        <id>828</id>
+        <username>user102659</username>
+        <date>04-10-1983 16:08:35</date>
+        <amount>72413.1</amount>
+    </record>
+    <record>
+        <id>829</id>
+        <username>user996047</username>
+        <date>18-04-2016 00:08:53</date>
+        <amount>13807.5</amount>
+    </record>
+    <record>
+        <id>830</id>
+        <username>user349576</username>
+        <date>30-03-1979 12:12:06</date>
+        <amount>6562.8</amount>
+    </record>
+    <record>
+        <id>831</id>
+        <username>user979537</username>
+        <date>09-01-2006 19:44:48</date>
+        <amount>38745.9</amount>
+    </record>
+    <record>
+        <id>832</id>
+        <username>user861054</username>
+        <date>06-08-2005 16:22:43</date>
+        <amount>13068.6</amount>
+    </record>
+    <record>
+        <id>833</id>
+        <username>user314874</username>
+        <date>06-08-1990 05:42:46</date>
+        <amount>65368.2</amount>
+    </record>
+    <record>
+        <id>834</id>
+        <username>user255996</username>
+        <date>31-03-2001 02:04:09</date>
+        <amount>75650.2</amount>
+    </record>
+    <record>
+        <id>835</id>
+        <username>user661279</username>
+        <date>31-12-2022 10:01:59</date>
+        <amount>51686.7</amount>
+    </record>
+    <record>
+        <id>836</id>
+        <username>user139117</username>
+        <date>08-03-2016 02:51:02</date>
+        <amount>9213.5</amount>
+    </record>
+    <record>
+        <id>837</id>
+        <username>user417525</username>
+        <date>24-04-2010 19:51:48</date>
+        <amount>11220.8</amount>
+    </record>
+    <record>
+        <id>838</id>
+        <username>user557455</username>
+        <date>28-05-1972 20:01:04</date>
+        <amount>95514.1</amount>
+    </record>
+    <record>
+        <id>839</id>
+        <username>user689638</username>
+        <date>10-06-1972 10:30:19</date>
+        <amount>99118.1</amount>
+    </record>
+    <record>
+        <id>840</id>
+        <username>user678597</username>
+        <date>29-09-1979 19:12:10</date>
+        <amount>28109.1</amount>
+    </record>
+    <record>
+        <id>841</id>
+        <username>user342790</username>
+        <date>30-03-2013 13:07:04</date>
+        <amount>34039.3</amount>
+    </record>
+    <record>
+        <id>842</id>
+        <username>user832921</username>
+        <date>28-02-2014 17:20:10</date>
+        <amount>14880.4</amount>
+    </record>
+    <record>
+        <id>843</id>
+        <username>user303774</username>
+        <date>23-11-2007 19:08:33</date>
+        <amount>10902.2</amount>
+    </record>
+    <record>
+        <id>844</id>
+        <username>user157385</username>
+        <date>24-04-2020 02:45:40</date>
+        <amount>50213.5</amount>
+    </record>
+    <record>
+        <id>845</id>
+        <username>user104848</username>
+        <date>07-03-2016 08:27:09</date>
+        <amount>43240.8</amount>
+    </record>
+    <record>
+        <id>846</id>
+        <username>user739884</username>
+        <date>19-02-2020 16:46:34</date>
+        <amount>8951.4</amount>
+    </record>
+    <record>
+        <id>847</id>
+        <username>user317514</username>
+        <date>05-11-1980 09:38:38</date>
+        <amount>1931.3</amount>
+    </record>
+    <record>
+        <id>848</id>
+        <username>user365277</username>
+        <date>26-10-1995 18:57:36</date>
+        <amount>16430.3</amount>
+    </record>
+    <record>
+        <id>849</id>
+        <username>user836357</username>
+        <date>26-10-2010 02:01:02</date>
+        <amount>45299.6</amount>
+    </record>
+    <record>
+        <id>850</id>
+        <username>user216549</username>
+        <date>27-07-2022 17:25:14</date>
+        <amount>33759.3</amount>
+    </record>
+    <record>
+        <id>851</id>
+        <username>user297360</username>
+        <date>14-10-1995 13:32:24</date>
+        <amount>33079.3</amount>
+    </record>
+    <record>
+        <id>852</id>
+        <username>user136688</username>
+        <date>19-12-1989 16:41:10</date>
+        <amount>93746.9</amount>
+    </record>
+    <record>
+        <id>853</id>
+        <username>user140245</username>
+        <date>28-04-2000 18:58:44</date>
+        <amount>99385.2</amount>
+    </record>
+    <record>
+        <id>854</id>
+        <username>user423447</username>
+        <date>24-11-2015 17:00:58</date>
+        <amount>15718.3</amount>
+    </record>
+    <record>
+        <id>855</id>
+        <username>user445387</username>
+        <date>16-11-2006 10:07:59</date>
+        <amount>68956.7</amount>
+    </record>
+    <record>
+        <id>856</id>
+        <username>user759196</username>
+        <date>24-03-2018 13:30:59</date>
+        <amount>66582.9</amount>
+    </record>
+    <record>
+        <id>857</id>
+        <username>user900266</username>
+        <date>13-06-2003 11:04:47</date>
+        <amount>76959.6</amount>
+    </record>
+    <record>
+        <id>858</id>
+        <username>user287785</username>
+        <date>05-02-1983 15:19:40</date>
+        <amount>92549.4</amount>
+    </record>
+    <record>
+        <id>859</id>
+        <username>user728809</username>
+        <date>20-11-1998 04:37:41</date>
+        <amount>37135.1</amount>
+    </record>
+    <record>
+        <id>860</id>
+        <username>user528836</username>
+        <date>25-07-2009 16:54:55</date>
+        <amount>60580.8</amount>
+    </record>
+    <record>
+        <id>861</id>
+        <username>user284205</username>
+        <date>11-09-2023 21:29:48</date>
+        <amount>64515.1</amount>
+    </record>
+    <record>
+        <id>862</id>
+        <username>user187626</username>
+        <date>12-08-2016 02:51:25</date>
+        <amount>6508.7</amount>
+    </record>
+    <record>
+        <id>863</id>
+        <username>user413318</username>
+        <date>24-04-1987 10:40:15</date>
+        <amount>40689.3</amount>
+    </record>
+    <record>
+        <id>864</id>
+        <username>user377862</username>
+        <date>13-02-1992 15:13:30</date>
+        <amount>44302.8</amount>
+    </record>
+    <record>
+        <id>865</id>
+        <username>user711304</username>
+        <date>13-06-2022 10:37:38</date>
+        <amount>56950.1</amount>
+    </record>
+    <record>
+        <id>866</id>
+        <username>user752205</username>
+        <date>15-11-2019 10:47:39</date>
+        <amount>38812.4</amount>
+    </record>
+    <record>
+        <id>867</id>
+        <username>user217887</username>
+        <date>25-10-1992 22:43:37</date>
+        <amount>81646.4</amount>
+    </record>
+    <record>
+        <id>868</id>
+        <username>user437569</username>
+        <date>19-02-1972 12:36:51</date>
+        <amount>83695.5</amount>
+    </record>
+    <record>
+        <id>869</id>
+        <username>user155499</username>
+        <date>28-02-1982 15:51:35</date>
+        <amount>80607.6</amount>
+    </record>
+    <record>
+        <id>870</id>
+        <username>user841608</username>
+        <date>30-12-1978 03:54:03</date>
+        <amount>28551.0</amount>
+    </record>
+    <record>
+        <id>871</id>
+        <username>user795839</username>
+        <date>06-04-1987 22:40:23</date>
+        <amount>59325.4</amount>
+    </record>
+    <record>
+        <id>872</id>
+        <username>user540066</username>
+        <date>19-08-2024 16:32:48</date>
+        <amount>32874.6</amount>
+    </record>
+    <record>
+        <id>873</id>
+        <username>user918975</username>
+        <date>03-11-2007 23:47:10</date>
+        <amount>82054.3</amount>
+    </record>
+    <record>
+        <id>874</id>
+        <username>user724358</username>
+        <date>20-07-1979 10:30:07</date>
+        <amount>89914.1</amount>
+    </record>
+    <record>
+        <id>875</id>
+        <username>user250122</username>
+        <date>24-08-1997 02:22:40</date>
+        <amount>98901.4</amount>
+    </record>
+    <record>
+        <id>876</id>
+        <username>user172227</username>
+        <date>02-01-1987 22:40:27</date>
+        <amount>86069.2</amount>
+    </record>
+    <record>
+        <id>877</id>
+        <username>user342862</username>
+        <date>04-02-2020 21:47:28</date>
+        <amount>87540.8</amount>
+    </record>
+    <record>
+        <id>878</id>
+        <username>user751837</username>
+        <date>01-04-1976 01:09:13</date>
+        <amount>35230.0</amount>
+    </record>
+    <record>
+        <id>879</id>
+        <username>user878827</username>
+        <date>03-03-1988 00:09:50</date>
+        <amount>56808.1</amount>
+    </record>
+    <record>
+        <id>880</id>
+        <username>user532571</username>
+        <date>24-12-1973 08:19:30</date>
+        <amount>72809.2</amount>
+    </record>
+    <record>
+        <id>881</id>
+        <username>user107582</username>
+        <date>02-12-1991 11:54:49</date>
+        <amount>54518.3</amount>
+    </record>
+    <record>
+        <id>882</id>
+        <username>user196617</username>
+        <date>02-04-2004 00:45:03</date>
+        <amount>78766.9</amount>
+    </record>
+    <record>
+        <id>883</id>
+        <username>user994160</username>
+        <date>09-01-1972 18:04:54</date>
+        <amount>12841.7</amount>
+    </record>
+    <record>
+        <id>884</id>
+        <username>user197908</username>
+        <date>30-07-2026 17:45:59</date>
+        <amount>18288.1</amount>
+    </record>
+    <record>
+        <id>885</id>
+        <username>user310022</username>
+        <date>23-04-2021 05:33:15</date>
+        <amount>74085.9</amount>
+    </record>
+    <record>
+        <id>886</id>
+        <username>user453421</username>
+        <date>11-09-2015 21:40:58</date>
+        <amount>36317.5</amount>
+    </record>
+    <record>
+        <id>887</id>
+        <username>user248599</username>
+        <date>17-04-2005 12:52:36</date>
+        <amount>94041.9</amount>
+    </record>
+    <record>
+        <id>888</id>
+        <username>user127484</username>
+        <date>01-06-2026 14:58:33</date>
+        <amount>40763.1</amount>
+    </record>
+    <record>
+        <id>889</id>
+        <username>user956779</username>
+        <date>29-09-1974 21:34:22</date>
+        <amount>50151.4</amount>
+    </record>
+    <record>
+        <id>890</id>
+        <username>user867262</username>
+        <date>11-03-2014 22:16:02</date>
+        <amount>473.4</amount>
+    </record>
+    <record>
+        <id>891</id>
+        <username>user101168</username>
+        <date>21-12-2015 18:59:03</date>
+        <amount>83882.8</amount>
+    </record>
+    <record>
+        <id>892</id>
+        <username>user643566</username>
+        <date>08-07-1989 15:03:58</date>
+        <amount>46038.8</amount>
+    </record>
+    <record>
+        <id>893</id>
+        <username>user656572</username>
+        <date>24-09-2016 08:44:39</date>
+        <amount>68990.6</amount>
+    </record>
+    <record>
+        <id>894</id>
+        <username>user490274</username>
+        <date>26-03-2009 17:31:28</date>
+        <amount>75211.7</amount>
+    </record>
+    <record>
+        <id>895</id>
+        <username>user240685</username>
+        <date>07-09-1994 07:28:40</date>
+        <amount>16583.4</amount>
+    </record>
+    <record>
+        <id>896</id>
+        <username>user188523</username>
+        <date>06-09-2023 09:40:57</date>
+        <amount>54595.1</amount>
+    </record>
+    <record>
+        <id>897</id>
+        <username>user907362</username>
+        <date>04-11-1998 17:16:58</date>
+        <amount>61623.6</amount>
+    </record>
+    <record>
+        <id>898</id>
+        <username>user997442</username>
+        <date>10-11-1995 15:52:01</date>
+        <amount>29811.8</amount>
+    </record>
+    <record>
+        <id>899</id>
+        <username>user867532</username>
+        <date>18-08-1979 08:28:16</date>
+        <amount>97132.8</amount>
+    </record>
+    <record>
+        <id>900</id>
+        <username>user815488</username>
+        <date>20-07-2022 13:49:47</date>
+        <amount>69650.1</amount>
     </record>
 </records>

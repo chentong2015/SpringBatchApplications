@@ -26,7 +26,7 @@ public class XmlToDbConfiguration {
 
     @Bean(name = "xmlToDbJob")
     public Job xmlToDbjob(JobRepository jobRepository, @Qualifier("xmlToDbStep") Step xmlToDbStep) {
-        return new JobBuilder("Xml To Db Job 2", jobRepository)
+        return new JobBuilder("Xml To Db Job", jobRepository)
                 .preventRestart()
                 .start(xmlToDbStep)
                 .build();

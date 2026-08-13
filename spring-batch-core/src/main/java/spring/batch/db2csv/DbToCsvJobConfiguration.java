@@ -26,7 +26,7 @@ public class DbToCsvJobConfiguration {
 
     @Bean(name = "dbToCsvJob")
     public Job dbToCsvJob(JobRepository jobRepository, @Qualifier("dbToCsvStep") Step dbToCsvStep) {
-        return new JobBuilder("Db to Csv Job 1", jobRepository)
+        return new JobBuilder("Db to Csv Job", jobRepository)
                 .incrementer(new RunIdIncrementer())
                 .flow(dbToCsvStep)
                 .end()

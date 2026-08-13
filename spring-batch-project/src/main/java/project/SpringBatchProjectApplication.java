@@ -1,8 +1,9 @@
-package spring.batch;
+package project;
 
 import org.springframework.batch.core.job.Job;
 import org.springframework.batch.core.job.JobExecution;
 import org.springframework.batch.core.job.parameters.JobParameters;
+import org.springframework.batch.core.job.parameters.JobParametersBuilder;
 import org.springframework.batch.core.launch.JobOperator;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -15,9 +16,15 @@ public class SpringBatchProjectApplication {
         ConfigurableApplicationContext context = new SpringApplication(SpringBatchProjectApplication.class).run();
         JobOperator jobOperator = context.getBean(JobOperator.class);
 
-        Job job = (Job) context.getBean("taskletJob");
-        JobExecution execution = jobOperator.start(job, new JobParameters());
+        Job job = (Job) context.getBean("concurrencyJob");
+        JobExecution execution = jobOperator.start(job, getJobParameter());
         System.out.println("Job Status : " + execution.getStatus());
         System.out.println("Job completed");
+    }
+
+    private static JobParameters getJobParameter() {
+        return new JobParametersBuilder()
+                .addLong("timestamp", System.currentTimeMillis())
+                .toJobParameters();
     }
 }

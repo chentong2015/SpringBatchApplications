@@ -1,4 +1,4 @@
-package spring.batch.test_concurrency.bean;
+package project.base_bean;
 
 import jakarta.xml.bind.annotation.XmlAccessType;
 import jakarta.xml.bind.annotation.XmlAccessorType;
@@ -9,11 +9,11 @@ import jakarta.xml.bind.annotation.XmlRootElement;
 @XmlRootElement(name = "record")
 public class Record {
 
-    @XmlElement(name = "username")
-    private String username;
-
     @XmlElement(name = "id")
     private int id;
+
+    @XmlElement(name = "username")
+    private String username;
 
     @XmlElement(name = "date")
     private String date;
@@ -24,9 +24,9 @@ public class Record {
     public Record() {
     }
 
-    public Record(String username, int id, String date, double amount) {
-        this.username = username;
+    public Record(int id, String username,  String date, double amount) {
         this.id = id;
+        this.username = username;
         this.date = date;
         this.amount = amount;
     }
