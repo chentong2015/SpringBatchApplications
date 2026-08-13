@@ -35,9 +35,9 @@ public class XmlToDbConfiguration {
     // TODO. 读取XmL中的<record>标签并解析成DbRecord对象
     @Bean(name = "xmlToDbStep")
     public Step xmlToDbStep(JobRepository jobRepository,
-                              ItemReader<Record> reader,
-                              RecordItemProcessor itemProcessor,
-                              ItemWriter<DbRecord> writer) {
+                            ItemReader<Record> reader,
+                            RecordItemProcessor itemProcessor,
+                            ItemWriter<DbRecord> writer) {
         return new StepBuilder("Xml To Db Step", jobRepository)
                 .<Record, DbRecord>chunk(100)
                 .reader(reader)

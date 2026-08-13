@@ -16,10 +16,9 @@ public class RecordItemWriter implements ItemWriter<DbRecord> {
         this.repositoryService = repositoryService;
     }
 
-    // TODO. 多线程并发执行写入操作
     @Override
     public void write(Chunk<? extends DbRecord> chunk) {
-        System.out.println(Thread.currentThread().getName() + "write batch chunk: " + chunk.size());
+        System.out.println(Thread.currentThread().getName() + " write batch chunk: " + chunk.size());
         try {
             Thread.sleep(5000);
         } catch (InterruptedException exception) {

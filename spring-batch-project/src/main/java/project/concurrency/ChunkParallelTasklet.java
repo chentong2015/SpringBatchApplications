@@ -12,6 +12,7 @@ import org.springframework.stereotype.Component;
 import project.base_bean.DbRecord;
 import project.base_bean.Record;
 import project.base_process.RecordItemProcessor;
+import project.base_process.RecordItemReader;
 import project.base_process.RecordItemWriter;
 
 import java.util.ArrayList;
@@ -20,14 +21,14 @@ import java.util.concurrent.Semaphore;
 import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 
-// TODO. 自定义Tasklet并发执行
+// TODO. 自定义Tasklet实行Chunk并发执行效果
 // - 串行Read: 单线程不断读取数据到内存中(防止OOM)
 // - 并行Process+Write: 线程池独立处理数据并存储
-@Component
+// @Component
 public class ChunkParallelTasklet implements Tasklet {
 
     // 可以为工作流对应的Listener
-    private ItemStreamReader<Record> itemStreamReader;
+    private ItemStreamReader<Record> itemReader;
     private RecordItemProcessor itemProcessor;
     private RecordItemWriter itemWriter;
 
@@ -36,11 +37,11 @@ public class ChunkParallelTasklet implements Tasklet {
     private final Semaphore semaphore;
     private final ThreadPoolTaskExecutor taskExecutor;
 
-    public ChunkParallelTasklet(ItemStreamReader<Record> itemStreamReader,
+    public ChunkParallelTasklet(RecordItemReader itemReader,
                                 RecordItemProcessor itemProcessor,
                                 RecordItemWriter itemWriter,
                                 ThreadPoolTaskExecutor taskExecutor) {
-        this.itemStreamReader = itemStreamReader;
+        this.itemReader = itemReader;
         this.itemProcessor = itemProcessor;
         this.itemWriter = itemWriter;
 
@@ -53,7 +54,7 @@ public class ChunkParallelTasklet implements Tasklet {
     @Override
     public RepeatStatus execute(StepContribution contribution, ChunkContext chunkContext) throws Exception {
         ExecutionContext executionContext = chunkContext.getStepContext().getStepExecution().getExecutionContext();
-        itemStreamReader.open(executionContext);
+        itemReader.open(executionContext);
         try {
             while (true) {
                 List<Record> chunkItems = readChunkItems();
@@ -72,7 +73,7 @@ public class ChunkParallelTasklet implements Tasklet {
             }
             waitForAllTasksCompletion();
         } finally {
-            itemStreamReader.close();
+            itemReader.close();
         }
         return RepeatStatus.FINISHED;
     }
@@ -81,7 +82,7 @@ public class ChunkParallelTasklet implements Tasklet {
     private List<Record> readChunkItems() throws Exception {
         List<Record> items = new ArrayList<>(chunkSize);
         for (int i = 0; i < chunkSize; i++) {
-            Record item = itemStreamReader.read();
+            Record item = itemReader.read();
             if (item == null) {
                 break; // End of XML File
             }
