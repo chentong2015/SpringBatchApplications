@@ -31,45 +31,27 @@ public class ConcurrencyJobConfiguration {
                 .build();
     }
 
-    // TODO. taskExecutor()无法让chunk操作流并发执行
+    // TODO. .tasklet()并发执行效果
     @Bean(name = "concurrencyStep")
-    public Step concurrencyStep(JobRepository jobRepository,
-                                RecordItemReader itemReader,
-                                RecordItemProcessor itemProcessor,
-                                RecordItemWriter itemWriter,
-                                ThreadPoolTaskExecutor taskExecutor) {
+    public Step concurrencyStep(JobRepository jobRepository, ChunkParallelTasklet chunkParallelTasklet) {
         return new StepBuilder("Concurrency Step", jobRepository)
-                .<Record, DbRecord>chunk(100)
-                .reader(new SynchronizedItemStreamReader<>(itemReader))
-                .processor(itemProcessor)
-                .writer(itemWriter)
-                .taskExecutor(taskExecutor)
+                .tasklet(chunkParallelTasklet)
                 .build();
     }
 
-    // TODO. .tasklet()并发执行效果
+    // TODO. taskExecutor()无法让chunk操作流并发执行
     // @Bean(name = "concurrencyStep")
-    // public Step concurrencyStep(JobRepository jobRepository, ChunkParallelTasklet chunkParallelTasklet) {
+    // public Step concurrencyStep(JobRepository jobRepository,
+    //                             RecordItemReader itemReader,
+    //                             RecordItemProcessor itemProcessor,
+    //                             RecordItemWriter itemWriter,
+    //                             ThreadPoolTaskExecutor taskExecutor) {
     //     return new StepBuilder("Concurrency Step", jobRepository)
-    //             .tasklet(chunkParallelTasklet)
+    //             .<Record, DbRecord>chunk(100)
+    //             .reader(new SynchronizedItemStreamReader<>(itemReader))
+    //             .processor(itemProcessor)
+    //             .writer(itemWriter)
+    //             .taskExecutor(taskExecutor)
     //             .build();
     // }
-
-    @Bean
-    public ThreadPoolTaskExecutor taskExecutor() {
-        ThreadPoolTaskExecutor taskExecutor = new ThreadPoolTaskExecutor();
-        taskExecutor.setCorePoolSize(4);
-        taskExecutor.setMaxPoolSize(4);
-        taskExecutor.setThreadNamePrefix("Batch Thread -");
-        return taskExecutor;
-    }
-
-    // 读取XML文件: 配置Schema XSD格式, 验证提交的文件数据符合规范
-    @Bean(name = "xmlUnmarshaller")
-    public Unmarshaller xmlUnmarshaller() throws Exception {
-        Jaxb2Marshaller unmarshaller = new Jaxb2Marshaller();
-        unmarshaller.setClassesToBeBound(Record.class);
-        unmarshaller.afterPropertiesSet();
-        return unmarshaller;
-    }
 }

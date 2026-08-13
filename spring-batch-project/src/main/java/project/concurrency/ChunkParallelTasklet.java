@@ -24,7 +24,7 @@ import java.util.concurrent.TimeUnit;
 // TODO. 自定义Tasklet实行Chunk并发执行效果
 // - 串行Read: 单线程不断读取数据到内存中(防止OOM)
 // - 并行Process+Write: 线程池独立处理数据并存储
-// @Component
+@Component
 public class ChunkParallelTasklet implements Tasklet {
 
     // 可以为工作流对应的Listener
