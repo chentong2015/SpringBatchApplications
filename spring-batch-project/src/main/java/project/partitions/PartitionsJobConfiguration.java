@@ -42,8 +42,8 @@ public class PartitionsJobConfiguration {
     public Step masterStep(JobRepository jobRepository,
                            XmlFilePartitioner partitioner,
                            TaskExecutorPartitionHandler handler) {
-        return new StepBuilder("masterStep", jobRepository)
-                .partitioner("workerStep", partitioner)
+        return new StepBuilder("Master Step", jobRepository)
+                .partitioner("Worker Step", partitioner)
                 .partitionHandler(handler)
                 .gridSize(4)
                 .build();

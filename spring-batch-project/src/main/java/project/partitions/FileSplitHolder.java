@@ -44,7 +44,7 @@ public class FileSplitHolder implements Closeable {
         currentPartSize += TITLE.length + ROOT_START.length;
     }
 
-    // 找到完整</record>标签则批量写入, 如果达到拆分文件大小则创建新文件
+    // 找到完整</record>标签则批量写入, 再判断是否达到拆分文件大小
     public void process(byte[] buffer, int length) throws IOException {
         int offset = 0;
         for (int i = 0; i < length; i++) {
@@ -80,6 +80,7 @@ public class FileSplitHolder implements Closeable {
         currentPartSize = 0;
     }
 
+    // 确保关闭最后一个拆分文件的输出流
     @Override
     public void close() throws IOException {
         if (outputStream != null) {
