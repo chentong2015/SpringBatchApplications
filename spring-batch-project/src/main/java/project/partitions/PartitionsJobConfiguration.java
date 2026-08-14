@@ -30,7 +30,7 @@ public class PartitionsJobConfiguration {
     }
 
     @Bean(name = "preSplitStep")
-    public Step preSplitStep(JobRepository jobRepository, XmlFileSplitTasklet splitTasklet) {
+    public Step preSplitStep(JobRepository jobRepository, FileSplitTasklet splitTasklet) {
         return new StepBuilder("Split File Step", jobRepository)
                 .tasklet(splitTasklet)
                 .build();
@@ -62,11 +62,11 @@ public class PartitionsJobConfiguration {
     // 独立处理每个Split文件的Step工作流
     @Bean(name = "workerStep")
     public Step workerStep(JobRepository jobRepository,
-                           RecordItemPartitionReader partitionReader,
+                           XmlFilePartitionReader partitionReader,
                            RecordItemProcessor itemProcessor,
                            RecordItemWriter itemWriter) {
         return new StepBuilder("workerStep", jobRepository)
-                .<Record, DbRecord>chunk(5)
+                .<Record, DbRecord>chunk(100)
                 .reader(partitionReader)
                 .processor(itemProcessor)
                 .writer(itemWriter)

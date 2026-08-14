@@ -23,6 +23,7 @@ public class SpringBatchCoreApplication {
         JobExecution execution = jobOperator.start(job, getJobParameter());
         System.out.println("Job Status : " + execution.getStatus());
         System.out.println("Job completed");
+        context.close();
     }
 
     // TODO. .preventRestart() 默认不允许同名JOB重复执行

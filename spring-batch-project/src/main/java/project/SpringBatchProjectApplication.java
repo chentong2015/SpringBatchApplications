@@ -20,6 +20,7 @@ public class SpringBatchProjectApplication {
         JobExecution execution = jobOperator.start(job, getJobParameter());
         System.out.println("Job Status : " + execution.getStatus());
         System.out.println("Job completed");
+        context.close();
     }
 
     private static JobParameters getJobParameter() {

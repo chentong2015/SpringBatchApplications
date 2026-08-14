@@ -7,11 +7,13 @@ import org.springframework.stereotype.Component;
 import java.util.HashMap;
 import java.util.Map;
 
-// TODO. 为PartitionStep创建执行上下文, 不同Step通过参数值找到操作文件
+// TODO. 为PartitionStep创建执行上下文, Step通过参数值找到操作文件
 // Partitioner to be used to construct new step executions
 // StepExecution
 //      └── ExecutionContext
-//              └── file = /data/parts/part-0.xml
+//              └── part-file = /data/parts/part-1.xml
+//              └── part-file = /data/parts/part-2.xml
+//              └── part-file = /data/parts/part-3.xml
 @Component
 public class XmlFilePartitioner implements Partitioner {
 
@@ -20,8 +22,8 @@ public class XmlFilePartitioner implements Partitioner {
         Map<String, ExecutionContext> stepExecution = new HashMap<>();
         for (int i = 0; i < gridSize; i++) {
             ExecutionContext context = new ExecutionContext();
-            context.putString("file", "drive_folder/xml/parts/part-" + i + ".xml");
-            stepExecution.put("partition-" + i, context);
+            context.putString("part-file", "drive_folder/xml/parts/part-" + (i+1) + ".xml");
+            stepExecution.put("partition-" + (i+1), context);
         }
         return stepExecution;
     }

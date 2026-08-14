@@ -12,18 +12,18 @@ import project.bean.Record;
 import java.nio.file.FileSystems;
 import java.nio.file.Path;
 
-// TODO. @StepScope 延迟到Step执行并创建Reader时调用构造器,获取上下文参数
+// TODO. @StepScope: 延迟到Step执行(创建Reader时)调用构造器,获取上下文参数
 @StepScope
 @Component
-public class RecordItemPartitionReader extends StaxEventItemReader<Record> {
+public class XmlFilePartitionReader extends StaxEventItemReader<Record> {
 
     // 通过Step的ExecutionContext找到特定Partition切分文件
-    public RecordItemPartitionReader(@Value("#{stepExecutionContext['file']}") String partitionFilepath,
-                                     @Qualifier("xmlUnmarshaller") Unmarshaller xmlUnmarshaller) throws Exception {
+    public XmlFilePartitionReader(@Value("#{stepExecutionContext['part-file']}") String partFilepath,
+                                  @Qualifier("xmlUnmarshaller") Unmarshaller xmlUnmarshaller) throws Exception {
         super(xmlUnmarshaller);
 
-        System.out.println(Thread.currentThread().getName() + " Reader read: " + partitionFilepath);
-        Path filepath = FileSystems.getDefault().getPath(partitionFilepath);
+        System.out.println(Thread.currentThread().getName() + " Reader read: " + partFilepath);
+        Path filepath = FileSystems.getDefault().getPath(partFilepath);
         setResource(new FileSystemResource(filepath));
         setFragmentRootElementNames(new String[] {"record"});
     }
