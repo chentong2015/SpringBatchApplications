@@ -17,7 +17,7 @@ import java.nio.file.Path;
 @Component
 public class RecordItemPartitionReader extends StaxEventItemReader<Record> {
 
-    // 只读取特定的Partition切分文件(根据ExecutionContext判断)
+    // 通过Step的ExecutionContext找到特定Partition切分文件
     public RecordItemPartitionReader(@Value("#{stepExecutionContext['file']}") String partitionFilepath,
                                      @Qualifier("xmlUnmarshaller") Unmarshaller xmlUnmarshaller) throws Exception {
         super(xmlUnmarshaller);

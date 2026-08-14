@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 import java.util.HashMap;
 import java.util.Map;
 
-// TODO. 为Partition Step的执行创建对应的Context
+// TODO. 为PartitionStep创建执行上下文, 不同Step通过参数值找到操作文件
 // Partitioner to be used to construct new step executions
 // StepExecution
 //      └── ExecutionContext
