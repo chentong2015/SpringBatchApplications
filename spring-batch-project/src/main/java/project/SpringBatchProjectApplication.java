@@ -16,7 +16,7 @@ public class SpringBatchProjectApplication {
         ConfigurableApplicationContext context = new SpringApplication(SpringBatchProjectApplication.class).run();
         JobOperator jobOperator = context.getBean(JobOperator.class);
 
-        Job job = (Job) context.getBean("concurrencyJob");
+        Job job = (Job) context.getBean("partitionsXMLJob");
         JobExecution execution = jobOperator.start(job, getJobParameter());
         System.out.println("Job Status : " + execution.getStatus());
         System.out.println("Job completed");

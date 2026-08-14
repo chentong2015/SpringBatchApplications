@@ -1,4 +1,4 @@
-package project.common.transaction;
+package project.transaction;
 
 import org.springframework.jdbc.datasource.DataSourceTransactionManager;
 import org.springframework.stereotype.Component;

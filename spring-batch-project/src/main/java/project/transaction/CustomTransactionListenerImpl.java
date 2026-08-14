@@ -1,4 +1,4 @@
-package project.common.transaction;
+package project.transaction;
 
 public class CustomTransactionListenerImpl implements CustomTransactionListener {
 

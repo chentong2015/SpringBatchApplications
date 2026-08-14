@@ -13,7 +13,7 @@ public class XmlFileSplitTasklet implements Tasklet {
 
     @Override
     public @Nullable RepeatStatus execute(StepContribution contribution, ChunkContext chunkContext) throws Exception {
-        System.out.println("Finish the split files");
+        System.out.println("Finish split files ====== ");
         return RepeatStatus.FINISHED;
     }
 }
