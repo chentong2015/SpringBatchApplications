@@ -1,6 +1,5 @@
 package project.partitions;
 
-import org.jspecify.annotations.Nullable;
 import org.springframework.batch.core.scope.context.ChunkContext;
 import org.springframework.batch.core.step.StepContribution;
 import org.springframework.batch.core.step.tasklet.Tasklet;
@@ -19,12 +18,14 @@ public class FileSplitTasklet implements Tasklet {
 
     private Path input = Path.of("drive_folder/xml/records.xml");
 
-    // TODO. 持续从Input文件中流式读取Buffer数据, 解析判断并直接写入Split文件
+    // TODO. 持续从Input文件中流式读取Buffer数据, 避免撑爆内存
     @Override
     public RepeatStatus execute(StepContribution contribution, ChunkContext chunkContext) throws Exception {
+        System.out.println("Start splitting xml file...");
         long partitionSize = Files.size(input) / PARTITION_NUM;
+
         try (InputStream in = new BufferedInputStream(Files.newInputStream(input), BUFFER_SIZE)) {
-            FileSplitHolder splitter = new FileSplitHolder(PARTITION_NUM, partitionSize);
+            FileSizeSplitter splitter = new FileSizeSplitter(PARTITION_NUM, partitionSize);
             byte[] buffer = new byte[BUFFER_SIZE];
             int len;
             while ((len = in.read(buffer)) != -1) {
@@ -32,7 +33,8 @@ public class FileSplitTasklet implements Tasklet {
             }
             splitter.close();
         }
-        System.out.println("Split Record XML file DONE.");
+
+        System.out.println("Finish splitting xml file.");
         return RepeatStatus.FINISHED;
     }
 }

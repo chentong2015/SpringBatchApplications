@@ -9,7 +9,8 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.StandardOpenOption;
 
-public class FileSplitHolder implements Closeable {
+// TODO. 基于文件的大小拆分成均匀大小的文件
+public class FileSizeSplitter implements Closeable {
 
     private static final byte[] TITLE = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n".getBytes(StandardCharsets.UTF_8);
     private static final byte[] ROOT_START = "<records>".getBytes(StandardCharsets.UTF_8);
@@ -26,7 +27,7 @@ public class FileSplitHolder implements Closeable {
     private int currentPartNum = 1;
     private long currentPartSize = 0;
 
-    public FileSplitHolder(int partitionNum, long partitionSize) throws IOException {
+    public FileSizeSplitter(int partitionNum, long partitionSize) throws IOException {
         this.partitionNum = partitionNum;
         this.partitionSize = partitionSize;
         openNewPartition();

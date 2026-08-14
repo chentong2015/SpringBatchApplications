@@ -25,7 +25,7 @@ public class PartitionsJobConfiguration {
                    @Qualifier("masterStep") Step masterStep) {
         return new JobBuilder("Partitions XML Job", jobRepository)
                 .start(preSplitStep)
-                .next(masterStep)
+                // .next(masterStep)
                 .build();
     }
 
