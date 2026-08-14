@@ -1,4 +1,4 @@
-package project.base_bean;
+package project.bean;
 
 import jakarta.xml.bind.annotation.XmlAccessType;
 import jakarta.xml.bind.annotation.XmlAccessorType;

@@ -1,4 +1,4 @@
-package spring.batch.xml2db.transaction;
+package project.common.transaction;
 
 import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
 import org.springframework.jdbc.core.namedparam.SqlParameterSource;

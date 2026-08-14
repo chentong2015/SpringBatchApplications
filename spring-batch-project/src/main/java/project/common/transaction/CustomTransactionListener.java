@@ -1,4 +1,4 @@
-package spring.batch.xml2db.transaction;
+package project.common.transaction;
 
 public interface CustomTransactionListener {
 

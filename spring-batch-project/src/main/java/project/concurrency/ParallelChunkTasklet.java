@@ -2,18 +2,17 @@ package project.concurrency;
 
 import org.springframework.batch.core.scope.context.ChunkContext;
 import org.springframework.batch.core.step.StepContribution;
+import org.springframework.batch.core.step.StepExecution;
 import org.springframework.batch.core.step.tasklet.Tasklet;
 import org.springframework.batch.infrastructure.item.Chunk;
-import org.springframework.batch.infrastructure.item.ExecutionContext;
 import org.springframework.batch.infrastructure.item.ItemStreamReader;
 import org.springframework.batch.infrastructure.repeat.RepeatStatus;
 import org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor;
 import org.springframework.stereotype.Component;
-import project.base_bean.DbRecord;
-import project.base_bean.Record;
-import project.base_process.RecordItemProcessor;
-import project.base_process.RecordItemReader;
-import project.base_process.RecordItemWriter;
+import project.bean.DbRecord;
+import project.bean.Record;
+import project.common.RecordItemProcessor;
+import project.common.RecordItemWriter;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -25,7 +24,7 @@ import java.util.concurrent.TimeUnit;
 // - 串行Read: 单线程不断读取数据到内存中(防止OOM)
 // - 并行Process+Write: 线程池独立处理数据并存储
 @Component
-public class ChunkParallelTasklet implements Tasklet {
+public class ParallelChunkTasklet implements Tasklet {
 
     // 可以为工作流对应的Listener
     private ItemStreamReader<Record> itemReader;
@@ -37,7 +36,7 @@ public class ChunkParallelTasklet implements Tasklet {
     private final Semaphore semaphore;
     private final ThreadPoolTaskExecutor taskExecutor;
 
-    public ChunkParallelTasklet(RecordItemReader itemReader,
+    public ParallelChunkTasklet(RecordItemReader itemReader,
                                 RecordItemProcessor itemProcessor,
                                 RecordItemWriter itemWriter,
                                 ThreadPoolTaskExecutor taskExecutor) {
@@ -53,8 +52,8 @@ public class ChunkParallelTasklet implements Tasklet {
 
     @Override
     public RepeatStatus execute(StepContribution contribution, ChunkContext chunkContext) throws Exception {
-        ExecutionContext executionContext = chunkContext.getStepContext().getStepExecution().getExecutionContext();
-        itemReader.open(executionContext);
+        StepExecution stepExecution = chunkContext.getStepContext().getStepExecution();
+        itemReader.open(stepExecution.getExecutionContext());
         try {
             while (true) {
                 List<Record> chunkItems = readChunkItems();

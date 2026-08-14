@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<records>
+    <record>
+        <id>1</id>
+        <username>user615477</username>
+        <date>13-07-2019 07:03:24</date>
+        <amount>12509.5</amount>
+    </record>
+    <record>
+        <id>2</id>
+        <username>user442350</username>
+        <date>15-08-2016 18:51:33</date>
+        <amount>85515.3</amount>
+    </record>
+    <record>
+        <id>3</id>
+        <username>user873091</username>
+        <date>21-05-2005 23:03:38</date>
+        <amount>98814.1</amount>
+    </record>
+</records>

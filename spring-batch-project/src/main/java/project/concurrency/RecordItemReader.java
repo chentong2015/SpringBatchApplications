@@ -1,11 +1,11 @@
-package project.base_process;
+package project.concurrency;
 
 import org.springframework.batch.infrastructure.item.xml.StaxEventItemReader;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.core.io.FileSystemResource;
 import org.springframework.oxm.Unmarshaller;
 import org.springframework.stereotype.Component;
-import project.base_bean.Record;
+import project.bean.Record;
 
 import java.nio.file.FileSystems;
 import java.nio.file.Path;

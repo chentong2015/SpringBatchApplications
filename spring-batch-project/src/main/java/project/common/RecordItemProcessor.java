@@ -1,9 +1,9 @@
-package project.base_process;
+package project.common;
 
 import org.springframework.batch.infrastructure.item.ItemProcessor;
 import org.springframework.stereotype.Component;
-import project.base_bean.DbRecord;
-import project.base_bean.Record;
+import project.bean.DbRecord;
+import project.bean.Record;
 
 @Component
 public class RecordItemProcessor implements ItemProcessor<Record, DbRecord> {

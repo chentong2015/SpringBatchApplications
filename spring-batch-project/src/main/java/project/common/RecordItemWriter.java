@@ -1,9 +1,9 @@
-package project.base_process;
+package project.common;
 
 import org.springframework.batch.infrastructure.item.Chunk;
 import org.springframework.batch.infrastructure.item.ItemWriter;
 import org.springframework.stereotype.Component;
-import project.base_bean.DbRecord;
+import project.bean.DbRecord;
 
 import java.util.List;
 

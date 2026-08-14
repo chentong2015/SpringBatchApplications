@@ -1,3 +1,0 @@
-支持多种文件格式的数据转换(Reader, Writer)
-数据格式: .csv .xml .json
-https://github.com/eugenp/tutorials/tree/master/spring-core
