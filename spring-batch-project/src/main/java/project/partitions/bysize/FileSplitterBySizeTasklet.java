@@ -1,4 +1,4 @@
-package project.partitions;
+package project.partitions.bysize;
 
 import org.springframework.batch.core.scope.context.ChunkContext;
 import org.springframework.batch.core.step.StepContribution;
@@ -10,29 +10,31 @@ import java.io.*;
 import java.nio.file.Files;
 import java.nio.file.Path;
 
+// TODO. 按照文件太小拆分可能不均匀, 且小文件无法拆分成指定多的份数(造成空文件)
 @Component
-public class FileSplitTasklet implements Tasklet {
+public class FileSplitterBySizeTasklet implements Tasklet {
 
     private static final int PARTITION_NUM = 4; // 切分文件的份数/并发线程数
     private static final int BUFFER_SIZE = 1024 * 1024; // 1MB 缓存到内存的大小
 
-    private Path input = Path.of("drive_folder/xml/records.xml");
+    private final Path pathInput = Path.of("drive_folder/xml/records.xml");
+    private final Path pathOutput = Path.of("drive_folder/xml/parts");
 
-    // TODO. 持续从Input文件中流式读取Buffer数据, 避免撑爆内存
+    // 持续从文件中流式读取Buffer数据, 避免撑爆内存
     @Override
     public RepeatStatus execute(StepContribution contribution, ChunkContext chunkContext) throws Exception {
         System.out.println("Start splitting xml file...");
-        long partitionSize = Files.size(input) / PARTITION_NUM;
+        long partitionSize = Files.size(pathInput) / PARTITION_NUM;
 
-        try (InputStream in = new BufferedInputStream(Files.newInputStream(input), BUFFER_SIZE)) {
-            FileSizeSplitter splitter = new FileSizeSplitter(PARTITION_NUM, partitionSize);
+        FileSplitterBySize splitter = new FileSplitterBySize(pathOutput, PARTITION_NUM, partitionSize);
+        try (InputStream in = new BufferedInputStream(Files.newInputStream(pathInput), BUFFER_SIZE)) {
             byte[] buffer = new byte[BUFFER_SIZE];
             int len;
             while ((len = in.read(buffer)) != -1) {
                 splitter.process(buffer, len);
             }
-            splitter.close();
         }
+        splitter.close();
 
         System.out.println("Finish splitting xml file.");
         return RepeatStatus.FINISHED;

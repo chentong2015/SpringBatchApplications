@@ -14,6 +14,8 @@ import project.bean.DbRecord;
 import project.bean.Record;
 import project.common.RecordItemProcessor;
 import project.common.RecordItemWriter;
+import project.partitions.bycount.FileSplitterByCountTasklet;
+import project.partitions.bysize.FileSplitterBySizeTasklet;
 
 @Configuration
 public class PartitionsJobConfiguration {
@@ -30,7 +32,7 @@ public class PartitionsJobConfiguration {
     }
 
     @Bean(name = "preSplitStep")
-    public Step preSplitStep(JobRepository jobRepository, FileSplitTasklet splitTasklet) {
+    public Step preSplitStep(JobRepository jobRepository, FileSplitterByCountTasklet splitTasklet) {
         return new StepBuilder("Split File Step", jobRepository)
                 .tasklet(splitTasklet)
                 .build();
