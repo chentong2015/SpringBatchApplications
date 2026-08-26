@@ -26,9 +26,7 @@ public class SpringBatchCoreApplication {
         context.close();
     }
 
-    // TODO. .preventRestart() 默认不允许同名JOB重复执行
-    // 1. 每次为JOB提供不同的Parameter
-    // 2. 为JOB添加RunIdIncrementer
+    // TODO. .preventRestart()不允许同名JOB重复执行: 设置JobParameters或RunIdIncrementer
     private static JobParameters getJobParameter() {
         return new JobParametersBuilder()
                 .addLong("timestamp", System.currentTimeMillis())

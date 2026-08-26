@@ -22,7 +22,7 @@ public class ConcurrencyProcessJobConfig {
                 .build();
     }
 
-    // TODO. .tasklet()并发执行效果
+    // TODO. .tasklet() 并发执行
     @Bean(name = "concurrencyStep")
     public Step concurrencyStep(JobRepository jobRepository, ParallelChunkTasklet chunkParallelTasklet) {
         return new StepBuilder("Concurrency Step", jobRepository)
@@ -30,7 +30,7 @@ public class ConcurrencyProcessJobConfig {
                 .build();
     }
 
-    // TODO. .taskExecutor()设置无法让chunk操作并行
+    // TODO. .taskExecutor() 无法并行执行
     // @Bean(name = "concurrencyStep")
     // public Step concurrencyStep(JobRepository jobRepository,
     //                             RecordItemReader itemReader,

@@ -12,7 +12,9 @@ import project.bean.Record;
 import java.nio.file.FileSystems;
 import java.nio.file.Path;
 
-// TODO. @StepScope: 延迟到Step执行(创建Reader时)调用构造器,获取上下文参数
+// TODO. @StepScope:
+//  先执行Partitioner划分操作, 为多线程Step执行提供上下文
+//  延迟到Step执行(创建Reader时)调用构造器, 获取上下文参数
 @StepScope
 @Component
 public class XmlFilePartitionReader extends StaxEventItemReader<Record> {

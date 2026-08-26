@@ -1,0 +1,13 @@
+获取JOB参数的不同方式:
+JobParameters
+   └── timestamp = 1756206300123
+      ├── @Value("#{jobParameters['timestamp']}")
+      ├── chunkContext.getStepContext().getJobParameters()
+      └── jobExecution.getJobParameters().getLong("timestamp")
+
+// 设置@StepScope: jobParameters是Job执行时才存在且才能获取
+@Bean
+@StepScope
+public SampleTasklet sampleTasklet(@Value("#{jobParameters['timestamp']}") Long timestamp) {
+    return new SampleTasklet(timestamp);
+}
