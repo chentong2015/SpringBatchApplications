@@ -8,9 +8,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;
 
-// TODO. Spring Boot Batch
-// 默认自动装配注入ResourcelessJobRepository
-// 无需存储Batch Metadata数据, 无数据库连接
+// TODO. 默认自动装配注入ResourcelessJobRepository, 无需存储DB Metadata数据
 @SpringBootApplication
 public class SpringBatchResourcelessApp {
 
