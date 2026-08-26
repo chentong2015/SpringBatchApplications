@@ -1,4 +1,4 @@
-package spring.batch.csv2xml.listener;
+package spring.batch.common.listener;
 
 import org.springframework.batch.core.listener.ItemProcessListener;
 import org.springframework.stereotype.Component;

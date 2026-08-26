@@ -1,4 +1,4 @@
-大文件并不适合多线程并发读取(IO争抢), Read操作通常不是性能关键
+TODO. 大文件并不适合多线程并发读取(IO争抢), Read操作不是性能关键
 Spring Batch未直接提供并发读取大文件Reader API
   - 自定义实现Reader并发模型, RandomAccessFileReader等
   - 考虑local chunking或partitioning
