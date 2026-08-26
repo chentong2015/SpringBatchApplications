@@ -12,6 +12,7 @@ import org.springframework.stereotype.Component;
 import project.bean.DbRecord;
 import project.bean.Record;
 import project.common.RecordItemProcessor;
+import project.common.RecordItemReader;
 import project.common.RecordItemWriter;
 
 import java.util.ArrayList;

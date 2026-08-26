@@ -43,6 +43,7 @@ public class XmlToDbConfiguration {
                 .reader(reader)
                 .processor(itemProcessor)
                 .writer(writer)
+                .retryLimit(5)
                 .build();
     }
 

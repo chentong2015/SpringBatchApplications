@@ -17,16 +17,18 @@ Job:
     - StepExecutionListener (beforeStep, afterStep)
        - ItemReader
          - ItemReadListener (beforeRead, afterRead, onReadError)
-         - FieldSetMapper     原始文件中数据映射到读取对象
-         - FlatFileItemReader 从文件中读取数据
+         - FieldSetMapper       原始文件中数据映射到读取对象
+         - FlatFileItemReader   从文件中读取数据
          - JdbcCursorItemReader 从DB中获取数据
 
-       - ItemProcessor<I, O>解析器: 从Input数据到Output加工过程
+       - ItemProcessor<I, O>    解析器从Input数据到Output加工过程
          - ItemProcessListener (beforeProcess, afterProcess)
-         - ItemMapper      从读取对象映射到目标对象
-         - SourceExtractor 从原始对象中解析出适配内容
+         - ItemMapper           从读取对象映射到目标对象
+         - SourceExtractor      从原始对象中解析出适配内容
 
        - ItemWriter
          - ItemWriteListener (beforeWrite, afterWrite, onWriteError)
          - StaxEventItemWriter 写入XML文件中
          - JdbcBatchItemWriter 存储到DB中
+
+       - .retryLimit(5) 设置Step重试次数(当有Exception发生时)

@@ -1,4 +1,4 @@
-package spring.batch.common;
+package spring.batch;
 
 import org.springframework.batch.core.configuration.BatchConfigurationException;
 import org.springframework.batch.core.configuration.support.DefaultBatchConfiguration;
