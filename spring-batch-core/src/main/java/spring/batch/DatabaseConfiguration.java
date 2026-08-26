@@ -13,21 +13,22 @@ import javax.sql.DataSource;
 @Configuration
 public class DatabaseConfiguration extends DefaultBatchConfiguration {
 
+    // TODO. 普通数据库连接(无连接池控制), 每次都新创建连接
     @Bean
     public DataSource dataSource() {
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
         dataSource.setDriverClassName("org.postgresql.Driver");
+        dataSource.setUrl("jdbc:postgresql://localhost:5432/spring_batch");
         dataSource.setUsername("postgres");
         dataSource.setPassword("postgres");
-        dataSource.setUrl("jdbc:postgresql://localhost:5432/spring_batch");
         return dataSource;
     }
 
     @Bean
-    public JobRepository jobRepository(DataSource dataSource) throws BatchConfigurationException {
+    public JobRepository jobRepository() throws BatchConfigurationException {
         try {
             JdbcJobRepositoryFactoryBean factory = new JdbcJobRepositoryFactoryBean();
-            factory.setDataSource(dataSource);
+            factory.setDataSource(dataSource());
             factory.setTransactionManager(getTransactionManager());
             factory.setIsolationLevelForCreate("ISOLATION_READ_COMMITTED");
             factory.afterPropertiesSet();

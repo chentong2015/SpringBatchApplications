@@ -1,25 +1,31 @@
 package project;
 
+import com.zaxxer.hikari.HikariDataSource;
 import org.springframework.batch.core.configuration.BatchConfigurationException;
 import org.springframework.batch.core.configuration.support.DefaultBatchConfiguration;
 import org.springframework.batch.core.repository.JobRepository;
 import org.springframework.batch.core.repository.support.JdbcJobRepositoryFactoryBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.jdbc.datasource.DriverManagerDataSource;
 
 import javax.sql.DataSource;
 
 @Configuration
-public class DatabaseConfiguration extends DefaultBatchConfiguration {
+public class DatasourceConfiguration extends DefaultBatchConfiguration {
 
+    // TODO. 配置支撑高并发CRUD的数据库连接池
     @Bean
     public DataSource dataSource() {
-        DriverManagerDataSource dataSource = new DriverManagerDataSource();
+        HikariDataSource dataSource = new HikariDataSource();
         dataSource.setDriverClassName("org.postgresql.Driver");
+        dataSource.setJdbcUrl("jdbc:postgresql://localhost:5432/spring_batch");
         dataSource.setUsername("postgres");
         dataSource.setPassword("postgres");
-        dataSource.setUrl("jdbc:postgresql://localhost:5432/spring_batch");
+
+        dataSource.setMaximumPoolSize(4 * 2 + 1);
+        dataSource.setMinimumIdle(4);
+        dataSource.setConnectionTimeout(60000);
+        dataSource.setMaxLifetime(580000);
         return dataSource;
     }
 
