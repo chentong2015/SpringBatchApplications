@@ -13,7 +13,16 @@ import javax.sql.DataSource;
 @Configuration
 public class DatabaseConfiguration extends DefaultBatchConfiguration {
 
-    // 注入JobRepository: 修改事务隔离级别"ISOLATION_SERIALIZABLE"以支持事务并发
+    @Bean
+    public DataSource dataSource() {
+        DriverManagerDataSource dataSource = new DriverManagerDataSource();
+        dataSource.setDriverClassName("org.postgresql.Driver");
+        dataSource.setUsername("postgres");
+        dataSource.setPassword("postgres");
+        dataSource.setUrl("jdbc:postgresql://localhost:5432/spring_batch");
+        return dataSource;
+    }
+
     @Bean
     public JobRepository jobRepository(DataSource dataSource) throws BatchConfigurationException {
         try {
@@ -26,15 +35,5 @@ public class DatabaseConfiguration extends DefaultBatchConfiguration {
         } catch (Exception exception) {
             throw new BatchConfigurationException("Unable to configure the default job repository", exception);
         }
-    }
-
-    @Bean
-    public DataSource dataSource() {
-        DriverManagerDataSource dataSource = new DriverManagerDataSource();
-        dataSource.setDriverClassName("org.postgresql.Driver");
-        dataSource.setUsername("postgres");
-        dataSource.setPassword("postgres");
-        dataSource.setUrl("jdbc:postgresql://localhost:5432/spring_batch");
-        return dataSource;
     }
 }

@@ -43,7 +43,7 @@ public class CsvToDbJobConfiguration {
                 .build();
     }
 
-    // 多CSV文件中读取Java对象数据
+    // 解析CSV文件中每一行的Token数据信息
     @Bean(name = "productLineMapper")
     public LineMapper<Product> productLineMapper(FieldSetMapper<Product> productFieldSetMapper) {
         DelimitedLineTokenizer lineTokenizer = new DelimitedLineTokenizer();
@@ -55,6 +55,7 @@ public class CsvToDbJobConfiguration {
         return lineMapper;
     }
 
+    // 自动义Token值到对象属性值的映射
     @Bean
     public FieldSetMapper<Product> productFieldSetMapper() {
         return fieldSet -> {

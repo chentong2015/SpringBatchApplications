@@ -3,17 +3,19 @@ package spring.batch.csv2xml.listener;
 import org.springframework.batch.core.ExitStatus;
 import org.springframework.batch.core.listener.StepExecutionListener;
 import org.springframework.batch.core.step.StepExecution;
+import org.springframework.stereotype.Component;
 
+@Component
 public class MyStepExecutionListener implements StepExecutionListener {
 
     @Override
     public void beforeStep(StepExecution stepExecution) {
-        System.out.println("Before step: {}" + stepExecution.getStepName());
+        System.out.println("Before step: " + stepExecution.getStepName());
     }
 
     @Override
     public ExitStatus afterStep(StepExecution stepExecution) {
-        System.out.println("After step: {}" + stepExecution.getStepName());
+        System.out.println("After step: " + stepExecution.getStepName());
         return stepExecution.getExitStatus();
     }
 }

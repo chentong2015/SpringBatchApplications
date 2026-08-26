@@ -1,9 +1,11 @@
 package spring.batch.csv2xml.listener;
 
 import org.springframework.batch.core.listener.ItemProcessListener;
+import org.springframework.stereotype.Component;
 import spring.batch.csv2xml.bean.Transaction;
 
 // 监听数据处理过程的前后时间
+@Component
 public class MyItemProcessorListener implements ItemProcessListener<Transaction, Transaction> {
 
     @Override

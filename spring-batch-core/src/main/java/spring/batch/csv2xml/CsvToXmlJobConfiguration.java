@@ -11,6 +11,7 @@ import org.springframework.batch.infrastructure.item.file.transform.DelimitedLin
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.oxm.jaxb.Jaxb2Marshaller;
 import spring.batch.csv2xml.bean.Transaction;
+import spring.batch.csv2xml.listener.MyChunkListener;
 import spring.batch.csv2xml.listener.MyItemProcessorListener;
 import spring.batch.csv2xml.process.TransactionItemProcessor;
 import spring.batch.csv2xml.listener.MyJobExecutionListener;
@@ -28,25 +29,32 @@ import java.time.format.DateTimeFormatter;
 public class CsvToXmlJobConfiguration {
 
     @Bean(name = "csvToXmlJob")
-    public Job csvToXmljob(JobRepository jobRepository, @Qualifier("csvToXmlStep") Step csvToXmlStep) {
+    public Job csvToXmljob(JobRepository jobRepository,
+                           MyJobExecutionListener jobExecutionListener,
+                           @Qualifier("csvToXmlStep") Step csvToXmlStep) {
         return new JobBuilder("Csv To Xml Job", jobRepository)
                 .preventRestart()
-                .listener(MyJobExecutionListener.class) // Job Listener
+                .listener(jobExecutionListener)  // Job Listener
                 .start(csvToXmlStep)
                 .build();
     }
 
+    // TODO. 统一设置Step在执行过程中多种Listener监听器
     @Bean(name = "csvToXmlStep")
     public Step csvToXmlStep(JobRepository jobRepository,
-                            ItemReader<Transaction> reader,
-                            TransactionItemProcessor itemProcessor,
-                            ItemWriter<Transaction> writer) {
+                             ItemReader<Transaction> reader,
+                             TransactionItemProcessor itemProcessor,
+                             ItemWriter<Transaction> writer,
+                             MyStepExecutionListener stepExecutionListener,
+                             MyChunkListener chunkListener,
+                             MyItemProcessorListener itemProcessorListener) {
         return new StepBuilder("Csv To Xml Step", jobRepository)
-                .listener(MyStepExecutionListener.class) // Step Listener
+                .listener(stepExecutionListener) // Step Listener
                 .<Transaction, Transaction>chunk(3)
+                .listener(chunkListener)         // Chunk Listener
                 .reader(reader)
                 .processor(itemProcessor)
-                .listener(MyItemProcessorListener.class) // Item Listener
+                .listener(itemProcessorListener) // Item Listener
                 .writer(writer)
                 .build();
     }

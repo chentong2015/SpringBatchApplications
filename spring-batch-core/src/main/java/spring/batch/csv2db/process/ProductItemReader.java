@@ -6,6 +6,7 @@ import org.springframework.core.io.FileSystemResource;
 import org.springframework.stereotype.Component;
 import spring.batch.csv2db.bean.Product;
 
+import java.nio.charset.StandardCharsets;
 import java.nio.file.FileSystems;
 import java.nio.file.Path;
 
@@ -17,7 +18,7 @@ public class ProductItemReader extends FlatFileItemReader<Product> {
 
         Path filepath = FileSystems.getDefault().getPath("drive_folder/csv/products.csv");
         setResource(new FileSystemResource(filepath));
-
         setLinesToSkip(1);
+        setEncoding(StandardCharsets.UTF_8.name());
     }
 }

@@ -5,11 +5,12 @@ import org.springframework.jdbc.core.namedparam.SqlParameterSource;
 import org.springframework.jdbc.core.namedparam.SqlParameterSourceUtils;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.TransactionStatus;
-import org.springframework.transaction.support.TransactionCallbackWithoutResult;
 
 import javax.sql.DataSource;
 import java.util.List;
+import java.util.function.Consumer;
 
+// TODO. 为Batch批提交添加编程式事务控制
 @Service
 public class RecordTransactionService {
 
@@ -21,11 +22,10 @@ public class RecordTransactionService {
         this.namedParameterJdbcTemplate = new NamedParameterJdbcTemplate(dataSource);
     }
 
-    // TODO. 为Batch批提交添加编程式事务控制
     public void insert(List<String> records) {
-        this.transactionTemplate.execute(new TransactionCallbackWithoutResult() {
+        this.transactionTemplate.execute(new Consumer<TransactionStatus>() {
             @Override
-            protected void doInTransactionWithoutResult(TransactionStatus status) {
+            public void accept(TransactionStatus transactionStatus) {
                 batchUpdate(records, "sql");
             }
         }, new CustomTransactionListenerImpl());

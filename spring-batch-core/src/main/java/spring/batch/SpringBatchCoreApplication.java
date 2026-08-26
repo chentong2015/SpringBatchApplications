@@ -13,13 +13,13 @@ import org.springframework.batch.core.job.parameters.JobParameters;
 @SpringBootApplication
 public class SpringBatchCoreApplication {
 
+    // 连接DB的JobRepository类型是Proxy代理类型
     public static void main(String[] args) throws Exception {
         ConfigurableApplicationContext context = new SpringApplication(SpringBatchCoreApplication.class).run();
-        // 连接DB的JobRepository类型是Proxy代理类型
         JobRepository jobRepository = context.getBean(JobRepository.class);
         JobOperator jobOperator = context.getBean(JobOperator.class);
 
-        Job job = (Job) context.getBean("xmlToDbJob");
+        Job job = (Job) context.getBean("csvToXmlJob");
         JobExecution execution = jobOperator.start(job, getJobParameter());
         System.out.println("Job Status : " + execution.getStatus());
         System.out.println("Job completed");
