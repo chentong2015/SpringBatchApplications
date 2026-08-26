@@ -1,4 +1,4 @@
-package project.concurrency;
+package project.concurrency_process;
 
 import org.springframework.batch.core.job.Job;
 import org.springframework.batch.core.job.builder.JobBuilder;
@@ -11,10 +11,10 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-public class ConcurrencyJobConfiguration {
+public class ConcurrencyProcessJobConfig {
 
-    @Bean(name = "concurrencyJob")
-    public Job concurrencyJob(JobRepository jobRepository, @Qualifier("concurrencyStep") Step concurrencyStep) {
+    @Bean(name = "concurrencyProcessJob")
+    public Job concurrencyProcessJob(JobRepository jobRepository, @Qualifier("concurrencyStep") Step concurrencyStep) {
         return new JobBuilder("Concurrency Job", jobRepository)
                 .preventRestart()
                 .incrementer(new RunIdIncrementer())

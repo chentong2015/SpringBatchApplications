@@ -22,9 +22,7 @@ public class PartitionsJobConfiguration {
 
     // TODO. 先对文件进行拆分, 再执行差分文件的并发处理
     @Bean(name = "partitionsXMLJob")
-    public Job job(JobRepository jobRepository,
-                   @Qualifier("preSplitStep") Step preSplitStep,
-                   @Qualifier("masterStep") Step masterStep) {
+    public Job job(JobRepository jobRepository, @Qualifier("preSplitStep") Step preSplitStep, @Qualifier("masterStep") Step masterStep) {
         return new JobBuilder("Partitions XML Job", jobRepository)
                 .start(preSplitStep)
                 // .next(masterStep)
@@ -41,9 +39,7 @@ public class PartitionsJobConfiguration {
     // TODO. 创建PartitionStep并利用PartitionHandler来划分执行任务并分摊负载
     // Build PartitionStep which partitions the execution and spreads the load using a PartitionHandler.
     @Bean(name = "masterStep")
-    public Step masterStep(JobRepository jobRepository,
-                           XmlFilePartitioner partitioner,
-                           TaskExecutorPartitionHandler handler) {
+    public Step masterStep(JobRepository jobRepository, XmlFilePartitioner partitioner, TaskExecutorPartitionHandler handler) {
         return new StepBuilder("Master Step", jobRepository)
                 .partitioner("Worker Step", partitioner)
                 .partitionHandler(handler)
@@ -63,10 +59,7 @@ public class PartitionsJobConfiguration {
 
     // 独立处理每个Split文件的Step工作流
     @Bean(name = "workerStep")
-    public Step workerStep(JobRepository jobRepository,
-                           XmlFilePartitionReader partitionReader,
-                           RecordItemProcessor itemProcessor,
-                           RecordItemWriter itemWriter) {
+    public Step workerStep(JobRepository jobRepository, XmlFilePartitionReader partitionReader, RecordItemProcessor itemProcessor, RecordItemWriter itemWriter) {
         return new StepBuilder("workerStep", jobRepository)
                 .<Record, DbRecord>chunk(100)
                 .reader(partitionReader)

@@ -26,15 +26,15 @@ public class FileSplitterBySizeTasklet implements Tasklet {
         System.out.println("Start splitting xml file...");
         long partitionSize = Files.size(pathInput) / PARTITION_NUM;
 
-        FileSplitterBySize splitter = new FileSplitterBySize(pathOutput, PARTITION_NUM, partitionSize);
+        FileSplitterBySize splitterBySize = new FileSplitterBySize(pathOutput, PARTITION_NUM, partitionSize);
         try (InputStream in = new BufferedInputStream(Files.newInputStream(pathInput), BUFFER_SIZE)) {
             byte[] buffer = new byte[BUFFER_SIZE];
             int len;
             while ((len = in.read(buffer)) != -1) {
-                splitter.process(buffer, len);
+                splitterBySize.process(buffer, len);
             }
         }
-        splitter.close();
+        splitterBySize.close();
 
         System.out.println("Finish splitting xml file.");
         return RepeatStatus.FINISHED;
