@@ -1,4 +1,4 @@
-package project.partitions;
+package project.partitions_test;
 
 import org.springframework.batch.core.partition.Partitioner;
 import org.springframework.batch.infrastructure.item.ExecutionContext;

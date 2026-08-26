@@ -5,7 +5,7 @@ import org.springframework.batch.infrastructure.item.ExecutionContext;
 import org.springframework.batch.infrastructure.item.ItemStreamReader;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
-import project.bean.Record;
+import project.common.bean.Record;
 
 import java.io.RandomAccessFile;
 

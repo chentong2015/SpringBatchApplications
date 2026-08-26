@@ -3,7 +3,7 @@ package project.common;
 import org.springframework.batch.infrastructure.item.Chunk;
 import org.springframework.batch.infrastructure.item.ItemWriter;
 import org.springframework.stereotype.Component;
-import project.bean.DbRecord;
+import project.common.bean.DbRecord;
 
 import java.util.List;
 

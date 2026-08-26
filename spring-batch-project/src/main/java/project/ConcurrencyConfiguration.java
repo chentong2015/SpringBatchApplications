@@ -5,7 +5,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.oxm.Unmarshaller;
 import org.springframework.oxm.jaxb.Jaxb2Marshaller;
 import org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor;
-import project.bean.Record;
+import project.common.bean.Record;
 
 @Configuration
 public class ConcurrencyConfiguration {

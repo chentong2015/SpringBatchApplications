@@ -1,4 +1,4 @@
-package project.partitions.bycount;
+package project.partitions_test.bycount;
 
 import java.io.BufferedOutputStream;
 import java.io.Closeable;
@@ -8,7 +8,6 @@ import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.StandardOpenOption;
-import java.util.LinkedList;
 
 // TODO. 基于Count数量拆分到split文件中, 达到执行数量则切换到新文件
 public class FileSplitterByCount implements Closeable {

@@ -3,7 +3,7 @@ package project.resources;
 import org.springframework.batch.infrastructure.item.file.MultiResourceItemReader;
 import org.springframework.core.io.FileSystemResource;
 import org.springframework.core.io.Resource;
-import project.bean.Record;
+import project.common.bean.Record;
 
 // 支持从多个资源中顺序读取数据
 public class MyMultiResourceItemReader {

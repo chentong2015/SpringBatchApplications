@@ -1,4 +1,4 @@
-package project.partitions.bycount;
+package project.partitions_test.bycount;
 
 import org.jspecify.annotations.Nullable;
 import org.springframework.batch.core.scope.context.ChunkContext;
@@ -18,8 +18,8 @@ public class FileSplitterByCountTasklet implements Tasklet {
     private static final int PARTITION_NUM = 8;
     private static final int BUFFER_SIZE = 1024 * 1024;
 
-    private final Path pathInput =  Path.of("drive_folder/xml/large_full.xml");
-    private final Path pathOutput = Path.of("drive_folder/xml/full");
+    private final Path pathInput =  Path.of("drive_folder/xml/records.xml");
+    private final Path pathOutput = Path.of("drive_folder/xml/parts");
 
     @Override
     public @Nullable RepeatStatus execute(StepContribution contribution, ChunkContext chunkContext) throws Exception {

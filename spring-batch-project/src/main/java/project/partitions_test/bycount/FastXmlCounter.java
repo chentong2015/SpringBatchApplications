@@ -1,20 +1,17 @@
-package project.partitions.bycount;
+package project.partitions_test.bycount;
 
 import java.io.BufferedInputStream;
 import java.io.IOException;
 import java.io.InputStream;
-import java.nio.ByteBuffer;
-import java.nio.channels.FileChannel;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
-import java.nio.file.StandardOpenOption;
 
 // 持续从文件中流式读取Buffer数据, 循环处理字节
 public class FastXmlCounter {
 
     private static final int BUFFER_SIZE = 1024 * 1024;
-    private static final byte[] START = "<record ".getBytes(StandardCharsets.UTF_8);
+    private static final byte[] START = "<record".getBytes(StandardCharsets.UTF_8);
     private final Path filepath;
 
     public FastXmlCounter(Path filepath) {
@@ -49,13 +46,13 @@ public class FastXmlCounter {
             this.pattern = pattern;
         }
 
-        // 逐个字节一一匹配, 直到完整匹配pattern字节长度，才记录标签
+        // 逐个字节一一匹配, 直到完整匹配pattern字节长度
         boolean match(byte b) {
             if (b == pattern[matched]) {
                 matched++;
                 if (matched == pattern.length) {
                     matched = 0;
-                    return true; // 只有match
+                    return true; // 只有match完整标签才统计
                 }
                 return false;
             }

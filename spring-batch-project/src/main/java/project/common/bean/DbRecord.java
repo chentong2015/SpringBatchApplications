@@ -1,4 +1,4 @@
-package project.bean;
+package project.common.bean;
 
 public class DbRecord {
 

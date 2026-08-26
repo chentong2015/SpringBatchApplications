@@ -1,4 +1,4 @@
-package project.partitions.bysize;
+package project.partitions_test.bysize;
 
 import org.springframework.batch.core.scope.context.ChunkContext;
 import org.springframework.batch.core.step.StepContribution;

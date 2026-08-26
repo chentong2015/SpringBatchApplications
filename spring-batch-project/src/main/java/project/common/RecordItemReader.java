@@ -5,7 +5,7 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.core.io.FileSystemResource;
 import org.springframework.oxm.Unmarshaller;
 import org.springframework.stereotype.Component;
-import project.bean.Record;
+import project.common.bean.Record;
 
 import java.nio.file.FileSystems;
 import java.nio.file.Path;

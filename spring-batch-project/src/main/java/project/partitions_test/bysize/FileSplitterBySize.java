@@ -1,4 +1,4 @@
-package project.partitions.bysize;
+package project.partitions_test.bysize;
 
 import java.io.BufferedOutputStream;
 import java.io.Closeable;

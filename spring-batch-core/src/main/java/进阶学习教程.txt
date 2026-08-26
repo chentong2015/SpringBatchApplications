@@ -1,0 +1,5 @@
+Spring Batch Table 存储执行状态和结果
+https://docs.spring.io/spring-batch/reference/schema-appendix.html
+
+Spring Batch Migration 迁移策略
+https://github.com/spring-projects/spring-batch/wiki/Spring-Batch-6.0-Migration-Guide
