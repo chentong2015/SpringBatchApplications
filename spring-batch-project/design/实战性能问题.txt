@@ -1,13 +1,13 @@
-TODO. 大文件并不适合多线程并发读取(IO争抢), Read操作不是性能关键
-Spring Batch未直接提供并发读取大文件Reader API
-  - 自定义实现Reader并发模型, RandomAccessFileReader等
-  - 考虑local chunking或partitioning
+TODO. 大数据性能: Read不是关键, Process/Write才是性能瓶颈
+Spring Batch未提供并发读取大文件的Reader, 大文件也不适合多线程并发读取(IO争抢)
 
-TODO. 项目实战 vs 最佳实践
 不拆分文件:
-  - 同步读取数据, 并发处理和持久化
-  - 偏移并发读取, 并发操作各个部分数据 => 预先建立索引(耗时)
+  - 同步读取数据, 并发处理和持久化(最佳实践)
+  - 偏移并发读取, 并发操作部分数据(相对复杂)
+    > 自定义实现Reader并发模型
+    > 预先定位byte偏移量, 利用RandomAccessFileReader等并发读取
+
 拆分文件:
-  - 单机多线程并发每个Split文件  => 预先切割分片(增加IO扫描)
-  - 多机分布式处理每个Split文件  => 预先切割分片并分发
-  = 必须额外处理切片的临时文件    => OS文件系统负担
+  - 单机多线程(或多机分布式)并发每个Split文件
+    > 预先切割并分发到不同机器(增加IO扫描)
+    > 额外处理切片的临时文件(增加OS文件系统负担)
