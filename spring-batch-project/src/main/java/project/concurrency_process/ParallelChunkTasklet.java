@@ -21,20 +21,18 @@ import java.util.concurrent.Semaphore;
 import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 
-// TODO. 自定义Tasklet实行Chunk并发执行效果
+// TODO. 自定义Tasklet实现Chunk并发执行效果, 包括整个Listener监听器
 // - 串行Read: 单线程不断读取数据到内存中(防止OOM)
 // - 并行Process+Write: 线程池独立处理数据并存储
 @Component
 public class ParallelChunkTasklet implements Tasklet {
 
-    // 可以为工作流对应的Listener
     private ItemStreamReader<Record> itemReader;
     private RecordItemProcessor itemProcessor;
     private RecordItemWriter itemWriter;
 
     private final int chunkSize;
-    private final int chunkCountLimit;
-    private final Semaphore semaphore;
+    private final Semaphore semaphoreChunkLimiter;
     private final ThreadPoolTaskExecutor taskExecutor;
 
     public ParallelChunkTasklet(RecordItemReader itemReader,
@@ -44,30 +42,32 @@ public class ParallelChunkTasklet implements Tasklet {
         this.itemReader = itemReader;
         this.itemProcessor = itemProcessor;
         this.itemWriter = itemWriter;
-
-        this.chunkSize = 100;
-        this.chunkCountLimit = 5; // 动态计算能读取多少批次数据到内存(>=并发线程数量)
-        this.semaphore = new Semaphore(chunkCountLimit); // 通过信号量控制读取批次数量
+        this.chunkSize = 100; // 每个批次读取的Item数量
         this.taskExecutor = taskExecutor; // 每次线程独立处理一个批次
+
+        // 动态计算能读取多少批次数据到内存, 信号量控制避免OOM内存溢出
+        // 批次数量应该大于并发线程数量, 保证最大批次数量的并发效果
+        this.semaphoreChunkLimiter = new Semaphore(5);
     }
 
+    // ItemReader Process: open(), read(), close()
     @Override
     public RepeatStatus execute(StepContribution contribution, ChunkContext chunkContext) throws Exception {
-        StepExecution stepExecution = chunkContext.getStepContext().getStepExecution();
-        itemReader.open(stepExecution.getExecutionContext());
+        System.out.println(chunkContext);
+        itemReader.open(contribution.getStepExecution().getExecutionContext());
         try {
             while (true) {
                 List<Record> chunkItems = readChunkItems();
                 if (chunkItems.isEmpty()) {
                     break; // No more records to process
                 }
-                semaphore.acquire();
+                semaphoreChunkLimiter.acquire();
                 taskExecutor.execute(() -> {
                     try {
                         processAndWriteChunk(chunkItems);
                     } finally {
                         chunkItems.clear();
-                        semaphore.release();
+                        semaphoreChunkLimiter.release();
                     }
                 });
             }

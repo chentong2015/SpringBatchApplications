@@ -16,24 +16,21 @@ public class RangeXmlItemReaderKO<T> extends StaxEventItemReader<T> {
         this.endIndex = endIndex;
     }
 
-    // TODO. 多线程并发导致对同个文件
-    // Read游标位置异常，无法按照各自RangedIndex来读取: Error reading XML Stream
+    // TODO. 多线程并发读取同个文件
+    // Read only the records from the range size [startIndex, endIndex)
+    // 执行时游标位置异常，无法按照各自RangedIndex来读取: Error reading XML Stream
     @Override
     public T read() throws Exception {
         T item;
         while (true) {
             item = super.read();
             if (item == null) {
-                // 整个Step的Reader生命周期结束, 不再读取数据
-                return null;
+                return null; // End XML Reader生命周期结束
             }
 
             long index = currentIndex++;
-            if (index < startIndex) {
-                continue; // skip
-            }
-            if (index >= endIndex) {
-                return null; // stop this partition
+            if (index < startIndex || index >= endIndex) {
+                continue; // skip outer index
             }
             return item;
         }

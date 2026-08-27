@@ -1,0 +1,47 @@
+package spring.batch.common;
+
+import org.springframework.batch.core.scope.context.ChunkContext;
+import org.springframework.batch.core.step.StepContribution;
+import org.springframework.batch.core.step.tasklet.Tasklet;
+import org.springframework.batch.infrastructure.repeat.RepeatStatus;
+import org.springframework.core.io.ClassPathResource;
+import org.springframework.core.io.Resource;
+import org.springframework.stereotype.Component;
+import org.springframework.util.Assert;
+
+import java.io.File;
+import java.io.IOException;
+import java.util.Objects;
+
+// 删除项目构建的/target结果目录中/clean的文件
+@Component
+public class FileDeleterTasklet implements Tasklet {
+
+    private File directory;
+    private Resource resource = new ClassPathResource("clean/");
+
+    public FileDeleterTasklet() {
+        try {
+            this.directory = resource.getFile();
+            Assert.state(this.directory.isDirectory(), "The resource must be a directory");
+        } catch (IOException exception) {
+            System.out.println(exception.getMessage());
+        }
+    }
+
+    // TODO. execute()方法将被重复调用
+    // 返回RepeatStatus.FINISHED或者抛出Exception标记Task执行结束
+    // 返回RepeatStatus.CONTINUABLE标明将会持续被调用
+    @Override
+    public RepeatStatus execute(StepContribution contribution, ChunkContext chunkContext) throws Exception {
+        File[] files = directory.listFiles();
+        for (int i = 0; i < Objects.requireNonNull(files).length; i++) {
+            boolean deleted = files[i].delete();
+            if (!deleted) {
+                System.out.println("Can not delete file");
+                return RepeatStatus.FINISHED;
+            }
+        }
+        return RepeatStatus.FINISHED;
+    }
+}
